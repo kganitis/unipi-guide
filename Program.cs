@@ -16,7 +16,7 @@ namespace WindowsFormsApp2023_Final
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WelcomeForm());
+            Application.Run(new BaseForm());
         }
     }
 }
