@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class WelcomeForm
+    partial class BaseForm
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,6 @@
             this.label1.Size = new System.Drawing.Size(224, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Καλωσορίσατε στο Πανεπιστήμιο Πειραιώς";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // WelcomeForm
             // 
