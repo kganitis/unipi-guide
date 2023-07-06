@@ -232,15 +232,15 @@
         private System.Windows.Forms.Panel ToolsPanel;
         protected System.Windows.Forms.Panel ContentPanel;
         private System.Windows.Forms.Button AboutButton;
-        private System.Windows.Forms.Button ExportButton;
-        private System.Windows.Forms.Button ListenButton;
+        protected System.Windows.Forms.Button ExportButton;
+        protected System.Windows.Forms.Button ListenButton;
         private System.Windows.Forms.Button ExitButton;
-        private System.Windows.Forms.Button NavButton1;
-        private System.Windows.Forms.Button NavButtonBack;
-        private System.Windows.Forms.Button NavButton5;
-        private System.Windows.Forms.Button NavButton4;
-        private System.Windows.Forms.Button NavButton3;
-        private System.Windows.Forms.Button NavButton2;
-        private System.Windows.Forms.Button NavButtonHome;
+        protected System.Windows.Forms.Button NavButton1;
+        protected System.Windows.Forms.Button NavButtonBack;
+        protected System.Windows.Forms.Button NavButton5;
+        protected System.Windows.Forms.Button NavButton4;
+        protected System.Windows.Forms.Button NavButton3;
+        protected System.Windows.Forms.Button NavButton2;
+        protected System.Windows.Forms.Button NavButtonHome;
     }
 }
