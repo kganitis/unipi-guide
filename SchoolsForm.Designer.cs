@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class UniversityForm
+    partial class SchoolsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,29 +32,13 @@
             // 
             // NavButton1
             // 
-            this.NavButton1.BackColor = System.Drawing.Color.BurlyWood;
+            this.NavButton1.Text = "Σχολές";
             // 
-            // NavButton5
-            // 
-            this.NavButton5.Text = "";
-            // 
-            // NavButton4
-            // 
-            this.NavButton4.Text = "";
-            // 
-            // NavButton3
-            // 
-            this.NavButton3.Text = "";
-            // 
-            // NavButton2
-            // 
-            this.NavButton2.Text = "";
-            // 
-            // UniversityForm
+            // SchoolsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Name = "UniversityForm";
+            this.Name = "SchoolsForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
