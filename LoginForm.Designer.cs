@@ -29,14 +29,24 @@
         private void InitializeComponent()
         {
             this.SuspendLayout();
+            HideAllControls();
             // 
-            // ExportButton
+            // LoginForm
             // 
-            this.ExportButton.Visible = false;
-            // 
-            // ListenButton
-            // 
-            this.ListenButton.Visible = false;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.Name = "LoginForm";
+            this.ResumeLayout(false);
+
+        }
+
+        private void HideAllControls()
+        {
+            HideExportAndListenControls();
+            HideNavigationControls();
+        }
+
+        private void HideNavigationControls()
+        {
             // 
             // NavButton1
             // 
@@ -65,13 +75,18 @@
             // NavButtonHome
             // 
             this.NavButtonHome.Visible = false;
-            // 
-            // LoginForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.Name = "LoginForm";
-            this.ResumeLayout(false);
+        }
 
+        private void HideExportAndListenControls()
+        {
+            // 
+            // ExportButton
+            // 
+            this.ExportButton.Visible = false;
+            // 
+            // ListenButton
+            // 
+            this.ListenButton.Visible = false;
         }
 
         #endregion
