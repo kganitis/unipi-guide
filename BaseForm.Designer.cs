@@ -238,7 +238,7 @@
 
         }
 
-        protected void HideAllControls()
+        public void HideAllControls()
         {
             HideExportAndListenControls();
             HideNavigationControls();

@@ -13,6 +13,7 @@ namespace WindowsFormsApp2023_Final
         public LoginForm()
         {
             InitializeComponent();
+            HideAllControls();
         }
     }
 }
