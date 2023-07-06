@@ -230,7 +230,7 @@
 
         private System.Windows.Forms.Panel NavigationPanel;
         private System.Windows.Forms.Panel ToolsPanel;
-        private System.Windows.Forms.Panel ContentPanel;
+        protected System.Windows.Forms.Panel ContentPanel;
         private System.Windows.Forms.Button AboutButton;
         private System.Windows.Forms.Button ExportButton;
         private System.Windows.Forms.Button ListenButton;
