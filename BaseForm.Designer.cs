@@ -42,6 +42,7 @@
             this.ExportButton = new System.Windows.Forms.Button();
             this.AboutButton = new System.Windows.Forms.Button();
             this.ContentPanel = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.NavigationPanel.SuspendLayout();
             this.ToolsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +58,7 @@
             this.NavigationPanel.Controls.Add(this.NavButton2);
             this.NavigationPanel.Controls.Add(this.NavButton1);
             this.NavigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.NavigationPanel.Location = new System.Drawing.Point(0, 0);
+            this.NavigationPanel.Location = new System.Drawing.Point(0, 24);
             this.NavigationPanel.Name = "NavigationPanel";
             this.NavigationPanel.Size = new System.Drawing.Size(200, 537);
             this.NavigationPanel.TabIndex = 0;
@@ -149,16 +150,16 @@
             this.ToolsPanel.Controls.Add(this.ExportButton);
             this.ToolsPanel.Controls.Add(this.AboutButton);
             this.ToolsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ToolsPanel.Location = new System.Drawing.Point(200, 437);
+            this.ToolsPanel.Location = new System.Drawing.Point(200, 461);
             this.ToolsPanel.Name = "ToolsPanel";
-            this.ToolsPanel.Size = new System.Drawing.Size(744, 100);
+            this.ToolsPanel.Size = new System.Drawing.Size(784, 100);
             this.ToolsPanel.TabIndex = 1;
             // 
             // ExitButton
             // 
             this.ExitButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.close;
             this.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ExitButton.Location = new System.Drawing.Point(591, 10);
+            this.ExitButton.Location = new System.Drawing.Point(608, 10);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(0);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(120, 80);
@@ -169,7 +170,7 @@
             // 
             this.ListenButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.speaker;
             this.ListenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ListenButton.Location = new System.Drawing.Point(405, 10);
+            this.ListenButton.Location = new System.Drawing.Point(422, 10);
             this.ListenButton.Margin = new System.Windows.Forms.Padding(0);
             this.ListenButton.Name = "ListenButton";
             this.ListenButton.Size = new System.Drawing.Size(120, 80);
@@ -180,7 +181,7 @@
             // 
             this.ExportButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.save;
             this.ExportButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ExportButton.Location = new System.Drawing.Point(219, 10);
+            this.ExportButton.Location = new System.Drawing.Point(236, 10);
             this.ExportButton.Margin = new System.Windows.Forms.Padding(0);
             this.ExportButton.Name = "ExportButton";
             this.ExportButton.Size = new System.Drawing.Size(120, 80);
@@ -191,7 +192,7 @@
             // 
             this.AboutButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.about;
             this.AboutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AboutButton.Location = new System.Drawing.Point(33, 10);
+            this.AboutButton.Location = new System.Drawing.Point(50, 10);
             this.AboutButton.Margin = new System.Windows.Forms.Padding(0);
             this.AboutButton.Name = "AboutButton";
             this.AboutButton.Size = new System.Drawing.Size(120, 80);
@@ -201,21 +202,30 @@
             // ContentPanel
             // 
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanel.Location = new System.Drawing.Point(200, 0);
+            this.ContentPanel.Location = new System.Drawing.Point(200, 24);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(5);
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(744, 437);
+            this.ContentPanel.Size = new System.Drawing.Size(784, 437);
             this.ContentPanel.TabIndex = 2;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(984, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // BaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(944, 537);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.ContentPanel);
             this.Controls.Add(this.ToolsPanel);
             this.Controls.Add(this.NavigationPanel);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "BaseForm";
@@ -223,6 +233,7 @@
             this.NavigationPanel.ResumeLayout(false);
             this.ToolsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
