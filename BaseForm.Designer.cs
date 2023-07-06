@@ -28,146 +28,219 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ButtonsTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.NavigationTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.BaseTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.NavigationPanel = new System.Windows.Forms.Panel();
+            this.NavButtonHome = new System.Windows.Forms.Button();
+            this.NavButtonBack = new System.Windows.Forms.Button();
+            this.NavButton5 = new System.Windows.Forms.Button();
+            this.NavButton4 = new System.Windows.Forms.Button();
+            this.NavButton3 = new System.Windows.Forms.Button();
+            this.NavButton2 = new System.Windows.Forms.Button();
+            this.NavButton1 = new System.Windows.Forms.Button();
+            this.ToolsPanel = new System.Windows.Forms.Panel();
             this.ExitButton = new System.Windows.Forms.Button();
             this.ListenButton = new System.Windows.Forms.Button();
             this.ExportButton = new System.Windows.Forms.Button();
             this.AboutButton = new System.Windows.Forms.Button();
-            this.ButtonsTableLayoutPanel.SuspendLayout();
-            this.BaseTableLayoutPanel.SuspendLayout();
+            this.ContentPanel = new System.Windows.Forms.Panel();
+            this.NavigationPanel.SuspendLayout();
+            this.ToolsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ButtonsTableLayoutPanel
+            // NavigationPanel
             // 
-            this.ButtonsTableLayoutPanel.ColumnCount = 4;
-            this.ButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.ButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.ButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.ButtonsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.ButtonsTableLayoutPanel.Controls.Add(this.ExitButton, 3, 0);
-            this.ButtonsTableLayoutPanel.Controls.Add(this.ListenButton, 2, 0);
-            this.ButtonsTableLayoutPanel.Controls.Add(this.ExportButton, 1, 0);
-            this.ButtonsTableLayoutPanel.Controls.Add(this.AboutButton, 0, 0);
-            this.ButtonsTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ButtonsTableLayoutPanel.Location = new System.Drawing.Point(179, 428);
-            this.ButtonsTableLayoutPanel.Name = "ButtonsTableLayoutPanel";
-            this.ButtonsTableLayoutPanel.RowCount = 1;
-            this.ButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.ButtonsTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.ButtonsTableLayoutPanel.Size = new System.Drawing.Size(702, 70);
-            this.ButtonsTableLayoutPanel.TabIndex = 1;
+            this.NavigationPanel.BackColor = System.Drawing.Color.LightGray;
+            this.NavigationPanel.Controls.Add(this.NavButtonHome);
+            this.NavigationPanel.Controls.Add(this.NavButtonBack);
+            this.NavigationPanel.Controls.Add(this.NavButton5);
+            this.NavigationPanel.Controls.Add(this.NavButton4);
+            this.NavigationPanel.Controls.Add(this.NavButton3);
+            this.NavigationPanel.Controls.Add(this.NavButton2);
+            this.NavigationPanel.Controls.Add(this.NavButton1);
+            this.NavigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.NavigationPanel.Location = new System.Drawing.Point(0, 0);
+            this.NavigationPanel.Name = "NavigationPanel";
+            this.NavigationPanel.Size = new System.Drawing.Size(200, 537);
+            this.NavigationPanel.TabIndex = 0;
             // 
-            // NavigationTableLayoutPanel
+            // NavButtonHome
             // 
-            this.NavigationTableLayoutPanel.ColumnCount = 1;
-            this.NavigationTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.NavigationTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NavigationTableLayoutPanel.Location = new System.Drawing.Point(3, 3);
-            this.NavigationTableLayoutPanel.Name = "NavigationTableLayoutPanel";
-            this.NavigationTableLayoutPanel.RowCount = 5;
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.NavigationTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.NavigationTableLayoutPanel.Size = new System.Drawing.Size(170, 419);
-            this.NavigationTableLayoutPanel.TabIndex = 0;
+            this.NavButtonHome.BackColor = System.Drawing.Color.CadetBlue;
+            this.NavButtonHome.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.home;
+            this.NavButtonHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.NavButtonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButtonHome.Location = new System.Drawing.Point(12, 12);
+            this.NavButtonHome.Name = "NavButtonHome";
+            this.NavButtonHome.Size = new System.Drawing.Size(180, 80);
+            this.NavButtonHome.TabIndex = 6;
+            this.NavButtonHome.UseVisualStyleBackColor = false;
             // 
-            // BaseTableLayoutPanel
+            // NavButtonBack
             // 
-            this.BaseTableLayoutPanel.ColumnCount = 2;
-            this.BaseTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.BaseTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.BaseTableLayoutPanel.Controls.Add(this.NavigationTableLayoutPanel, 0, 0);
-            this.BaseTableLayoutPanel.Controls.Add(this.ButtonsTableLayoutPanel, 1, 1);
-            this.BaseTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BaseTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
-            this.BaseTableLayoutPanel.Name = "BaseTableLayoutPanel";
-            this.BaseTableLayoutPanel.RowCount = 2;
-            this.BaseTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.BaseTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.BaseTableLayoutPanel.Size = new System.Drawing.Size(884, 501);
-            this.BaseTableLayoutPanel.TabIndex = 0;
+            this.NavButtonBack.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.NavButtonBack.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.restart;
+            this.NavButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.NavButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButtonBack.Location = new System.Drawing.Point(10, 447);
+            this.NavButtonBack.Name = "NavButtonBack";
+            this.NavButtonBack.Size = new System.Drawing.Size(180, 80);
+            this.NavButtonBack.TabIndex = 5;
+            this.NavButtonBack.UseVisualStyleBackColor = false;
+            // 
+            // NavButton5
+            // 
+            this.NavButton5.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.NavButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton5.Location = new System.Drawing.Point(12, 371);
+            this.NavButton5.Name = "NavButton5";
+            this.NavButton5.Size = new System.Drawing.Size(180, 60);
+            this.NavButton5.TabIndex = 4;
+            this.NavButton5.Text = "Φωτογραφίες";
+            this.NavButton5.UseVisualStyleBackColor = false;
+            // 
+            // NavButton4
+            // 
+            this.NavButton4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.NavButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton4.Location = new System.Drawing.Point(12, 305);
+            this.NavButton4.Name = "NavButton4";
+            this.NavButton4.Size = new System.Drawing.Size(180, 60);
+            this.NavButton4.TabIndex = 3;
+            this.NavButton4.Text = "Αξιολογήσεις";
+            this.NavButton4.UseVisualStyleBackColor = false;
+            // 
+            // NavButton3
+            // 
+            this.NavButton3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.NavButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton3.Location = new System.Drawing.Point(12, 239);
+            this.NavButton3.Name = "NavButton3";
+            this.NavButton3.Size = new System.Drawing.Size(180, 60);
+            this.NavButton3.TabIndex = 2;
+            this.NavButton3.Text = "Σχολές";
+            this.NavButton3.UseVisualStyleBackColor = false;
+            // 
+            // NavButton2
+            // 
+            this.NavButton2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.NavButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton2.Location = new System.Drawing.Point(12, 173);
+            this.NavButton2.Name = "NavButton2";
+            this.NavButton2.Size = new System.Drawing.Size(180, 60);
+            this.NavButton2.TabIndex = 1;
+            this.NavButton2.Text = "Υπηρεσίες";
+            this.NavButton2.UseVisualStyleBackColor = false;
+            // 
+            // NavButton1
+            // 
+            this.NavButton1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.NavButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton1.Location = new System.Drawing.Point(12, 107);
+            this.NavButton1.Name = "NavButton1";
+            this.NavButton1.Size = new System.Drawing.Size(180, 60);
+            this.NavButton1.TabIndex = 0;
+            this.NavButton1.Text = "Πανεπιστήμιο";
+            this.NavButton1.UseVisualStyleBackColor = false;
+            // 
+            // ToolsPanel
+            // 
+            this.ToolsPanel.BackColor = System.Drawing.Color.LightGray;
+            this.ToolsPanel.Controls.Add(this.ExitButton);
+            this.ToolsPanel.Controls.Add(this.ListenButton);
+            this.ToolsPanel.Controls.Add(this.ExportButton);
+            this.ToolsPanel.Controls.Add(this.AboutButton);
+            this.ToolsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ToolsPanel.Location = new System.Drawing.Point(200, 437);
+            this.ToolsPanel.Name = "ToolsPanel";
+            this.ToolsPanel.Size = new System.Drawing.Size(744, 100);
+            this.ToolsPanel.TabIndex = 1;
             // 
             // ExitButton
             // 
-            this.ExitButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.exit;
+            this.ExitButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.close;
             this.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ExitButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ExitButton.Location = new System.Drawing.Point(545, 3);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.ExitButton.Location = new System.Drawing.Point(591, 10);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(0);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(137, 64);
-            this.ExitButton.TabIndex = 3;
+            this.ExitButton.Size = new System.Drawing.Size(120, 80);
+            this.ExitButton.TabIndex = 4;
             this.ExitButton.UseVisualStyleBackColor = true;
             // 
             // ListenButton
             // 
             this.ListenButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.speaker;
             this.ListenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ListenButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ListenButton.Location = new System.Drawing.Point(370, 3);
-            this.ListenButton.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.ListenButton.Location = new System.Drawing.Point(405, 10);
+            this.ListenButton.Margin = new System.Windows.Forms.Padding(0);
             this.ListenButton.Name = "ListenButton";
-            this.ListenButton.Size = new System.Drawing.Size(135, 64);
-            this.ListenButton.TabIndex = 2;
+            this.ListenButton.Size = new System.Drawing.Size(120, 80);
+            this.ListenButton.TabIndex = 3;
             this.ListenButton.UseVisualStyleBackColor = true;
             // 
             // ExportButton
             // 
             this.ExportButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.save;
             this.ExportButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ExportButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ExportButton.Location = new System.Drawing.Point(195, 3);
-            this.ExportButton.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.ExportButton.Location = new System.Drawing.Point(219, 10);
+            this.ExportButton.Margin = new System.Windows.Forms.Padding(0);
             this.ExportButton.Name = "ExportButton";
-            this.ExportButton.Size = new System.Drawing.Size(135, 64);
-            this.ExportButton.TabIndex = 1;
+            this.ExportButton.Size = new System.Drawing.Size(120, 80);
+            this.ExportButton.TabIndex = 2;
             this.ExportButton.UseVisualStyleBackColor = true;
             // 
             // AboutButton
             // 
-            this.AboutButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.users;
+            this.AboutButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.about;
             this.AboutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AboutButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AboutButton.Location = new System.Drawing.Point(20, 3);
-            this.AboutButton.Margin = new System.Windows.Forms.Padding(20, 3, 20, 3);
+            this.AboutButton.Location = new System.Drawing.Point(33, 10);
+            this.AboutButton.Margin = new System.Windows.Forms.Padding(0);
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(135, 64);
-            this.AboutButton.TabIndex = 0;
+            this.AboutButton.Size = new System.Drawing.Size(120, 80);
+            this.AboutButton.TabIndex = 1;
             this.AboutButton.UseVisualStyleBackColor = true;
+            // 
+            // ContentPanel
+            // 
+            this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContentPanel.Location = new System.Drawing.Point(200, 0);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5);
+            this.ContentPanel.Name = "ContentPanel";
+            this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.ContentPanel.Size = new System.Drawing.Size(744, 437);
+            this.ContentPanel.TabIndex = 2;
             // 
             // BaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 501);
-            this.Controls.Add(this.BaseTableLayoutPanel);
+            this.ClientSize = new System.Drawing.Size(944, 537);
+            this.Controls.Add(this.ContentPanel);
+            this.Controls.Add(this.ToolsPanel);
+            this.Controls.Add(this.NavigationPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "BaseForm";
             this.Text = "Πανεπιστήμιο Πειραιώς";
-            this.ButtonsTableLayoutPanel.ResumeLayout(false);
-            this.BaseTableLayoutPanel.ResumeLayout(false);
+            this.NavigationPanel.ResumeLayout(false);
+            this.ToolsPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel ButtonsTableLayoutPanel;
-        private System.Windows.Forms.Button ExitButton;
-        private System.Windows.Forms.Button ListenButton;
-        private System.Windows.Forms.Button ExportButton;
+        private System.Windows.Forms.Panel NavigationPanel;
+        private System.Windows.Forms.Panel ToolsPanel;
+        private System.Windows.Forms.Panel ContentPanel;
         private System.Windows.Forms.Button AboutButton;
-        private System.Windows.Forms.TableLayoutPanel NavigationTableLayoutPanel;
-        private System.Windows.Forms.TableLayoutPanel BaseTableLayoutPanel;
+        private System.Windows.Forms.Button ExportButton;
+        private System.Windows.Forms.Button ListenButton;
+        private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.Button NavButton1;
+        private System.Windows.Forms.Button NavButtonBack;
+        private System.Windows.Forms.Button NavButton5;
+        private System.Windows.Forms.Button NavButton4;
+        private System.Windows.Forms.Button NavButton3;
+        private System.Windows.Forms.Button NavButton2;
+        private System.Windows.Forms.Button NavButtonHome;
     }
 }
-
