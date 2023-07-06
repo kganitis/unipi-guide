@@ -39,56 +39,6 @@
 
         }
 
-        private void HideAllControls()
-        {
-            HideExportAndListenControls();
-            HideNavigationControls();
-        }
-
-        private void HideNavigationControls()
-        {
-            // 
-            // NavButton1
-            // 
-            this.NavButton1.Visible = false;
-            // 
-            // NavButtonBack
-            // 
-            this.NavButtonBack.Visible = false;
-            // 
-            // NavButton5
-            // 
-            this.NavButton5.Visible = false;
-            // 
-            // NavButton4
-            // 
-            this.NavButton4.Visible = false;
-            // 
-            // NavButton3
-            // 
-            this.NavButton3.Visible = false;
-            // 
-            // NavButton2
-            // 
-            this.NavButton2.Visible = false;
-            // 
-            // NavButtonHome
-            // 
-            this.NavButtonHome.Visible = false;
-        }
-
-        private void HideExportAndListenControls()
-        {
-            // 
-            // ExportButton
-            // 
-            this.ExportButton.Visible = false;
-            // 
-            // ListenButton
-            // 
-            this.ListenButton.Visible = false;
-        }
-
         #endregion
     }
 }
