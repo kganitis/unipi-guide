@@ -42,7 +42,7 @@
             this.ExportButton = new System.Windows.Forms.Button();
             this.AboutButton = new System.Windows.Forms.Button();
             this.ContentPanel = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.NavigationPanel.SuspendLayout();
             this.ToolsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -209,13 +209,13 @@
             this.ContentPanel.Size = new System.Drawing.Size(784, 437);
             this.ContentPanel.TabIndex = 2;
             // 
-            // menuStrip1
+            // MenuStrip
             // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(984, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
+            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.MenuStrip.Name = "MenuStrip";
+            this.MenuStrip.Size = new System.Drawing.Size(984, 24);
+            this.MenuStrip.TabIndex = 3;
+            this.MenuStrip.Text = "MenuStrip";
             // 
             // BaseForm
             // 
@@ -225,8 +225,9 @@
             this.Controls.Add(this.ContentPanel);
             this.Controls.Add(this.ToolsPanel);
             this.Controls.Add(this.NavigationPanel);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MenuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.MenuStrip;
             this.MaximizeBox = false;
             this.Name = "BaseForm";
             this.Text = "Πανεπιστήμιο Πειραιώς";
@@ -253,5 +254,6 @@
         protected System.Windows.Forms.Button NavButton3;
         protected System.Windows.Forms.Button NavButton2;
         protected System.Windows.Forms.Button NavButtonHome;
+        private System.Windows.Forms.MenuStrip MenuStrip;
     }
 }
