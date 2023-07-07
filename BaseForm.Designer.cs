@@ -165,6 +165,7 @@
             this.ExitButton.Size = new System.Drawing.Size(120, 80);
             this.ExitButton.TabIndex = 4;
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // ListenButton
             // 
