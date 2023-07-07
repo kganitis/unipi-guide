@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class SchoolsForm
+    partial class SchoolsSectionForm
     {
         /// <summary>
         /// Required designer variable.

@@ -28,16 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // ContentPanel
+            // 
+            this.ContentPanel.Controls.Add(this.button1);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(357, 210);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "ΕΙΣΟΔΟΣ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Name = "LoginForm";
+            this.ContentPanel.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
     }
 }

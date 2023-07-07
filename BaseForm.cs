@@ -16,5 +16,29 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
         }
+
+        private void NavButtonHome_Click(object sender, EventArgs e)
+        {
+            Close();
+            new GuideIntroForm().Show();
+        }
+
+        private void NavButton1_Click(object sender, EventArgs e)
+        {
+            Close();
+            new UniversitySectionForm().Show();
+        }
+
+        private void NavButton2_Click(object sender, EventArgs e)
+        {
+            Close();
+            new ServicesSectionForm().Show();
+        }
+
+        private void NavButton3_Click(object sender, EventArgs e)
+        {
+            Close();
+            new SchoolsSectionForm().Show();
+        }
     }
 }
