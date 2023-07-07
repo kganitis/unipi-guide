@@ -15,5 +15,11 @@ namespace WindowsFormsApp2023_Final
             InitializeComponent();
             HideAllControls();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            new GuideIntroForm().Show();
+        }
     }
 }

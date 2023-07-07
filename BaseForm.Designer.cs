@@ -74,6 +74,7 @@
             this.NavButtonHome.Size = new System.Drawing.Size(180, 80);
             this.NavButtonHome.TabIndex = 6;
             this.NavButtonHome.UseVisualStyleBackColor = false;
+            this.NavButtonHome.Click += new System.EventHandler(this.NavButtonHome_Click);
             // 
             // NavButtonBack
             // 
@@ -119,6 +120,7 @@
             this.NavButton3.TabIndex = 2;
             this.NavButton3.Text = "Σχολές";
             this.NavButton3.UseVisualStyleBackColor = false;
+            this.NavButton3.Click += new System.EventHandler(this.NavButton3_Click);
             // 
             // NavButton2
             // 
@@ -130,6 +132,7 @@
             this.NavButton2.TabIndex = 1;
             this.NavButton2.Text = "Υπηρεσίες";
             this.NavButton2.UseVisualStyleBackColor = false;
+            this.NavButton2.Click += new System.EventHandler(this.NavButton2_Click);
             // 
             // NavButton1
             // 
@@ -141,6 +144,7 @@
             this.NavButton1.TabIndex = 0;
             this.NavButton1.Text = "Πανεπιστήμιο";
             this.NavButton1.UseVisualStyleBackColor = false;
+            this.NavButton1.Click += new System.EventHandler(this.NavButton1_Click);
             // 
             // ToolsPanel
             // 
