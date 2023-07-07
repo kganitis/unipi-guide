@@ -34,11 +34,16 @@
             // 
             this.NavButtonBack.Visible = false;
             // 
+            // NavButtonHome
+            // 
+            this.NavButtonHome.Enabled = false;
+            // 
             // GuideIntroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Name = "GuideIntroForm";
+            this.Load += new System.EventHandler(this.GuideIntroForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
