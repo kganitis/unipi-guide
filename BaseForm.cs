@@ -17,6 +17,11 @@ namespace WindowsFormsApp2023_Final
             InitializeComponent();
         }
 
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void NavButtonHome_Click(object sender, EventArgs e)
         {
             Close();
@@ -39,11 +44,6 @@ namespace WindowsFormsApp2023_Final
         {
             Close();
             new SchoolsSectionForm().Show();
-        }
-
-        private void ExitButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
