@@ -69,7 +69,7 @@
             this.NavButtonHome.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.home;
             this.NavButtonHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.NavButtonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButtonHome.Location = new System.Drawing.Point(12, 12);
+            this.NavButtonHome.Location = new System.Drawing.Point(10, 18);
             this.NavButtonHome.Name = "NavButtonHome";
             this.NavButtonHome.Size = new System.Drawing.Size(180, 80);
             this.NavButtonHome.TabIndex = 6;
@@ -92,7 +92,7 @@
             // 
             this.NavButton5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton5.Location = new System.Drawing.Point(12, 371);
+            this.NavButton5.Location = new System.Drawing.Point(10, 377);
             this.NavButton5.Name = "NavButton5";
             this.NavButton5.Size = new System.Drawing.Size(180, 60);
             this.NavButton5.TabIndex = 4;
@@ -103,7 +103,7 @@
             // 
             this.NavButton4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton4.Location = new System.Drawing.Point(12, 305);
+            this.NavButton4.Location = new System.Drawing.Point(10, 311);
             this.NavButton4.Name = "NavButton4";
             this.NavButton4.Size = new System.Drawing.Size(180, 60);
             this.NavButton4.TabIndex = 3;
@@ -114,7 +114,7 @@
             // 
             this.NavButton3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton3.Location = new System.Drawing.Point(12, 239);
+            this.NavButton3.Location = new System.Drawing.Point(10, 245);
             this.NavButton3.Name = "NavButton3";
             this.NavButton3.Size = new System.Drawing.Size(180, 60);
             this.NavButton3.TabIndex = 2;
@@ -126,7 +126,7 @@
             // 
             this.NavButton2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton2.Location = new System.Drawing.Point(12, 173);
+            this.NavButton2.Location = new System.Drawing.Point(10, 179);
             this.NavButton2.Name = "NavButton2";
             this.NavButton2.Size = new System.Drawing.Size(180, 60);
             this.NavButton2.TabIndex = 1;
@@ -138,7 +138,7 @@
             // 
             this.NavButton1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton1.Location = new System.Drawing.Point(12, 107);
+            this.NavButton1.Location = new System.Drawing.Point(10, 113);
             this.NavButton1.Name = "NavButton1";
             this.NavButton1.Size = new System.Drawing.Size(180, 60);
             this.NavButton1.TabIndex = 0;
