@@ -34,11 +34,15 @@
             // 
             this.NavButton1.Text = "Σχολές";
             // 
-            // SchoolsForm
+            // NavButtonBack
+            // 
+            this.NavButtonBack.Click += new System.EventHandler(this.NavButtonBack_Click);
+            // 
+            // SchoolsSectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Name = "SchoolsForm";
+            this.Name = "SchoolsSectionForm";
             this.ResumeLayout(false);
             this.PerformLayout();
 

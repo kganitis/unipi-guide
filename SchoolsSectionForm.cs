@@ -14,5 +14,11 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
         }
+
+        private void NavButtonBack_Click(object sender, EventArgs e)
+        {
+            Close();
+            new GuideIntroForm().Show();
+        }
     }
 }

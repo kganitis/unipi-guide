@@ -34,6 +34,10 @@
             // 
             this.NavButton1.Text = "Πανεπιστήμιο";
             // 
+            // NavButtonBack
+            // 
+            this.NavButtonBack.Click += new System.EventHandler(this.NavButtonBack_Click);
+            // 
             // UniversitySectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
