@@ -15,5 +15,15 @@ namespace WindowsFormsApp2023_Final
             InitializeComponent();
             HideAllControls();
         }
+
+        private void ContentPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
