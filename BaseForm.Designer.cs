@@ -235,6 +235,7 @@
             this.MainMenuStrip = this.MenuStrip;
             this.MaximizeBox = false;
             this.Name = "BaseForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Πανεπιστήμιο Πειραιώς";
             this.NavigationPanel.ResumeLayout(false);
             this.ToolsPanel.ResumeLayout(false);
