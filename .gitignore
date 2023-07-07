@@ -361,10 +361,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/GuideSectionForm.Designer.cs
-/SchoolsSectionForm.cs
-/SchoolsSectionForm.Designer.cs
-/ServicesSectionForm.cs
-/ServicesSectionForm.Designer.cs
-/UniversitySectionForm.cs
-/UniversitySectionForm.Designer.cs
