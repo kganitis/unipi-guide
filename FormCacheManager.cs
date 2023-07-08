@@ -11,7 +11,7 @@ namespace WindowsFormsApp2023_Final
     {
         private static readonly FormCacheManager instance = new FormCacheManager();
 
-        public Stack<Form> formHistory = new Stack<Form>();
+        private Stack<Form> formHistory = new Stack<Form>();
 
         public static FormCacheManager Instance { get { return instance; } }
 
