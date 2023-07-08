@@ -17,8 +17,7 @@ namespace WindowsFormsApp2023_Final
 
         private void NavButtonBack_Click(object sender, EventArgs e)
         {
-            Close();
-            new GuideIntroForm().Show();
+            cacheManager.NavigateToForm<GuideIntroForm>();
         }
     }
 }

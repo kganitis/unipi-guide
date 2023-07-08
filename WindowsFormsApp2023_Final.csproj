@@ -58,6 +58,7 @@
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCacheManager.cs" />
     <Compile Include="GuideSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>

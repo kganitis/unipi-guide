@@ -12,9 +12,18 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class BaseForm : Form
     {
+        internal FormCacheManager cacheManager;
+
         public BaseForm()
         {
             InitializeComponent();
+            cacheManager = FormCacheManager.Instance;
+        }
+
+        private void NavigateToForm<T>() where T : Form, new()
+        {
+            Hide();
+            cacheManager.NavigateToForm<T>();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -24,32 +33,27 @@ namespace WindowsFormsApp2023_Final
 
         private void NavButtonHome_Click(object sender, EventArgs e)
         {
-            Close();
-            new GuideIntroForm().Show();
+            NavigateToForm<GuideIntroForm>();
         }
 
         private void NavButton1_Click(object sender, EventArgs e)
         {
-            Close();
-            new UniversitySectionForm().Show();
+            NavigateToForm<UniversitySectionForm>();
         }
 
         private void NavButton2_Click(object sender, EventArgs e)
         {
-            Close();
-            new ServicesSectionForm().Show();
+            NavigateToForm<ServicesSectionForm>();
         }
 
         private void NavButton3_Click(object sender, EventArgs e)
         {
-            Close();
-            new SchoolsSectionForm().Show();
+            NavigateToForm<SchoolsSectionForm>();
         }
 
         private void AboutButton_Click(object sender, EventArgs e)
         {
-            Close();
-            new AboutForm().Show();
+            NavigateToForm<AboutForm>();
         }
     }
 }
