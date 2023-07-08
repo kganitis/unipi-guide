@@ -36,7 +36,7 @@ namespace WindowsFormsApp2023_Final
         public void NavigateToForm<T>(Form currentForm) where T : Form, new()
         {
             T nextForm = GetForm<T>();
-            if (!(currentForm.GetType() == typeof(LoginForm) && nextForm.GetType() == typeof(GuideIntroForm))) {
+            if (!(currentForm.GetType() == typeof(LoginForm) && nextForm.GetType() == typeof(GuideForm))) {
                 formHistory.Push(currentForm);
             }
             currentForm.Hide();

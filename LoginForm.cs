@@ -18,7 +18,7 @@ namespace WindowsFormsApp2023_Final
 
         private void button1_Click(object sender, EventArgs e)
         {
-            NavigateToForm<GuideIntroForm>();
+            NavigateToForm<GuideForm>();
         }
     }
 }

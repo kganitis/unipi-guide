@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class GuideIntroForm
+    partial class GuideForm
     {
         /// <summary>
         /// Required designer variable.

@@ -13,6 +13,7 @@ namespace WindowsFormsApp2023_Final
     public partial class BaseForm : Form
     {
         internal FormCacheManager cacheManager;
+        protected Color highlightedButtonColor = Color.BurlyWood;
         
         public BaseForm()
         {
@@ -32,7 +33,7 @@ namespace WindowsFormsApp2023_Final
 
         private void NavButtonHome_Click(object sender, EventArgs e)
         {
-            NavigateToForm<GuideIntroForm>();
+            NavigateToForm<GuideForm>();
         }
 
         private void NavButton1_Click(object sender, EventArgs e)
