@@ -13,8 +13,7 @@ namespace WindowsFormsApp2023_Final
         public SlideshowForm()
         {
             InitializeComponent();
-            NavButton5.Enabled = false;
-            NavButton5.BackColor = highlightedButtonColor;
+            HighlightButton(NavButton5);
         }
     }
 }

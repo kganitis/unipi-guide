@@ -21,6 +21,12 @@ namespace WindowsFormsApp2023_Final
             cacheManager = FormCacheManager.Instance;
         }
 
+        protected void HighlightButton(Button button)
+        {
+            button.Enabled = false;
+            button.BackColor = highlightedButtonColor;
+        }
+
         protected void NavigateToForm<T>() where T : Form, new()
         {
             cacheManager.NavigateToForm<T>(this);
