@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.NavigationPanel = new System.Windows.Forms.Panel();
-            this.NavButtonHome = new System.Windows.Forms.Button();
-            this.NavButtonBack = new System.Windows.Forms.Button();
             this.NavButton5 = new System.Windows.Forms.Button();
             this.NavButton4 = new System.Windows.Forms.Button();
             this.NavButton3 = new System.Windows.Forms.Button();
             this.NavButton2 = new System.Windows.Forms.Button();
             this.NavButton1 = new System.Windows.Forms.Button();
             this.ToolsPanel = new System.Windows.Forms.Panel();
+            this.ContentPanel = new System.Windows.Forms.Panel();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.ExitButton = new System.Windows.Forms.Button();
             this.ListenButton = new System.Windows.Forms.Button();
             this.ExportButton = new System.Windows.Forms.Button();
             this.AboutButton = new System.Windows.Forms.Button();
-            this.ContentPanel = new System.Windows.Forms.Panel();
-            this.MenuStrip = new System.Windows.Forms.MenuStrip();
+            this.NavButtonHome = new System.Windows.Forms.Button();
+            this.NavButtonBack = new System.Windows.Forms.Button();
             this.NavigationPanel.SuspendLayout();
             this.ToolsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -62,31 +62,6 @@
             this.NavigationPanel.Name = "NavigationPanel";
             this.NavigationPanel.Size = new System.Drawing.Size(200, 537);
             this.NavigationPanel.TabIndex = 0;
-            // 
-            // NavButtonHome
-            // 
-            this.NavButtonHome.BackColor = System.Drawing.Color.CadetBlue;
-            this.NavButtonHome.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.home;
-            this.NavButtonHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.NavButtonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButtonHome.Location = new System.Drawing.Point(10, 18);
-            this.NavButtonHome.Name = "NavButtonHome";
-            this.NavButtonHome.Size = new System.Drawing.Size(180, 80);
-            this.NavButtonHome.TabIndex = 6;
-            this.NavButtonHome.UseVisualStyleBackColor = false;
-            this.NavButtonHome.Click += new System.EventHandler(this.NavButtonHome_Click);
-            // 
-            // NavButtonBack
-            // 
-            this.NavButtonBack.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NavButtonBack.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.restart;
-            this.NavButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.NavButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButtonBack.Location = new System.Drawing.Point(10, 447);
-            this.NavButtonBack.Name = "NavButtonBack";
-            this.NavButtonBack.Size = new System.Drawing.Size(180, 80);
-            this.NavButtonBack.TabIndex = 5;
-            this.NavButtonBack.UseVisualStyleBackColor = false;
             // 
             // NavButton5
             // 
@@ -159,6 +134,25 @@
             this.ToolsPanel.Size = new System.Drawing.Size(784, 100);
             this.ToolsPanel.TabIndex = 1;
             // 
+            // ContentPanel
+            // 
+            this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ContentPanel.Location = new System.Drawing.Point(200, 24);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5);
+            this.ContentPanel.Name = "ContentPanel";
+            this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.ContentPanel.Size = new System.Drawing.Size(784, 437);
+            this.ContentPanel.TabIndex = 2;
+            // 
+            // MenuStrip
+            // 
+            this.MenuStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.MenuStrip.Name = "MenuStrip";
+            this.MenuStrip.Size = new System.Drawing.Size(984, 24);
+            this.MenuStrip.TabIndex = 3;
+            this.MenuStrip.Text = "MenuStrip";
+            // 
             // ExitButton
             // 
             this.ExitButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.close;
@@ -203,24 +197,32 @@
             this.AboutButton.Size = new System.Drawing.Size(120, 80);
             this.AboutButton.TabIndex = 1;
             this.AboutButton.UseVisualStyleBackColor = true;
+            this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
             // 
-            // ContentPanel
+            // NavButtonHome
             // 
-            this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanel.Location = new System.Drawing.Point(200, 24);
-            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5);
-            this.ContentPanel.Name = "ContentPanel";
-            this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(784, 437);
-            this.ContentPanel.TabIndex = 2;
+            this.NavButtonHome.BackColor = System.Drawing.Color.CadetBlue;
+            this.NavButtonHome.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.home;
+            this.NavButtonHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.NavButtonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButtonHome.Location = new System.Drawing.Point(10, 18);
+            this.NavButtonHome.Name = "NavButtonHome";
+            this.NavButtonHome.Size = new System.Drawing.Size(180, 80);
+            this.NavButtonHome.TabIndex = 6;
+            this.NavButtonHome.UseVisualStyleBackColor = false;
+            this.NavButtonHome.Click += new System.EventHandler(this.NavButtonHome_Click);
             // 
-            // MenuStrip
+            // NavButtonBack
             // 
-            this.MenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Size = new System.Drawing.Size(984, 24);
-            this.MenuStrip.TabIndex = 3;
-            this.MenuStrip.Text = "MenuStrip";
+            this.NavButtonBack.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.NavButtonBack.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.restart;
+            this.NavButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.NavButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButtonBack.Location = new System.Drawing.Point(10, 447);
+            this.NavButtonBack.Name = "NavButtonBack";
+            this.NavButtonBack.Size = new System.Drawing.Size(180, 80);
+            this.NavButtonBack.TabIndex = 5;
+            this.NavButtonBack.UseVisualStyleBackColor = false;
             // 
             // BaseForm
             // 

@@ -45,5 +45,11 @@ namespace WindowsFormsApp2023_Final
             Close();
             new SchoolsSectionForm().Show();
         }
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            Close();
+            new AboutForm().Show();
+        }
     }
 }
