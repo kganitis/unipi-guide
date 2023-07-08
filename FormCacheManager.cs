@@ -17,7 +17,7 @@ namespace WindowsFormsApp2023_Final
 
         private Dictionary<Type, Form> formCache = new Dictionary<Type, Form>();
 
-        public T GetForm<T>() where T : Form, new()
+        private T GetForm<T>() where T : Form, new()
         {
             Type formType = typeof(T);
 
