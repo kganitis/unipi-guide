@@ -19,6 +19,10 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
             cacheManager = FormCacheManager.Instance;
+            if (GetType() == typeof(AboutForm))
+            {
+                AboutButton.Enabled = false;
+            }
         }
 
         protected void HighlightButton(Button button)
