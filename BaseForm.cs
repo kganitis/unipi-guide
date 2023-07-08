@@ -13,17 +13,16 @@ namespace WindowsFormsApp2023_Final
     public partial class BaseForm : Form
     {
         internal FormCacheManager cacheManager;
-
+        
         public BaseForm()
         {
             InitializeComponent();
             cacheManager = FormCacheManager.Instance;
         }
 
-        private void NavigateToForm<T>() where T : Form, new()
+        protected void NavigateToForm<T>() where T : Form, new()
         {
-            Hide();
-            cacheManager.NavigateToForm<T>();
+            cacheManager.NavigateToForm<T>(this);
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -54,6 +53,11 @@ namespace WindowsFormsApp2023_Final
         private void AboutButton_Click(object sender, EventArgs e)
         {
             NavigateToForm<AboutForm>();
+        }
+
+        private void NavButtonBack_Click(object sender, EventArgs e)
+        {
+            cacheManager.NavigateBack(this);
         }
     }
 }

@@ -14,10 +14,5 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
         }
-
-        private void GuideIntroForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

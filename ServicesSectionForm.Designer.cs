@@ -34,10 +34,6 @@
             // 
             this.NavButton1.Text = "Υπηρεσίες";
             // 
-            // NavButtonBack
-            // 
-            this.NavButtonBack.Click += new System.EventHandler(this.NavButtonBack_Click);
-            // 
             // ServicesSectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

@@ -11,6 +11,8 @@ namespace WindowsFormsApp2023_Final
     {
         private static readonly FormCacheManager instance = new FormCacheManager();
 
+        public Stack<Form> formHistory = new Stack<Form>();
+
         public static FormCacheManager Instance { get { return instance; } }
 
         private Dictionary<Type, Form> formCache = new Dictionary<Type, Form>();
@@ -31,10 +33,24 @@ namespace WindowsFormsApp2023_Final
             }
         }
 
-        public void NavigateToForm<T>() where T : Form, new()
+        public void NavigateToForm<T>(Form currentForm) where T : Form, new()
         {
-            T form = GetForm<T>();
-            form.Show();
+            T nextForm = GetForm<T>();
+            if (!(currentForm.GetType() == typeof(LoginForm) && nextForm.GetType() == typeof(GuideIntroForm))) {
+                formHistory.Push(currentForm);
+            }
+            currentForm.Hide();
+            nextForm.Show();
+        }
+
+        public void NavigateBack(Form currentForm)
+        {
+            if (formHistory.Count > 0)
+            {
+                Form previousForm = formHistory.Pop();
+                currentForm.Hide();
+                previousForm.Show();
+            }
         }
     }
 
