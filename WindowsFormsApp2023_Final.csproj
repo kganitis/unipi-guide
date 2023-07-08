@@ -97,6 +97,12 @@
     <Compile Include="ServicesSectionForm.Designer.cs">
       <DependentUpon>ServicesSectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SlideshowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlideshowForm.Designer.cs">
+      <DependentUpon>SlideshowForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UniversitySectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ServicesSectionForm.resx">
       <DependentUpon>ServicesSectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlideshowForm.resx">
+      <DependentUpon>SlideshowForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UniversitySectionForm.resx">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
