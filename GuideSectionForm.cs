@@ -13,6 +13,7 @@ namespace WindowsFormsApp2023_Final
         public GuideSectionForm()
         {
             InitializeComponent();
+            NavButton1.Enabled = false;
             NavButton1.BackColor = highlightedButtonColor;
         }
     }

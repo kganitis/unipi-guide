@@ -99,6 +99,7 @@
             this.NavButton5.TabIndex = 4;
             this.NavButton5.Text = "Φωτογραφίες";
             this.NavButton5.UseVisualStyleBackColor = false;
+            this.NavButton5.Click += new System.EventHandler(this.NavButton5_Click);
             // 
             // NavButton4
             // 
@@ -110,6 +111,7 @@
             this.NavButton4.TabIndex = 3;
             this.NavButton4.Text = "Αξιολογήσεις";
             this.NavButton4.UseVisualStyleBackColor = false;
+            this.NavButton4.Click += new System.EventHandler(this.NavButton4_Click);
             // 
             // NavButton3
             // 

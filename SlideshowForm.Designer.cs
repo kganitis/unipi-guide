@@ -33,6 +33,7 @@
             // NavButton5
             // 
             this.NavButton5.BackColor = System.Drawing.Color.BurlyWood;
+            this.NavButton5.Enabled = false;
             // 
             // SlideshowForm
             // 

@@ -33,6 +33,7 @@
             // NavButton4
             // 
             this.NavButton4.BackColor = System.Drawing.Color.BurlyWood;
+            this.NavButton4.Enabled = false;
             // 
             // ReviewsForm
             // 

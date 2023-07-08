@@ -60,5 +60,15 @@ namespace WindowsFormsApp2023_Final
         {
             cacheManager.NavigateBack(this);
         }
+
+        private void NavButton4_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<ReviewsForm>();
+        }
+
+        private void NavButton5_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<SlideshowForm>();
+        }
     }
 }

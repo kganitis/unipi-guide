@@ -13,6 +13,7 @@ namespace WindowsFormsApp2023_Final
         public ReviewsForm()
         {
             InitializeComponent();
+            NavButton4.Enabled = false;
             NavButton4.BackColor = highlightedButtonColor;
         }
     }
