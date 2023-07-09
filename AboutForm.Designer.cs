@@ -37,6 +37,9 @@
             // 
             this.ContentPanel.Controls.Add(this.AboutTitleLabel);
             this.ContentPanel.Controls.Add(this.AboutLabel);
+            this.ContentPanel.Controls.SetChildIndex(this.AboutLabel, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.AboutTitleLabel, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.testLabel, 0);
             // 
             // AboutLabel
             // 
@@ -64,6 +67,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Name = "AboutForm";
+            this.Text = "Σχετικά";
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);

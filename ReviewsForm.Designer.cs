@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // NavButton4
@@ -40,6 +41,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Name = "ReviewsForm";
+            this.Text = "Αξιολογήσεις";
+            this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -79,6 +80,17 @@ namespace WindowsFormsApp2023_Final
         private void NavButton5_Click(object sender, EventArgs e)
         {
             NavigateToForm<SlideshowForm>();
+        }
+
+        private void ExportButton_Click(object sender, EventArgs e)
+        {
+            string textToExport = testLabel.Text;
+            string filename = Text;
+            string filePath = "..\\..\\exports\\" + filename + ".txt";
+            StreamWriter writer = new StreamWriter(filePath);
+            writer.Write(textToExport);
+            MessageBox.Show("Οι πληροφορίες εξήχθησαν με επιτυχία!");
+            writer.Close();
         }
     }
 }
