@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Speech.Synthesis;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,12 +16,14 @@ namespace WindowsFormsApp2023_Final
     public partial class BaseForm : Form
     {
         internal FormCacheManager cacheManager;
+        private SpeechSynthesizer synthesizer;
         protected Color highlightedButtonColor = Color.BurlyWood;
         
         public BaseForm()
         {
             InitializeComponent();
             cacheManager = FormCacheManager.Instance;
+            synthesizer = new SpeechSynthesizer();
             if (GetType() == typeof(AboutForm))
             {
                 AboutButton.Enabled = false;
@@ -168,6 +172,13 @@ namespace WindowsFormsApp2023_Final
         private void HomeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             NavigateToForm<GuideForm>();
+        }
+
+        private void ListenButton_Click(object sender, EventArgs e)
+        {
+            synthesizer.SelectVoice("Microsoft Stefanos");
+            // synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult, 0, CultureInfo.GetCultureInfo("el-GR"));
+            synthesizer.SpeakAsync(testLabel.Text);
         }
     }
 }
