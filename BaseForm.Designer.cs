@@ -467,22 +467,22 @@
         protected System.Windows.Forms.Button NavButton2;
         protected System.Windows.Forms.Button NavButtonHome;
         private System.Windows.Forms.MenuStrip MenuStrip;
-        private System.Windows.Forms.ToolStripMenuItem NavigationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem BackToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ToolsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ExportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ListenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem NavigationToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem BackToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem ToolsToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem ExportToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem ListenToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem UniversityToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ServicesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem SchoolsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ReviewsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem SlideshowToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem UniversityToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem ServicesToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem SchoolsToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem ReviewsToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem SlideshowToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem HomeToolStripMenuItem;
+        protected System.Windows.Forms.ToolStripMenuItem HomeToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }
