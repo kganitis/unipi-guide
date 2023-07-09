@@ -450,6 +450,6 @@
         private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
         protected System.Windows.Forms.ToolStripMenuItem HomeToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.Label testLabel;
+        protected System.Windows.Forms.Label testLabel;
     }
 }
