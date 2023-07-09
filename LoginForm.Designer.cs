@@ -36,11 +36,6 @@
             // 
             this.ContentPanel.Controls.Add(this.button1);
             this.ContentPanel.Controls.SetChildIndex(this.button1, 0);
-            this.ContentPanel.Controls.SetChildIndex(this.testLabel, 0);
-            // 
-            // testLabel
-            // 
-            this.testLabel.Location = new System.Drawing.Point(17, 136);
             // 
             // button1
             // 

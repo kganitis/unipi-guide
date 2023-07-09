@@ -39,7 +39,6 @@
             this.ContentPanel.Controls.Add(this.AboutLabel);
             this.ContentPanel.Controls.SetChildIndex(this.AboutLabel, 0);
             this.ContentPanel.Controls.SetChildIndex(this.AboutTitleLabel, 0);
-            this.ContentPanel.Controls.SetChildIndex(this.testLabel, 0);
             // 
             // AboutLabel
             // 

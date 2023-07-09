@@ -43,7 +43,6 @@
             this.ExportButton = new System.Windows.Forms.Button();
             this.AboutButton = new System.Windows.Forms.Button();
             this.ContentPanel = new System.Windows.Forms.Panel();
-            this.testLabel = new System.Windows.Forms.Label();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.NavigationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -215,7 +214,7 @@
             this.ExportButton.Size = new System.Drawing.Size(120, 80);
             this.ExportButton.TabIndex = 2;
             this.ExportButton.UseVisualStyleBackColor = true;
-            this.ExportButton.Click += new System.EventHandler(this.ExportButton_Click);
+            // this.ExportButton.Click += new System.EventHandler(this.ExportButton_Click);
             // 
             // AboutButton
             // 
@@ -231,7 +230,6 @@
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Controls.Add(this.testLabel);
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContentPanel.Location = new System.Drawing.Point(200, 24);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(5);
@@ -239,16 +237,6 @@
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.ContentPanel.Size = new System.Drawing.Size(784, 437);
             this.ContentPanel.TabIndex = 2;
-            // 
-            // testLabel
-            // 
-            this.testLabel.AutoSize = true;
-            this.testLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.testLabel.Location = new System.Drawing.Point(13, 179);
-            this.testLabel.Name = "testLabel";
-            this.testLabel.Size = new System.Drawing.Size(755, 120);
-            this.testLabel.TabIndex = 0;
-            this.testLabel.Text = resources.GetString("testLabel.Text");
             // 
             // MenuStrip
             // 
@@ -415,8 +403,6 @@
         }
 
         #endregion
-
-        
 
         private System.Windows.Forms.Panel NavigationPanel;
         private System.Windows.Forms.Panel ToolsPanel;
