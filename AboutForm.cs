@@ -15,6 +15,7 @@ namespace WindowsFormsApp2023_Final
             InitializeComponent();
             HideAllControls();
             NavButtonBack.Visible = true;
+            BackToolStripMenuItem.Enabled = true;
         }
     }
 }

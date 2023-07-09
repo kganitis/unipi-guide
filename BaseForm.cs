@@ -32,6 +32,39 @@ namespace WindowsFormsApp2023_Final
             button.BackColor = highlightedButtonColor;
         }
 
+        protected void HideAllControls()
+        {
+            HideExportAndListenControls();
+            HideNavigationControls();
+        }
+
+        protected void HideNavigationControls()
+        {
+            NavButtonHome.Visible = false;
+            NavButton1.Visible = false;
+            NavButton2.Visible = false;
+            NavButton3.Visible = false;
+            NavButton4.Visible = false;
+            NavButton5.Visible = false;
+            NavButtonBack.Visible = false;
+            HomeToolStripMenuItem.Enabled = false;
+            UniversityToolStripMenuItem.Enabled = false;
+            ServicesToolStripMenuItem.Enabled = false;
+            SchoolsToolStripMenuItem.Enabled = false;
+            ReviewsToolStripMenuItem.Enabled = false;
+            SlideshowToolStripMenuItem.Enabled = false;
+            BackToolStripMenuItem.Enabled = false;
+        }
+
+        protected void HideExportAndListenControls()
+        {
+            ExportButton.Visible = false;
+            ListenButton.Visible = false;
+            ToolsToolStripMenuItem.Enabled = false;
+            ExportToolStripMenuItem.Enabled = false;
+            ListenToolStripMenuItem.Enabled = false;
+        }
+
         protected void NavigateToForm<T>() where T : Form, new()
         {
             cacheManager.NavigateToForm<T>(this);
@@ -82,15 +115,59 @@ namespace WindowsFormsApp2023_Final
             NavigateToForm<SlideshowForm>();
         }
 
-        private void ExportButton_Click(object sender, EventArgs e)
+        private void UniversityToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string textToExport = testLabel.Text;
-            string filename = Text;
-            string filePath = "..\\..\\exports\\" + filename + ".txt";
-            StreamWriter writer = new StreamWriter(filePath);
-            writer.Write(textToExport);
-            MessageBox.Show("Οι πληροφορίες εξήχθησαν με επιτυχία!");
-            writer.Close();
+            NavigateToForm<UniversitySectionForm>();
+        }
+
+        private void ServicesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<ServicesSectionForm>();
+        }
+
+        private void SchoolsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<SchoolsSectionForm>();
+        }
+
+        private void ReviewsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<ReviewsForm>();
+        }
+
+        private void SlideshowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<SlideshowForm>();
+        }
+
+        private void BackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cacheManager.NavigateBack(this);
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ExportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ListenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<AboutForm>();
+        }
+
+        private void HomeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<GuideForm>();
         }
     }
 }
