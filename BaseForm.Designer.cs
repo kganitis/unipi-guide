@@ -43,8 +43,24 @@
             this.AboutButton = new System.Windows.Forms.Button();
             this.ContentPanel = new System.Windows.Forms.Panel();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
+            this.πλοήγησηToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.εργαλείαToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.σχετικάToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.πληροφορίεςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.εξαγωγήΚαταχώρησηςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.εκφώνησηΚειμένουToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.πίσωToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.πανεπιστήμιοToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.υπηρεσίεςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.σχολέςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.αξιολογήσειςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.φωτογραφίεςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.έξοδοςToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.NavigationPanel.SuspendLayout();
             this.ToolsPanel.SuspendLayout();
+            this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // NavigationPanel
@@ -221,11 +237,118 @@
             // MenuStrip
             // 
             this.MenuStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.πλοήγησηToolStripMenuItem,
+            this.εργαλείαToolStripMenuItem,
+            this.σχετικάToolStripMenuItem});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
             this.MenuStrip.Size = new System.Drawing.Size(984, 24);
             this.MenuStrip.TabIndex = 3;
             this.MenuStrip.Text = "MenuStrip";
+            // 
+            // πλοήγησηToolStripMenuItem
+            // 
+            this.πλοήγησηToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.πίσωToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.πανεπιστήμιοToolStripMenuItem,
+            this.υπηρεσίεςToolStripMenuItem,
+            this.σχολέςToolStripMenuItem,
+            this.αξιολογήσειςToolStripMenuItem,
+            this.φωτογραφίεςToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.έξοδοςToolStripMenuItem});
+            this.πλοήγησηToolStripMenuItem.Name = "πλοήγησηToolStripMenuItem";
+            this.πλοήγησηToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.πλοήγησηToolStripMenuItem.Text = "Πλοήγηση";
+            // 
+            // εργαλείαToolStripMenuItem
+            // 
+            this.εργαλείαToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.εξαγωγήΚαταχώρησηςToolStripMenuItem,
+            this.εκφώνησηΚειμένουToolStripMenuItem});
+            this.εργαλείαToolStripMenuItem.Name = "εργαλείαToolStripMenuItem";
+            this.εργαλείαToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.εργαλείαToolStripMenuItem.Text = "Εργαλεία";
+            // 
+            // σχετικάToolStripMenuItem
+            // 
+            this.σχετικάToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.πληροφορίεςToolStripMenuItem});
+            this.σχετικάToolStripMenuItem.Name = "σχετικάToolStripMenuItem";
+            this.σχετικάToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.σχετικάToolStripMenuItem.Text = "Βοήθεια";
+            // 
+            // πληροφορίεςToolStripMenuItem
+            // 
+            this.πληροφορίεςToolStripMenuItem.Name = "πληροφορίεςToolStripMenuItem";
+            this.πληροφορίεςToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.πληροφορίεςToolStripMenuItem.Text = "Πληροφορίες εφαρμογής";
+            // 
+            // εξαγωγήΚαταχώρησηςToolStripMenuItem
+            // 
+            this.εξαγωγήΚαταχώρησηςToolStripMenuItem.Name = "εξαγωγήΚαταχώρησηςToolStripMenuItem";
+            this.εξαγωγήΚαταχώρησηςToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.εξαγωγήΚαταχώρησηςToolStripMenuItem.Text = "Εξαγωγή σε αρχείο";
+            // 
+            // εκφώνησηΚειμένουToolStripMenuItem
+            // 
+            this.εκφώνησηΚειμένουToolStripMenuItem.Name = "εκφώνησηΚειμένουToolStripMenuItem";
+            this.εκφώνησηΚειμένουToolStripMenuItem.Size = new System.Drawing.Size(202, 22);
+            this.εκφώνησηΚειμένουToolStripMenuItem.Text = "Εκφώνηση κειμένου";
+            // 
+            // πίσωToolStripMenuItem
+            // 
+            this.πίσωToolStripMenuItem.Name = "πίσωToolStripMenuItem";
+            this.πίσωToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.πίσωToolStripMenuItem.Text = "Πίσω";
+            // 
+            // πανεπιστήμιοToolStripMenuItem
+            // 
+            this.πανεπιστήμιοToolStripMenuItem.Name = "πανεπιστήμιοToolStripMenuItem";
+            this.πανεπιστήμιοToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.πανεπιστήμιοToolStripMenuItem.Text = "Πανεπιστήμιο";
+            // 
+            // υπηρεσίεςToolStripMenuItem
+            // 
+            this.υπηρεσίεςToolStripMenuItem.Name = "υπηρεσίεςToolStripMenuItem";
+            this.υπηρεσίεςToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.υπηρεσίεςToolStripMenuItem.Text = "Υπηρεσίες";
+            // 
+            // σχολέςToolStripMenuItem
+            // 
+            this.σχολέςToolStripMenuItem.Name = "σχολέςToolStripMenuItem";
+            this.σχολέςToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.σχολέςToolStripMenuItem.Text = "Σχολές";
+            // 
+            // αξιολογήσειςToolStripMenuItem
+            // 
+            this.αξιολογήσειςToolStripMenuItem.Name = "αξιολογήσειςToolStripMenuItem";
+            this.αξιολογήσειςToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.αξιολογήσειςToolStripMenuItem.Text = "Αξιολογήσεις";
+            // 
+            // φωτογραφίεςToolStripMenuItem
+            // 
+            this.φωτογραφίεςToolStripMenuItem.Name = "φωτογραφίεςToolStripMenuItem";
+            this.φωτογραφίεςToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.φωτογραφίεςToolStripMenuItem.Text = "Φωτογραφίες";
+            // 
+            // έξοδοςToolStripMenuItem
+            // 
+            this.έξοδοςToolStripMenuItem.Name = "έξοδοςToolStripMenuItem";
+            this.έξοδοςToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.έξοδοςToolStripMenuItem.Text = "Έξοδος";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // BaseForm
             // 
@@ -244,6 +367,8 @@
             this.Text = "Πανεπιστήμιο Πειραιώς";
             this.NavigationPanel.ResumeLayout(false);
             this.ToolsPanel.ResumeLayout(false);
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,5 +441,20 @@
         protected System.Windows.Forms.Button NavButton2;
         protected System.Windows.Forms.Button NavButtonHome;
         private System.Windows.Forms.MenuStrip MenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem πλοήγησηToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem πίσωToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem εργαλείαToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem εξαγωγήΚαταχώρησηςToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem εκφώνησηΚειμένουToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem σχετικάToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem πληροφορίεςToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem πανεπιστήμιοToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem υπηρεσίεςToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem σχολέςToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem αξιολογήσειςToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem φωτογραφίεςToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem έξοδοςToolStripMenuItem;
     }
 }
