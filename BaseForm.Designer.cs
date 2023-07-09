@@ -187,6 +187,7 @@
             this.ListenButton.Size = new System.Drawing.Size(120, 80);
             this.ListenButton.TabIndex = 3;
             this.ListenButton.UseVisualStyleBackColor = true;
+            this.ListenButton.Click += new System.EventHandler(this.ListenButton_Click);
             // 
             // ExportButton
             // 
