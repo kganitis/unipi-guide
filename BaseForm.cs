@@ -27,6 +27,7 @@ namespace WindowsFormsApp2023_Final
             if (GetType() == typeof(AboutForm))
             {
                 AboutButton.Enabled = false;
+                HelpToolStripMenuItem.Enabled = false;
             }
         }
 
@@ -35,6 +36,19 @@ namespace WindowsFormsApp2023_Final
             button.Enabled = false;
             button.BackColor = highlightedButtonColor;
         }
+
+        private void Export()
+        {
+            string textToExport = testLabel.Text;
+            string filename = Text;
+            string filePath = "..\\..\\exports\\" + filename + ".txt";
+            StreamWriter writer = new StreamWriter(filePath);
+            writer.Write(textToExport);
+            MessageBox.Show("Οι πληροφορίες εξήχθησαν με επιτυχία!");
+            writer.Close();
+        }
+
+        #region Hide Controls Methods
 
         protected void HideAllControls()
         {
@@ -69,14 +83,13 @@ namespace WindowsFormsApp2023_Final
             ListenToolStripMenuItem.Enabled = false;
         }
 
+        #endregion
+
+        #region Navigation Buttons Methods
+
         protected void NavigateToForm<T>() where T : Form, new()
         {
             cacheManager.NavigateToForm<T>(this);
-        }
-
-        private void ExitButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void NavButtonHome_Click(object sender, EventArgs e)
@@ -99,16 +112,6 @@ namespace WindowsFormsApp2023_Final
             NavigateToForm<SchoolsSectionForm>();
         }
 
-        private void AboutButton_Click(object sender, EventArgs e)
-        {
-            NavigateToForm<AboutForm>();
-        }
-
-        private void NavButtonBack_Click(object sender, EventArgs e)
-        {
-            cacheManager.NavigateBack(this);
-        }
-
         private void NavButton4_Click(object sender, EventArgs e)
         {
             NavigateToForm<ReviewsForm>();
@@ -117,6 +120,49 @@ namespace WindowsFormsApp2023_Final
         private void NavButton5_Click(object sender, EventArgs e)
         {
             NavigateToForm<SlideshowForm>();
+        }
+
+        private void NavButtonBack_Click(object sender, EventArgs e)
+        {
+            cacheManager.NavigateBack(this);
+        }
+
+        #endregion
+
+        #region Tool Buttons Methods
+
+        private void AboutButton_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<AboutForm>();
+        }
+
+        private void ExportButton_Click(object sender, EventArgs e)
+        {
+            Export();
+        }
+
+        private void ListenButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        #endregion
+
+        #region Menu Strip Items Methods
+
+        private void HomeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<GuideForm>();
+        }
+
+        private void BackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cacheManager.NavigateBack(this);
         }
 
         private void UniversityToolStripMenuItem_Click(object sender, EventArgs e)
@@ -144,11 +190,6 @@ namespace WindowsFormsApp2023_Final
             NavigateToForm<SlideshowForm>();
         }
 
-        private void BackToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            cacheManager.NavigateBack(this);
-        }
-
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -156,7 +197,7 @@ namespace WindowsFormsApp2023_Final
 
         private void ExportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Export();
         }
 
         private void ListenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -169,14 +210,7 @@ namespace WindowsFormsApp2023_Final
             NavigateToForm<AboutForm>();
         }
 
-        private void HomeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            NavigateToForm<GuideForm>();
-        }
+        #endregion
 
-        private void ListenButton_Click(object sender, EventArgs e)
-        {
-            
-        }
     }
 }
