@@ -333,6 +333,6 @@
         protected System.Windows.Forms.Button NavButton2;
         protected System.Windows.Forms.Button NavButtonHome;
         private System.Windows.Forms.MenuStrip MenuStrip;
-        private System.Windows.Forms.Label testLabel;
+        protected System.Windows.Forms.Label testLabel;
     }
 }

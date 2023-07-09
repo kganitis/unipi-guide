@@ -35,10 +35,16 @@
             // ContentPanel
             // 
             this.ContentPanel.Controls.Add(this.button1);
+            this.ContentPanel.Controls.SetChildIndex(this.button1, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.testLabel, 0);
+            // 
+            // testLabel
+            // 
+            this.testLabel.Location = new System.Drawing.Point(17, 136);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(357, 210);
+            this.button1.Location = new System.Drawing.Point(346, 321);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -52,6 +58,7 @@
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Name = "LoginForm";
             this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
