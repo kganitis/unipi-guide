@@ -85,8 +85,9 @@ namespace WindowsFormsApp2023_Final
         private void ExportButton_Click(object sender, EventArgs e)
         {
             string textToExport = testLabel.Text;
-            string filename = "..\\..\\exports\\test.txt";
-            StreamWriter writer = new StreamWriter(filename);
+            string filename = Text;
+            string filePath = "..\\..\\exports\\" + filename + ".txt";
+            StreamWriter writer = new StreamWriter(filePath);
             writer.Write(textToExport);
             MessageBox.Show("Οι πληροφορίες εξήχθησαν με επιτυχία!");
             writer.Close();
