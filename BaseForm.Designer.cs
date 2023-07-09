@@ -400,6 +400,8 @@
 
         }
 
+        #endregion
+
         protected void HideAllControls()
         {
             HideExportAndListenControls();
@@ -408,49 +410,27 @@
 
         protected void HideNavigationControls()
         {
-            // 
-            // NavButton1
-            // 
-            this.NavButton1.Visible = false;
-            // 
-            // NavButtonBack
-            // 
-            this.NavButtonBack.Visible = false;
-            // 
-            // NavButton5
-            // 
-            this.NavButton5.Visible = false;
-            // 
-            // NavButton4
-            // 
-            this.NavButton4.Visible = false;
-            // 
-            // NavButton3
-            // 
-            this.NavButton3.Visible = false;
-            // 
-            // NavButton2
-            // 
-            this.NavButton2.Visible = false;
-            // 
-            // NavButtonHome
-            // 
             this.NavButtonHome.Visible = false;
+            this.NavButton1.Visible = false;
+            this.NavButton2.Visible = false;
+            this.NavButton3.Visible = false;
+            this.NavButton4.Visible = false;
+            this.NavButton5.Visible = false;
+            this.NavButtonBack.Visible = false;
+            this.UniversityToolStripMenuItem.Enabled = false;
+            this.ServicesToolStripMenuItem.Enabled = false;
+            this.SchoolsToolStripMenuItem.Enabled = false;
+            this.BackToolStripMenuItem.Enabled = false;
         }
 
         protected void HideExportAndListenControls()
         {
-            // 
-            // ExportButton
-            // 
             this.ExportButton.Visible = false;
-            // 
-            // ListenButton
-            // 
             this.ListenButton.Visible = false;
+            this.ToolsToolStripMenuItem.Enabled = false;
+            this.ExportToolStripMenuItem.Enabled = false;
+            this.ListenToolStripMenuItem.Enabled = false;
         }
-
-        #endregion
 
         private System.Windows.Forms.Panel NavigationPanel;
         private System.Windows.Forms.Panel ToolsPanel;
@@ -472,7 +452,7 @@
         protected System.Windows.Forms.ToolStripMenuItem ToolsToolStripMenuItem;
         protected System.Windows.Forms.ToolStripMenuItem ExportToolStripMenuItem;
         protected System.Windows.Forms.ToolStripMenuItem ListenToolStripMenuItem;
-        protected System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         protected System.Windows.Forms.ToolStripMenuItem UniversityToolStripMenuItem;
