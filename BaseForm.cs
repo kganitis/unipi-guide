@@ -15,14 +15,12 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class BaseForm : Form
     {
-        internal FormCacheManager cacheManager;
         private SpeechSynthesizer synthesizer;
         protected Color highlightedButtonColor = Color.BurlyWood;
         
         public BaseForm()
         {
             InitializeComponent();
-            cacheManager = FormCacheManager.Instance;
             synthesizer = new SpeechSynthesizer();
             if (GetType() == typeof(AboutForm))
             {
@@ -89,7 +87,7 @@ namespace WindowsFormsApp2023_Final
 
         protected void NavigateToForm<T>() where T : Form, new()
         {
-            cacheManager.NavigateToForm<T>(this);
+            FormCacheManager.Instance.NavigateToForm<T>(this);
         }
 
         private void NavButtonHome_Click(object sender, EventArgs e)
@@ -124,7 +122,7 @@ namespace WindowsFormsApp2023_Final
 
         private void NavButtonBack_Click(object sender, EventArgs e)
         {
-            cacheManager.NavigateBack(this);
+            FormCacheManager.Instance.NavigateBack(this);
         }
 
         #endregion
@@ -162,7 +160,7 @@ namespace WindowsFormsApp2023_Final
 
         private void BackToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            cacheManager.NavigateBack(this);
+            FormCacheManager.Instance.NavigateBack(this);
         }
 
         private void UniversityToolStripMenuItem_Click(object sender, EventArgs e)

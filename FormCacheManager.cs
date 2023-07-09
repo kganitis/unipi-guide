@@ -12,31 +12,33 @@ namespace WindowsFormsApp2023_Final
         private static readonly FormCacheManager instance = new FormCacheManager();
 
         private Stack<Form> formHistory = new Stack<Form>();
+        private Dictionary<Type, Form> formCache = new Dictionary<Type, Form>();
 
         public static FormCacheManager Instance { get { return instance; } }
 
-        private Dictionary<Type, Form> formCache = new Dictionary<Type, Form>();
-
-        private T GetForm<T>() where T : Form, new()
+        private FormCacheManager()
         {
-            Type formType = typeof(T);
-
-            if (formCache.ContainsKey(formType))
-            {
-                return (T)formCache[formType];
-            }
-            else
-            {
-                T form = new T();
-                formCache.Add(formType, form);
-                return form;
-            }
+            PreloadForms();
         }
 
-        public void NavigateToForm<T>(Form currentForm) where T : Form, new()
+        public void PreloadForms()
         {
-            T nextForm = GetForm<T>();
-            if (!(currentForm.GetType() == typeof(LoginForm) && nextForm.GetType() == typeof(GuideForm))) {
+            // Create instances of all the forms and add them to the cache
+            formCache.Add(typeof(AboutForm), new AboutForm());
+            formCache.Add(typeof(GuideForm), new GuideForm());
+            formCache.Add(typeof(UniversitySectionForm), new UniversitySectionForm());
+            formCache.Add(typeof(ServicesSectionForm), new ServicesSectionForm());
+            formCache.Add(typeof(SchoolsSectionForm), new SchoolsSectionForm());
+            formCache.Add(typeof(ReviewsForm), new ReviewsForm());
+            formCache.Add(typeof(SlideshowForm), new SlideshowForm());
+        }
+
+        public void NavigateToForm<T>(Form currentForm) where T : Form
+        {
+            T nextForm = (T)formCache[typeof(T)];
+            // Don't keep LoginForm in history after entering the guide
+            if (!(currentForm.GetType() == typeof(LoginForm) && nextForm.GetType() == typeof(GuideForm)))
+            {
                 formHistory.Push(currentForm);
             }
             currentForm.Hide();
@@ -53,5 +55,4 @@ namespace WindowsFormsApp2023_Final
             }
         }
     }
-
 }
