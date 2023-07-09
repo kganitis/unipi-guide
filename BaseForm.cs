@@ -88,6 +88,7 @@ namespace WindowsFormsApp2023_Final
             string filename = "..\\..\\exports\\test.txt";
             StreamWriter writer = new StreamWriter(filename);
             writer.Write(textToExport);
+            MessageBox.Show("Export successfull.");
             writer.Close();
         }
     }
