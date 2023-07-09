@@ -80,5 +80,60 @@ namespace WindowsFormsApp2023_Final
         {
             NavigateToForm<SlideshowForm>();
         }
+
+        private void UniversityToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<UniversitySectionForm>();
+        }
+
+        private void ServicesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<ServicesSectionForm>();
+        }
+
+        private void SchoolsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<SchoolsSectionForm>();
+        }
+
+        private void ReviewsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<ReviewsForm>();
+        }
+
+        private void SlideshowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<SlideshowForm>();
+        }
+
+        private void BackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cacheManager.NavigateBack(this);
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ExportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ListenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<AboutForm>();
+        }
+
+        private void HomeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<GuideForm>();
+        }
     }
 }
