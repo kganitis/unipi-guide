@@ -402,35 +402,7 @@
 
         #endregion
 
-        protected void HideAllControls()
-        {
-            HideExportAndListenControls();
-            HideNavigationControls();
-        }
-
-        protected void HideNavigationControls()
-        {
-            this.NavButtonHome.Visible = false;
-            this.NavButton1.Visible = false;
-            this.NavButton2.Visible = false;
-            this.NavButton3.Visible = false;
-            this.NavButton4.Visible = false;
-            this.NavButton5.Visible = false;
-            this.NavButtonBack.Visible = false;
-            this.UniversityToolStripMenuItem.Enabled = false;
-            this.ServicesToolStripMenuItem.Enabled = false;
-            this.SchoolsToolStripMenuItem.Enabled = false;
-            this.BackToolStripMenuItem.Enabled = false;
-        }
-
-        protected void HideExportAndListenControls()
-        {
-            this.ExportButton.Visible = false;
-            this.ListenButton.Visible = false;
-            this.ToolsToolStripMenuItem.Enabled = false;
-            this.ExportToolStripMenuItem.Enabled = false;
-            this.ListenToolStripMenuItem.Enabled = false;
-        }
+        
 
         private System.Windows.Forms.Panel NavigationPanel;
         private System.Windows.Forms.Panel ToolsPanel;

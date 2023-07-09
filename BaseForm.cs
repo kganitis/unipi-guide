@@ -31,6 +31,39 @@ namespace WindowsFormsApp2023_Final
             button.BackColor = highlightedButtonColor;
         }
 
+        protected void HideAllControls()
+        {
+            HideExportAndListenControls();
+            HideNavigationControls();
+        }
+
+        protected void HideNavigationControls()
+        {
+            NavButtonHome.Visible = false;
+            NavButton1.Visible = false;
+            NavButton2.Visible = false;
+            NavButton3.Visible = false;
+            NavButton4.Visible = false;
+            NavButton5.Visible = false;
+            NavButtonBack.Visible = false;
+            HomeToolStripMenuItem.Enabled = false;
+            UniversityToolStripMenuItem.Enabled = false;
+            ServicesToolStripMenuItem.Enabled = false;
+            SchoolsToolStripMenuItem.Enabled = false;
+            ReviewsToolStripMenuItem.Enabled = false;
+            SlideshowToolStripMenuItem.Enabled = false;
+            BackToolStripMenuItem.Enabled = false;
+        }
+
+        protected void HideExportAndListenControls()
+        {
+            ExportButton.Visible = false;
+            ListenButton.Visible = false;
+            ToolsToolStripMenuItem.Enabled = false;
+            ExportToolStripMenuItem.Enabled = false;
+            ListenToolStripMenuItem.Enabled = false;
+        }
+
         protected void NavigateToForm<T>() where T : Form, new()
         {
             cacheManager.NavigateToForm<T>(this);
