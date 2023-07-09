@@ -176,9 +176,7 @@ namespace WindowsFormsApp2023_Final
 
         private void ListenButton_Click(object sender, EventArgs e)
         {
-            synthesizer.SelectVoice("Microsoft Stefanos");
-            // synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult, 0, CultureInfo.GetCultureInfo("el-GR"));
-            synthesizer.SpeakAsync(testLabel.Text);
+            
         }
     }
 }
