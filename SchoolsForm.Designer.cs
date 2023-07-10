@@ -30,14 +30,20 @@
         {
             this.SuspendLayout();
             // 
+            // ContentPanel
+            // 
+            this.ContentPanel.Location = new System.Drawing.Point(300, 36);
+            this.ContentPanel.Size = new System.Drawing.Size(1176, 673);
+            // 
             // NavButton1
             // 
             this.NavButton1.Text = "Σχολές";
             // 
             // SchoolsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.ClientSize = new System.Drawing.Size(1476, 863);
+            this.Margin = new System.Windows.Forms.Padding(14, 18, 14, 18);
             this.Name = "SchoolsForm";
             this.ResumeLayout(false);
             this.PerformLayout();
