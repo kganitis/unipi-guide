@@ -8,11 +8,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
 {
-    public partial class SchoolsForm : WindowsFormsApp2023_Final.GuideSectionForm
+    public partial class GuideForm : WindowsFormsApp2023_Final.BaseForm
     {
-        public SchoolsForm()
+        public GuideForm()
         {
             InitializeComponent();
+            HomeToolStripMenuItem.Enabled = false;
         }
     }
 }

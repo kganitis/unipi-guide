@@ -38,6 +38,7 @@
             // NavButton1
             // 
             this.NavButton1.BackColor = System.Drawing.Color.BurlyWood;
+            this.NavButton1.Enabled = false;
             this.NavButton1.Text = "";
             // 
             // NavButtonBack
@@ -59,6 +60,10 @@
             // NavButton2
             // 
             this.NavButton2.Text = "";
+            // 
+            // NavButtonHome
+            // 
+            this.NavButtonHome.Enabled = true;
             // 
             // GuideSectionForm
             // 

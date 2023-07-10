@@ -8,17 +8,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
 {
-    public partial class LoginForm : WindowsFormsApp2023_Final.BaseForm
+    public partial class SlideshowForm : WindowsFormsApp2023_Final.GuideForm
     {
-        public LoginForm()
+        public SlideshowForm()
         {
             InitializeComponent();
-            HideAllControls();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            NavigateToForm<GuideForm>();
+            HighlightButton(NavButton5);
         }
     }
 }

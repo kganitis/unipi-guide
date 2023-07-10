@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
 {
-    public partial class GuideIntroForm : WindowsFormsApp2023_Final.BaseForm
+    public partial class SchoolsSectionForm : WindowsFormsApp2023_Final.GuideSectionForm
     {
-        public GuideIntroForm()
+        public SchoolsSectionForm()
         {
             InitializeComponent();
         }

@@ -8,17 +8,14 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
 {
-    public partial class LoginForm : WindowsFormsApp2023_Final.BaseForm
+    public partial class AboutForm : WindowsFormsApp2023_Final.BaseForm
     {
-        public LoginForm()
+        public AboutForm()
         {
             InitializeComponent();
             HideAllControls();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            NavigateToForm<GuideForm>();
+            NavButtonBack.Visible = true;
+            BackToolStripMenuItem.Enabled = true;
         }
     }
 }

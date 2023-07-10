@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,23 +47,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCacheManager.cs" />
     <Compile Include="GuideSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GuideSectionForm.Designer.cs">
       <DependentUpon>GuideSectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuideIntroForm.cs">
+    <Compile Include="GuideForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuideIntroForm.Designer.cs">
-      <DependentUpon>GuideIntroForm.cs</DependentUpon>
+    <Compile Include="GuideForm.Designer.cs">
+      <DependentUpon>GuideForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -72,11 +80,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SchoolsForm.cs">
+    <Compile Include="ReviewsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SchoolsForm.Designer.cs">
-      <DependentUpon>SchoolsForm.cs</DependentUpon>
+    <Compile Include="ReviewsForm.Designer.cs">
+      <DependentUpon>ReviewsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SchoolsSectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolsSectionForm.Designer.cs">
+      <DependentUpon>SchoolsSectionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ServicesSectionForm.cs">
       <SubType>Form</SubType>
@@ -84,20 +98,29 @@
     <Compile Include="ServicesSectionForm.Designer.cs">
       <DependentUpon>ServicesSectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SlideshowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlideshowForm.Designer.cs">
+      <DependentUpon>SlideshowForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UniversitySectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UniversitySectionForm.Designer.cs">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuideSectionForm.resx">
       <DependentUpon>GuideSectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuideIntroForm.resx">
-      <DependentUpon>GuideIntroForm.cs</DependentUpon>
+    <EmbeddedResource Include="GuideForm.resx">
+      <DependentUpon>GuideForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -112,11 +135,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SchoolsForm.resx">
-      <DependentUpon>SchoolsForm.cs</DependentUpon>
+    <EmbeddedResource Include="ReviewsForm.resx">
+      <DependentUpon>ReviewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolsSectionForm.resx">
+      <DependentUpon>SchoolsSectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServicesSectionForm.resx">
       <DependentUpon>ServicesSectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlideshowForm.resx">
+      <DependentUpon>SlideshowForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UniversitySectionForm.resx">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>

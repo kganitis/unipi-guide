@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class GuideIntroForm
+    partial class GuideForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // NavButtonBack
+            // NavButtonHome
             // 
-            this.NavButtonBack.Visible = false;
+            this.NavButtonHome.Enabled = false;
             // 
-            // GuideIntroForm
+            // GuideForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Name = "GuideIntroForm";
+            this.Name = "GuideForm";
+            this.Text = "Οδηγός Πανεπιστημίου";
+            this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

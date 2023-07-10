@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class UniversitySectionForm
+    partial class SlideshowForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,16 +31,17 @@
             this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // NavButton1
+            // NavButton5
             // 
-            this.NavButton1.Text = "Πανεπιστήμιο";
+            this.NavButton5.BackColor = System.Drawing.Color.BurlyWood;
+            this.NavButton5.Enabled = false;
             // 
-            // UniversitySectionForm
+            // SlideshowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Name = "UniversitySectionForm";
-            this.Text = "Πανεπιστήμιο";
+            this.Name = "SlideshowForm";
+            this.Text = "Φωτογραφίες";
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
