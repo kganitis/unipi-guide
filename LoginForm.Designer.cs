@@ -35,13 +35,15 @@
             // ContentPanel
             // 
             this.ContentPanel.Controls.Add(this.button1);
-            this.ContentPanel.Controls.SetChildIndex(this.button1, 0);
+            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(346, 321);
+            this.button1.Location = new System.Drawing.Point(461, 395);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "ΕΙΣΟΔΟΣ";
             this.button1.UseVisualStyleBackColor = true;
@@ -49,12 +51,12 @@
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(1312, 690);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "LoginForm";
             this.Text = "Σύνδεση";
             this.ContentPanel.ResumeLayout(false);
-            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

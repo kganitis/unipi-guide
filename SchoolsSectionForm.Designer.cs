@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // ContentPanel
+            // 
+            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
             // 
             // NavButton1
             // 
@@ -37,12 +41,11 @@
             // 
             // SchoolsSectionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(1312, 690);
+            this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.Name = "SchoolsSectionForm";
             this.Text = "Σχολές";
-            this.ContentPanel.ResumeLayout(false);
-            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

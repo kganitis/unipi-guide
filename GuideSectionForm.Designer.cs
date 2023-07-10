@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // ContentPanel
@@ -40,10 +41,6 @@
             this.NavButton1.BackColor = System.Drawing.Color.BurlyWood;
             this.NavButton1.Enabled = false;
             this.NavButton1.Text = "";
-            // 
-            // NavButtonBack
-            // 
-            this.NavButtonBack.Visible = true;
             // 
             // NavButton5
             // 
@@ -71,6 +68,8 @@
             this.ClientSize = new System.Drawing.Size(1312, 690);
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "GuideSectionForm";
+            this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
