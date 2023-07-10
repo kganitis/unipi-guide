@@ -99,9 +99,20 @@ namespace WindowsFormsApp2023_Final
 
         private void ListenButton_Click(object sender, EventArgs e)
         {
-            synthesizer.SelectVoice("Microsoft Stefanos");
-            // synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult, 0, CultureInfo.GetCultureInfo("el-GR"));
-            synthesizer.SpeakAsync(testLabel.Text);
+            foreach (InstalledVoice voice in synthesizer.GetInstalledVoices())
+            {
+                VoiceInfo info = voice.VoiceInfo;
+
+                Console.WriteLine(" Name:          " + info.Name);
+                Console.WriteLine(" Culture:       " + info.Culture);
+                Console.WriteLine(" Age:           " + info.Age);
+                Console.WriteLine(" Gender:        " + info.Gender);
+                Console.WriteLine(" Description:   " + info.Description);
+                Console.WriteLine(" ID:            " + info.Id);
+            }
+            // synthesizer.SelectVoice("Microsoft Stefanos");
+            // synthesizer.SelectVoiceByHints(VoiceGender.Male, VoiceAge.Adult, 0, CultureInfo.GetCultureInfo("el-GR"));
+            // synthesizer.SpeakAsync(testLabel.Text);
         }
     }
 }
