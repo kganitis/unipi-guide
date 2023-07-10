@@ -38,6 +38,7 @@
             // NavButton1
             // 
             this.NavButton1.Text = "Πανεπιστήμιο";
+            this.NavButton1.Click += new System.EventHandler(this.NavButton1_Click);
             // 
             // UniversitySectionForm
             // 
