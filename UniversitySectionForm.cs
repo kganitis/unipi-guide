@@ -19,5 +19,10 @@ namespace WindowsFormsApp2023_Final
         {
 
         }
+
+        private void NavButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
