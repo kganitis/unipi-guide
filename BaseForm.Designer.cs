@@ -63,7 +63,6 @@
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NavigationPanel.SuspendLayout();
             this.ToolsPanel.SuspendLayout();
-            this.ContentPanel.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -241,7 +240,6 @@
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Controls.Add(this.testLabel);
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContentPanel.Location = new System.Drawing.Point(267, 28);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
@@ -295,71 +293,71 @@
             // BackToolStripMenuItem
             // 
             this.BackToolStripMenuItem.Name = "BackToolStripMenuItem";
-            this.BackToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.BackToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.BackToolStripMenuItem.Text = "Πίσω";
             this.BackToolStripMenuItem.Click += new System.EventHandler(this.BackToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(184, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(147, 6);
             // 
             // HomeToolStripMenuItem
             // 
             this.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem";
-            this.HomeToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.HomeToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.HomeToolStripMenuItem.Text = "Αρχική";
             this.HomeToolStripMenuItem.Click += new System.EventHandler(this.HomeToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(184, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(147, 6);
             // 
             // UniversityToolStripMenuItem
             // 
             this.UniversityToolStripMenuItem.Name = "UniversityToolStripMenuItem";
-            this.UniversityToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.UniversityToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.UniversityToolStripMenuItem.Text = "Πανεπιστήμιο";
             this.UniversityToolStripMenuItem.Click += new System.EventHandler(this.UniversityToolStripMenuItem_Click);
             // 
             // ServicesToolStripMenuItem
             // 
             this.ServicesToolStripMenuItem.Name = "ServicesToolStripMenuItem";
-            this.ServicesToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.ServicesToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.ServicesToolStripMenuItem.Text = "Υπηρεσίες";
             this.ServicesToolStripMenuItem.Click += new System.EventHandler(this.ServicesToolStripMenuItem_Click);
             // 
             // SchoolsToolStripMenuItem
             // 
             this.SchoolsToolStripMenuItem.Name = "SchoolsToolStripMenuItem";
-            this.SchoolsToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.SchoolsToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.SchoolsToolStripMenuItem.Text = "Σχολές";
             this.SchoolsToolStripMenuItem.Click += new System.EventHandler(this.SchoolsToolStripMenuItem_Click);
             // 
             // ReviewsToolStripMenuItem
             // 
             this.ReviewsToolStripMenuItem.Name = "ReviewsToolStripMenuItem";
-            this.ReviewsToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.ReviewsToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.ReviewsToolStripMenuItem.Text = "Αξιολογήσεις";
             this.ReviewsToolStripMenuItem.Click += new System.EventHandler(this.ReviewsToolStripMenuItem_Click);
             // 
             // SlideshowToolStripMenuItem
             // 
             this.SlideshowToolStripMenuItem.Name = "SlideshowToolStripMenuItem";
-            this.SlideshowToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.SlideshowToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.SlideshowToolStripMenuItem.Text = "Φωτογραφίες";
             this.SlideshowToolStripMenuItem.Click += new System.EventHandler(this.SlideshowToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(184, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
             // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.ExitToolStripMenuItem.Text = "Έξοδος";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -419,8 +417,6 @@
             this.Text = "Πανεπιστήμιο Πειραιώς";
             this.NavigationPanel.ResumeLayout(false);
             this.ToolsPanel.ResumeLayout(false);
-            this.ContentPanel.ResumeLayout(false);
-            this.ContentPanel.PerformLayout();
             this.MenuStrip.ResumeLayout(false);
             this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -433,10 +429,10 @@
         private System.Windows.Forms.Panel NavigationPanel;
         private System.Windows.Forms.Panel ToolsPanel;
         protected System.Windows.Forms.Panel ContentPanel;
-        private System.Windows.Forms.Button AboutButton;
+        protected System.Windows.Forms.Button AboutButton;
         protected System.Windows.Forms.Button ExportButton;
         protected System.Windows.Forms.Button ListenButton;
-        private System.Windows.Forms.Button ExitButton;
+        protected System.Windows.Forms.Button ExitButton;
         protected System.Windows.Forms.Button NavButton1;
         protected System.Windows.Forms.Button NavButtonBack;
         protected System.Windows.Forms.Button NavButton5;
@@ -444,7 +440,7 @@
         protected System.Windows.Forms.Button NavButton3;
         protected System.Windows.Forms.Button NavButton2;
         protected System.Windows.Forms.Button NavButtonHome;
-        private System.Windows.Forms.MenuStrip MenuStrip;
+        protected System.Windows.Forms.MenuStrip MenuStrip;
         protected System.Windows.Forms.ToolStripMenuItem NavigationToolStripMenuItem;
         protected System.Windows.Forms.ToolStripMenuItem BackToolStripMenuItem;
         protected System.Windows.Forms.ToolStripMenuItem ToolsToolStripMenuItem;
@@ -462,6 +458,5 @@
         private System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
         protected System.Windows.Forms.ToolStripMenuItem HomeToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        protected System.Windows.Forms.Label testLabel;
     }
 }
