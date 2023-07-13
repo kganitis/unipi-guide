@@ -31,6 +31,11 @@
             this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
+            // ContentPanel
+            // 
+            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
+            // 
             // NavButton1
             // 
             this.NavButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F);
@@ -58,6 +63,7 @@
             this.NavButton3.Location = new System.Drawing.Point(13, 295);
             this.NavButton3.Size = new System.Drawing.Size(240, 91);
             this.NavButton3.Text = "Στρατηγική Πανεπιστημίου";
+            this.NavButton3.Click += new System.EventHandler(this.NavButton3_Click);
             // 
             // NavButton2
             // 
@@ -66,6 +72,12 @@
             this.NavButton2.Size = new System.Drawing.Size(240, 83);
             this.NavButton2.Text = "Χαιρετισμός\r\nΠρύτανη";
             this.NavButton2.Click += new System.EventHandler(this.NavButton2_Click);
+            // 
+            // testLabel
+            // 
+            this.testLabel.Location = new System.Drawing.Point(440, 210);
+            this.testLabel.Size = new System.Drawing.Size(136, 16);
+            this.testLabel.Text = "Χαιρετισμός Πρύτανη";
             // 
             // UniversitySectionForm
             // 

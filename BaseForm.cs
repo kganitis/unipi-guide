@@ -210,5 +210,9 @@ namespace WindowsFormsApp2023_Final
 
         #endregion
 
+        private void ContentPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
