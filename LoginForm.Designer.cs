@@ -36,6 +36,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.ContentPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -43,6 +44,7 @@
             // 
             // ContentPanel
             // 
+            this.ContentPanel.Controls.Add(this.richTextBox1);
             this.ContentPanel.Controls.Add(this.button2);
             this.ContentPanel.Controls.Add(this.button1);
             this.ContentPanel.Controls.Add(this.textBox2);
@@ -160,6 +162,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Είσοδος Χρήστη";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -171,6 +174,15 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Είσοδος Επισκέπτη";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(255, 347);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(199, 96);
+            this.richTextBox1.TabIndex = 8;
+            this.richTextBox1.Text = "";
             // 
             // LoginForm
             // 
@@ -202,5 +214,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
