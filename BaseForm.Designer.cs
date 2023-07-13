@@ -78,10 +78,10 @@
             this.NavigationPanel.Controls.Add(this.NavButton2);
             this.NavigationPanel.Controls.Add(this.NavButton1);
             this.NavigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.NavigationPanel.Location = new System.Drawing.Point(0, 30);
-            this.NavigationPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavigationPanel.Location = new System.Drawing.Point(0, 28);
+            this.NavigationPanel.Margin = new System.Windows.Forms.Padding(4);
             this.NavigationPanel.Name = "NavigationPanel";
-            this.NavigationPanel.Size = new System.Drawing.Size(267, 660);
+            this.NavigationPanel.Size = new System.Drawing.Size(267, 662);
             this.NavigationPanel.TabIndex = 0;
             // 
             // NavButtonHome
@@ -91,7 +91,7 @@
             this.NavButtonHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.NavButtonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButtonHome.Location = new System.Drawing.Point(13, 22);
-            this.NavButtonHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavButtonHome.Margin = new System.Windows.Forms.Padding(4);
             this.NavButtonHome.Name = "NavButtonHome";
             this.NavButtonHome.Size = new System.Drawing.Size(240, 98);
             this.NavButtonHome.TabIndex = 6;
@@ -105,7 +105,7 @@
             this.NavButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.NavButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButtonBack.Location = new System.Drawing.Point(13, 550);
-            this.NavButtonBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavButtonBack.Margin = new System.Windows.Forms.Padding(4);
             this.NavButtonBack.Name = "NavButtonBack";
             this.NavButtonBack.Size = new System.Drawing.Size(240, 98);
             this.NavButtonBack.TabIndex = 5;
@@ -117,7 +117,7 @@
             this.NavButton5.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButton5.Location = new System.Drawing.Point(13, 464);
-            this.NavButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavButton5.Margin = new System.Windows.Forms.Padding(4);
             this.NavButton5.Name = "NavButton5";
             this.NavButton5.Size = new System.Drawing.Size(240, 74);
             this.NavButton5.TabIndex = 4;
@@ -130,7 +130,7 @@
             this.NavButton4.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButton4.Location = new System.Drawing.Point(13, 383);
-            this.NavButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavButton4.Margin = new System.Windows.Forms.Padding(4);
             this.NavButton4.Name = "NavButton4";
             this.NavButton4.Size = new System.Drawing.Size(240, 74);
             this.NavButton4.TabIndex = 3;
@@ -143,7 +143,7 @@
             this.NavButton3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButton3.Location = new System.Drawing.Point(13, 302);
-            this.NavButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavButton3.Margin = new System.Windows.Forms.Padding(4);
             this.NavButton3.Name = "NavButton3";
             this.NavButton3.Size = new System.Drawing.Size(240, 74);
             this.NavButton3.TabIndex = 2;
@@ -156,7 +156,7 @@
             this.NavButton2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButton2.Location = new System.Drawing.Point(13, 220);
-            this.NavButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavButton2.Margin = new System.Windows.Forms.Padding(4);
             this.NavButton2.Name = "NavButton2";
             this.NavButton2.Size = new System.Drawing.Size(240, 74);
             this.NavButton2.TabIndex = 1;
@@ -169,7 +169,7 @@
             this.NavButton1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButton1.Location = new System.Drawing.Point(13, 139);
-            this.NavButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NavButton1.Margin = new System.Windows.Forms.Padding(4);
             this.NavButton1.Name = "NavButton1";
             this.NavButton1.Size = new System.Drawing.Size(240, 74);
             this.NavButton1.TabIndex = 0;
@@ -186,7 +186,7 @@
             this.ToolsPanel.Controls.Add(this.AboutButton);
             this.ToolsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ToolsPanel.Location = new System.Drawing.Point(267, 567);
-            this.ToolsPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ToolsPanel.Margin = new System.Windows.Forms.Padding(4);
             this.ToolsPanel.Name = "ToolsPanel";
             this.ToolsPanel.Size = new System.Drawing.Size(1045, 123);
             this.ToolsPanel.TabIndex = 1;
@@ -243,11 +243,11 @@
             // 
             this.ContentPanel.Controls.Add(this.testLabel);
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
+            this.ContentPanel.Location = new System.Drawing.Point(267, 28);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(13, 0, 13, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 539);
             this.ContentPanel.TabIndex = 2;
             // 
             // testLabel
@@ -269,7 +269,7 @@
             this.HelpToolStripMenuItem});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Size = new System.Drawing.Size(1312, 30);
+            this.MenuStrip.Size = new System.Drawing.Size(1312, 28);
             this.MenuStrip.TabIndex = 3;
             this.MenuStrip.Text = "MenuStrip";
             // 
@@ -288,7 +288,7 @@
             this.toolStripSeparator1,
             this.ExitToolStripMenuItem});
             this.NavigationToolStripMenuItem.Name = "NavigationToolStripMenuItem";
-            this.NavigationToolStripMenuItem.Size = new System.Drawing.Size(94, 26);
+            this.NavigationToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.NavigationToolStripMenuItem.Text = "Πλοήγηση";
             // 
             // BackToolStripMenuItem
@@ -368,7 +368,7 @@
             this.ExportToolStripMenuItem,
             this.ListenToolStripMenuItem});
             this.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem";
-            this.ToolsToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
+            this.ToolsToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
             this.ToolsToolStripMenuItem.Text = "Εργαλεία";
             // 
             // ExportToolStripMenuItem
@@ -390,7 +390,7 @@
             this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AboutToolStripMenuItem});
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
-            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(79, 26);
+            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
             this.HelpToolStripMenuItem.Text = "Βοήθεια";
             // 
             // AboutToolStripMenuItem
@@ -411,7 +411,7 @@
             this.Controls.Add(this.MenuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.MenuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "BaseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
