@@ -75,9 +75,7 @@
             // 
             // testLabel
             // 
-            this.testLabel.Location = new System.Drawing.Point(440, 210);
-            this.testLabel.Size = new System.Drawing.Size(136, 16);
-            this.testLabel.Text = "Χαιρετισμός Πρύτανη";
+            
             // 
             // UniversitySectionForm
             // 

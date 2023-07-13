@@ -27,7 +27,7 @@ namespace WindowsFormsApp2023_Final
 
         private void NavButton3_Click(object sender, EventArgs e)
         {
-            testLabel.Text = "Fountas";
+            
         }
     }
 }

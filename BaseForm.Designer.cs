@@ -42,7 +42,6 @@
             this.ExportButton = new System.Windows.Forms.Button();
             this.AboutButton = new System.Windows.Forms.Button();
             this.ContentPanel = new System.Windows.Forms.Panel();
-            this.testLabel = new System.Windows.Forms.Label();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.NavigationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -251,13 +250,6 @@
             // 
             // testLabel
             // 
-            this.testLabel.AutoSize = true;
-            this.testLabel.Location = new System.Drawing.Point(484, 196);
-            this.testLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.testLabel.Name = "testLabel";
-            this.testLabel.Size = new System.Drawing.Size(54, 16);
-            this.testLabel.TabIndex = 0;
-            this.testLabel.Text = "Κείμενο";
             // 
             // MenuStrip
             // 
