@@ -129,7 +129,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox5.Image = global::WindowsFormsApp2023_Final.Properties.Resources.pic1;
+            this.pictureBox5.Image = global::WindowsFormsApp2023_Final.Properties.Resources.pic12;
             this.pictureBox5.Location = new System.Drawing.Point(80, 0);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(533, 160);
