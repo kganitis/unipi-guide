@@ -8,12 +8,14 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
 {
-    public partial class GuideSectionForm : WindowsFormsApp2023_Final.GuideForm
+    public partial class AboutForm : WindowsFormsApp2023_Final.BaseForm
     {
-        public GuideSectionForm()
+        public AboutForm()
         {
             InitializeComponent();
-            HighlightButton(NavButton1);
+            HideAllControls();
+            NavButtonBack.Visible = true;
+            BackToolStripMenuItem.Enabled = true;
         }
     }
 }

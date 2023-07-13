@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class ServicesSectionForm
+    partial class SchoolsSectionForm
     {
         /// <summary>
         /// Required designer variable.
@@ -37,15 +37,15 @@
             // 
             // NavButton1
             // 
-            this.NavButton1.Text = "Υπηρεσίες";
+            this.NavButton1.Text = "Σχολές";
             // 
-            // ServicesSectionForm
+            // SchoolsSectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(1312, 690);
             this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
-            this.Name = "ServicesSectionForm";
-            this.Text = "Υπηρεσίες";
+            this.Name = "SchoolsSectionForm";
+            this.Text = "Σχολές";
             this.ResumeLayout(false);
             this.PerformLayout();
 

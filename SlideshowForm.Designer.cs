@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class GuideIntroForm
+    partial class SlideshowForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // NavButtonBack
+            // NavButton5
             // 
-            this.NavButtonBack.Visible = false;
+            this.NavButton5.BackColor = System.Drawing.Color.BurlyWood;
+            this.NavButton5.Enabled = false;
             // 
-            // GuideIntroForm
+            // SlideshowForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Name = "GuideIntroForm";
+            this.Name = "SlideshowForm";
+            this.Text = "Φωτογραφίες";
+            this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
