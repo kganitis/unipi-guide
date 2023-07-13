@@ -37,7 +37,7 @@ namespace WindowsFormsApp2023_Final
 
         private void Export()
         {
-            string textToExport = testLabel.Text;
+            string textToExport = Text;
             string filename = Text;
             string filePath = "..\\..\\exports\\" + filename + ".txt";
             StreamWriter writer = new StreamWriter(filePath);
