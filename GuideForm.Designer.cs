@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // NavButtonHome
@@ -37,12 +36,11 @@
             // 
             // GuideForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.ClientSize = new System.Drawing.Size(1476, 863);
+            this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.Name = "GuideForm";
             this.Text = "Οδηγός Πανεπιστημίου";
-            this.ContentPanel.ResumeLayout(false);
-            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
