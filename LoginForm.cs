@@ -55,7 +55,6 @@ namespace WindowsFormsApp2023_Final
 
             if (foundMatch)
             {
-                MessageBox.Show("Καλωσορίσατε στο Πανεπιστήμιο Πειραιώς");
                 NavigateToForm<GuideForm>();
             }
             else

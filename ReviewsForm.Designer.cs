@@ -52,7 +52,8 @@
             this.ContentPanel.Controls.Add(this.pictureBox3);
             this.ContentPanel.Controls.Add(this.pictureBox2);
             this.ContentPanel.Controls.Add(this.pictureBox1);
-            this.ContentPanel.Size = new System.Drawing.Size(1176, 676);
+            this.ContentPanel.Location = new System.Drawing.Point(300, 36);
+            this.ContentPanel.Size = new System.Drawing.Size(1176, 673);
             this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             // 
             // AboutButton
@@ -152,6 +153,7 @@
             this.button3.TabIndex = 5;
             this.button3.Text = "Σχόλια";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
