@@ -22,8 +22,8 @@ namespace WindowsFormsApp2023_Final
         {
             button1.Hide();
             button2.Hide();
-          //  button4.Location = new Point(120, 332);
-          //  button5.Location = new Point(498, 332);                
+            button4.Location = new Point(120, 332);
+            button5.Location = new Point(498, 332);                
             button4.Show();
             button5.Show();
 
