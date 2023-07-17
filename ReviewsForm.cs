@@ -10,6 +10,7 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class ReviewsForm : WindowsFormsApp2023_Final.GuideForm
     {
+        ReviewCommentsForm revCom = null;
         public ReviewsForm()
         {
             InitializeComponent();
@@ -21,9 +22,7 @@ namespace WindowsFormsApp2023_Final
         private void button1_Click(object sender, EventArgs e)
         {
             button1.Hide();
-            button2.Hide();
-            button4.Location = new Point(120, 332);
-            button5.Location = new Point(498, 332);                
+            button2.Hide();             
             button4.Show();
             button5.Show();
 
@@ -136,6 +135,8 @@ namespace WindowsFormsApp2023_Final
 
         private void button3_Click(object sender, EventArgs e)
         {
+            revCom = new ReviewCommentsForm();
+            revCom.Show();
             button1.Visible = true;
             button2.Visible = true;
             button3.Visible = true;

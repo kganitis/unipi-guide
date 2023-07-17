@@ -54,6 +54,14 @@
             this.ContentPanel.Controls.Add(this.pictureBox1);
             this.ContentPanel.Size = new System.Drawing.Size(1176, 676);
             this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
+            this.ContentPanel.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.pictureBox2, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.pictureBox3, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.button1, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.button2, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.button3, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.button4, 0);
+            this.ContentPanel.Controls.SetChildIndex(this.button5, 0);
             // 
             // AboutButton
             // 
@@ -159,7 +167,7 @@
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
             this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(120, 409);
+            this.button4.Location = new System.Drawing.Point(120, 341);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(277, 71);
             this.button4.TabIndex = 6;
@@ -172,7 +180,7 @@
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
             this.button5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(498, 409);
+            this.button5.Location = new System.Drawing.Point(498, 341);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(277, 71);
             this.button5.TabIndex = 7;
@@ -190,6 +198,7 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ReviewsForm_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ReviewsForm_FormClosed);
             this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

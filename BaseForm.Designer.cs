@@ -241,7 +241,7 @@
             // 
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContentPanel.Location = new System.Drawing.Point(300, 33);
-            this.ContentPanel.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(8);
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.ContentPanel.Size = new System.Drawing.Size(1176, 675);
@@ -284,71 +284,71 @@
             // BackToolStripMenuItem
             // 
             this.BackToolStripMenuItem.Name = "BackToolStripMenuItem";
-            this.BackToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.BackToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.BackToolStripMenuItem.Text = "Πίσω";
             this.BackToolStripMenuItem.Click += new System.EventHandler(this.BackToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(267, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(225, 6);
             // 
             // HomeToolStripMenuItem
             // 
             this.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem";
-            this.HomeToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.HomeToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.HomeToolStripMenuItem.Text = "Αρχική";
             this.HomeToolStripMenuItem.Click += new System.EventHandler(this.HomeToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(267, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(225, 6);
             // 
             // UniversityToolStripMenuItem
             // 
             this.UniversityToolStripMenuItem.Name = "UniversityToolStripMenuItem";
-            this.UniversityToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.UniversityToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.UniversityToolStripMenuItem.Text = "Πανεπιστήμιο";
             this.UniversityToolStripMenuItem.Click += new System.EventHandler(this.UniversityToolStripMenuItem_Click);
             // 
             // ServicesToolStripMenuItem
             // 
             this.ServicesToolStripMenuItem.Name = "ServicesToolStripMenuItem";
-            this.ServicesToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.ServicesToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.ServicesToolStripMenuItem.Text = "Υπηρεσίες";
             this.ServicesToolStripMenuItem.Click += new System.EventHandler(this.ServicesToolStripMenuItem_Click);
             // 
             // SchoolsToolStripMenuItem
             // 
             this.SchoolsToolStripMenuItem.Name = "SchoolsToolStripMenuItem";
-            this.SchoolsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.SchoolsToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.SchoolsToolStripMenuItem.Text = "Σχολές";
             this.SchoolsToolStripMenuItem.Click += new System.EventHandler(this.SchoolsToolStripMenuItem_Click);
             // 
             // ReviewsToolStripMenuItem
             // 
             this.ReviewsToolStripMenuItem.Name = "ReviewsToolStripMenuItem";
-            this.ReviewsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.ReviewsToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.ReviewsToolStripMenuItem.Text = "Αξιολογήσεις";
             this.ReviewsToolStripMenuItem.Click += new System.EventHandler(this.ReviewsToolStripMenuItem_Click);
             // 
             // SlideshowToolStripMenuItem
             // 
             this.SlideshowToolStripMenuItem.Name = "SlideshowToolStripMenuItem";
-            this.SlideshowToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.SlideshowToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.SlideshowToolStripMenuItem.Text = "Φωτογραφίες";
             this.SlideshowToolStripMenuItem.Click += new System.EventHandler(this.SlideshowToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(267, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(225, 6);
             // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
             this.ExitToolStripMenuItem.Text = "Έξοδος";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
