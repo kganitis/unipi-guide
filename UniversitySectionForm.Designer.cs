@@ -42,11 +42,8 @@
             // 
             this.NavButton1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.NavButton1.Location = new System.Drawing.Point(13, 128);
-            this.NavButton1.Text = "Πανεπιστήμιο";
-            // 
-            // NavButtonBack
-            // 
-            this.NavButtonBack.Click += new System.EventHandler(this.NavButtonBack_Click_1);
+            this.NavButton1.Text = "Πανεπιστήμιο"; 
+            
             // 
             // NavButton5
             // 
