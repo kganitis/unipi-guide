@@ -17,7 +17,9 @@ namespace WindowsFormsApp2023_Final
     {
         private SpeechSynthesizer synthesizer;
         protected Color highlightedButtonColor = Color.BurlyWood;
-        
+
+
+
         public BaseForm()
         {
             InitializeComponent();
@@ -209,10 +211,5 @@ namespace WindowsFormsApp2023_Final
         }
 
         #endregion
-
-        private void ContentPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
