@@ -246,7 +246,6 @@
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.ContentPanel.Size = new System.Drawing.Size(1176, 672);
             this.ContentPanel.TabIndex = 2;
-            this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             // 
             // MenuStrip
             // 

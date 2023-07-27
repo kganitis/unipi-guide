@@ -14,7 +14,6 @@ namespace WindowsFormsApp2023_Final
         string name = "";
         int id;
         string password;
-        string username;
         String connectionString = "Data source=rad19900.db;Version=3;";
         SQLiteConnection connection;
         public LoginForm()
@@ -48,8 +47,8 @@ namespace WindowsFormsApp2023_Final
             while (reader.Read())
             {
                 password = reader.GetInt32(0).ToString();
-                username = reader.GetString(1);  
-                if (textBox2.Text.Equals(password) && textBox1.Text.Equals(username))
+                Username = reader.GetString(1);
+                if (textBox2.Text.Equals(password) && textBox1.Text.Equals(Username))
                 {
                     foundMatch = true;
                     name = reader.GetString(2);
@@ -59,13 +58,13 @@ namespace WindowsFormsApp2023_Final
             }
             MessageBox.Show("Hi " + reader.GetString(2) + ", welcome to Unipi");
             connection.Close();
+
             textBox1.Clear();
             textBox2.Clear();
 
             if (foundMatch)
             {
                 NavigateToForm<GuideForm>();
-                ReviewCommentsForm reviewCommentsForm = new ReviewCommentsForm(name);
             }
             else
             {
