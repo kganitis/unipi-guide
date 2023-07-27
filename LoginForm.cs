@@ -11,6 +11,10 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class LoginForm : WindowsFormsApp2023_Final.BaseForm
     {
+        string name = "";
+        int id;
+        string password;
+        string username;
         String connectionString = "Data source=rad19900.db;Version=3;";
         SQLiteConnection connection;
         public LoginForm()
@@ -18,6 +22,7 @@ namespace WindowsFormsApp2023_Final
             InitializeComponent();
             HideAllControls();
         }
+
 
         private void ContentPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -28,27 +33,31 @@ namespace WindowsFormsApp2023_Final
         {
 
         }
+        public string getName() { 
+            return name;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string selectSQL = "SELECT passwordStudent, username FROM Student";
+            string selectSQL = "SELECT passwordStudent, username, name, studentId FROM student";
             SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
             SQLiteDataReader reader = command.ExecuteReader();
             bool foundMatch = false;
 
             while (reader.Read())
             {
-                string password = reader.GetInt32(0).ToString();
-                string username = reader.GetString(1);
-
+                password = reader.GetInt32(0).ToString();
+                username = reader.GetString(1);  
                 if (textBox2.Text.Equals(password) && textBox1.Text.Equals(username))
                 {
                     foundMatch = true;
+                    name = reader.GetString(2);
+                    id = reader.GetInt32(3);
                     break;
                 }
             }
-
+            MessageBox.Show("Hi " + reader.GetString(2) + ", welcome to Unipi");
             connection.Close();
             textBox1.Clear();
             textBox2.Clear();
@@ -56,6 +65,7 @@ namespace WindowsFormsApp2023_Final
             if (foundMatch)
             {
                 NavigateToForm<GuideForm>();
+                ReviewCommentsForm reviewCommentsForm = new ReviewCommentsForm(name);
             }
             else
             {
@@ -65,9 +75,8 @@ namespace WindowsFormsApp2023_Final
         }
         private void button2_Click(object sender, EventArgs e)
         {
-
             connection.Open();
-            String selectSQL = "SELECT* FROM Student";
+            String selectSQL = "SELECT* FROM student";
             SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
             SQLiteDataReader reader = command.ExecuteReader();
             while (reader.Read())
@@ -76,6 +85,16 @@ namespace WindowsFormsApp2023_Final
                 richTextBox1.AppendText(Environment.NewLine);
             }
             connection.Close();
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void richTextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

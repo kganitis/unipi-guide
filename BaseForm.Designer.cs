@@ -76,10 +76,10 @@
             this.NavigationPanel.Controls.Add(this.NavButton2);
             this.NavigationPanel.Controls.Add(this.NavButton1);
             this.NavigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.NavigationPanel.Location = new System.Drawing.Point(0, 33);
+            this.NavigationPanel.Location = new System.Drawing.Point(0, 36);
             this.NavigationPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.NavigationPanel.Name = "NavigationPanel";
-            this.NavigationPanel.Size = new System.Drawing.Size(300, 829);
+            this.NavigationPanel.Size = new System.Drawing.Size(300, 826);
             this.NavigationPanel.TabIndex = 0;
             // 
             // NavButtonHome
@@ -240,11 +240,11 @@
             // ContentPanel
             // 
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanel.Location = new System.Drawing.Point(300, 33);
+            this.ContentPanel.Location = new System.Drawing.Point(300, 36);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(8);
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(1176, 675);
+            this.ContentPanel.Size = new System.Drawing.Size(1176, 672);
             this.ContentPanel.TabIndex = 2;
             this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             // 
@@ -259,7 +259,7 @@
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
             this.MenuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.MenuStrip.Size = new System.Drawing.Size(1476, 33);
+            this.MenuStrip.Size = new System.Drawing.Size(1476, 36);
             this.MenuStrip.TabIndex = 3;
             this.MenuStrip.Text = "MenuStrip";
             // 

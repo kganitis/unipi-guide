@@ -56,8 +56,7 @@
             this.ContentPanel.Controls.Add(this.label1);
             this.ContentPanel.Controls.Add(this.pictureBox6);
             this.ContentPanel.Controls.Add(this.pictureBox5);
-            this.ContentPanel.Location = new System.Drawing.Point(300, 36);
-            this.ContentPanel.Size = new System.Drawing.Size(1176, 673);
+            this.ContentPanel.Size = new System.Drawing.Size(1176, 676);
             this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             // 
             // label1
@@ -134,6 +133,7 @@
             this.richTextBox1.Size = new System.Drawing.Size(296, 119);
             this.richTextBox1.TabIndex = 8;
             this.richTextBox1.Text = "";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged_1);
             // 
             // pictureBox5
             // 

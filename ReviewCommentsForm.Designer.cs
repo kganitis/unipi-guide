@@ -37,22 +37,23 @@
             this.NavButton2 = new System.Windows.Forms.Button();
             this.NavButton1 = new System.Windows.Forms.Button();
             this.ContentPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ToolsPanel = new System.Windows.Forms.Panel();
             this.ExitButton = new System.Windows.Forms.Button();
             this.ListenButton = new System.Windows.Forms.Button();
             this.ExportButton = new System.Windows.Forms.Button();
             this.AboutButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.NavigationPanel.SuspendLayout();
             this.ContentPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.ToolsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // NavigationPanel
@@ -69,7 +70,7 @@
             this.NavigationPanel.Location = new System.Drawing.Point(0, 0);
             this.NavigationPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.NavigationPanel.Name = "NavigationPanel";
-            this.NavigationPanel.Size = new System.Drawing.Size(300, 863);
+            this.NavigationPanel.Size = new System.Drawing.Size(300, 862);
             this.NavigationPanel.TabIndex = 1;
             // 
             // NavButtonHome
@@ -160,6 +161,7 @@
             // 
             // ContentPanel
             // 
+            this.ContentPanel.Controls.Add(this.button1);
             this.ContentPanel.Controls.Add(this.label1);
             this.ContentPanel.Controls.Add(this.textBox1);
             this.ContentPanel.Controls.Add(this.ToolsPanel);
@@ -171,38 +173,46 @@
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(8);
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(1185, 863);
+            this.ContentPanel.Size = new System.Drawing.Size(1265, 862);
             this.ContentPanel.TabIndex = 3;
+            this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             // 
-            // pictureBox1
+            // button1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 246);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button1.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button1.Location = new System.Drawing.Point(968, 617);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 67);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Καταχώρηση";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox2
+            // label1
             // 
-            this.pictureBox2.Image = global::WindowsFormsApp2023_Final.Properties.Resources.pic11;
-            this.pictureBox2.Location = new System.Drawing.Point(120, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(800, 246);
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
+            this.label1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(7, 283);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1165, 66);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "       Μοιραστείτε σχόλια και εμπειρίες για το Πανεπιστήμιο και παραθέστε τη δική" +
+    " σας \r\nγνώμη για βελτίωση των υπαρχόντων υπηρεσιών";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // pictureBox3
+            // textBox1
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
-            this.pictureBox3.Location = new System.Drawing.Point(912, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(264, 246);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.textBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.textBox1.Location = new System.Drawing.Point(7, 352);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(1169, 349);
+            this.textBox1.TabIndex = 5;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ToolsPanel
             // 
@@ -212,10 +222,10 @@
             this.ToolsPanel.Controls.Add(this.ExportButton);
             this.ToolsPanel.Controls.Add(this.AboutButton);
             this.ToolsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ToolsPanel.Location = new System.Drawing.Point(15, 709);
+            this.ToolsPanel.Location = new System.Drawing.Point(15, 708);
             this.ToolsPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ToolsPanel.Name = "ToolsPanel";
-            this.ToolsPanel.Size = new System.Drawing.Size(1155, 154);
+            this.ToolsPanel.Size = new System.Drawing.Size(1235, 154);
             this.ToolsPanel.TabIndex = 4;
             // 
             // ExitButton
@@ -262,47 +272,54 @@
             this.AboutButton.TabIndex = 1;
             this.AboutButton.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // pictureBox3
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.textBox1.Location = new System.Drawing.Point(7, 352);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1169, 349);
-            this.textBox1.TabIndex = 5;
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
+            this.pictureBox3.Location = new System.Drawing.Point(912, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(264, 246);
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
             // 
-            // label1
+            // pictureBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
-            this.label1.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(7, 283);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1165, 66);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "       Μοιραστείτε σχόλια και εμπειρίες για το Πανεπιστήμιο και παραθέστε τη δική" +
-    " σας \r\nγνώμη για βελτίωση των υπαρχόντων υπηρεσιών";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.pictureBox2.Image = global::WindowsFormsApp2023_Final.Properties.Resources.pic11;
+            this.pictureBox2.Location = new System.Drawing.Point(120, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(800, 246);
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(124, 246);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // ReviewCommentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1485, 863);
+            this.ClientSize = new System.Drawing.Size(1565, 862);
             this.Controls.Add(this.ContentPanel);
             this.Controls.Add(this.NavigationPanel);
             this.Name = "ReviewCommentsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReviewComments";
+            this.Load += new System.EventHandler(this.ReviewCommentsForm_Load);
             this.NavigationPanel.ResumeLayout(false);
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ToolsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -328,5 +345,6 @@
         protected System.Windows.Forms.Button AboutButton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
