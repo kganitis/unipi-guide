@@ -11,8 +11,10 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class ReviewsForm : WindowsFormsApp2023_Final.GuideForm
     {
+
         String connectionString = "Data source=rad19900.db;Version=3;";
         SQLiteConnection connection;
+
         public ReviewsForm()
         {
             InitializeComponent();
@@ -92,6 +94,12 @@ namespace WindowsFormsApp2023_Final
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<ReviewSubmitForm>();
+        }
+
+
+        private void button3_Click(object sender, EventArgs e)
         {
             NavigateToForm<ReviewSubmitForm>();
         }

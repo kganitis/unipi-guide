@@ -29,7 +29,7 @@ namespace WindowsFormsApp2023_Final
             try
             {
                 connection.Open();
-                int grade = (int)numericUpDown1.Value;
+                int grade = (int)numericUpDown2.Value;
                 // string insertSQL = "INSERT INTO reviews(comments,commentatorId,grade) VALUES('" + ReviewTextBox.Text + "','"+session.UserId+"','"+grade+"')";
                 string insertSQL = "INSERT INTO reviews(comments, commentatorId, grade) VALUES(@comments, @commentatorId, @grade)";
                 SQLiteCommand command = new SQLiteCommand(insertSQL, connection);
@@ -49,6 +49,16 @@ namespace WindowsFormsApp2023_Final
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ContentPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

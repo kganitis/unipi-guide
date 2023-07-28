@@ -51,6 +51,11 @@ namespace WindowsFormsApp2023_Final
                 password = reader.GetString(0);
                 username = reader.GetString(1);
                 if (textBox2.Text.Equals(password) && textBox1.Text.Equals(username))
+
+                password = reader.GetString(0);
+                Username = reader.GetString(1);
+                if (textBox2.Text.Equals(password) && textBox1.Text.Equals(Username))
+
                 {
                     foundMatch = true;
                     password = reader.GetString(0);
@@ -70,12 +75,14 @@ namespace WindowsFormsApp2023_Final
             if (foundMatch)
             {
                 NavigateToForm<GuideForm>();
+
                 UserSession session = UserSession.Instance;
                 session.Username = username; // Replace with actual username
                 session.UserId = id; // Replace with actual user ID or relevant data
                 session.Name = name; // Replace with actual username
                 session.Email = email; // Replace with actual user ID or relevant data
                 session.Password = password;
+
             }
             else
             {
