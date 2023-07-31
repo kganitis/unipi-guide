@@ -30,15 +30,18 @@
         {
             this.SuspendLayout();
             // 
+            // ContentPanel
+            // 
+            this.ContentPanel.Location = new System.Drawing.Point(300, 36);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
+            this.ContentPanel.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
+            this.ContentPanel.Size = new System.Drawing.Size(1176, 672);
+            // 
             // NavButton1
             // 
             this.NavButton1.BackColor = System.Drawing.Color.BurlyWood;
             this.NavButton1.Enabled = false;
             this.NavButton1.Text = "";
-            // 
-            // NavButtonBack
-            // 
-            this.NavButtonBack.Visible = true;
             // 
             // NavButton5
             // 
@@ -62,8 +65,9 @@
             // 
             // GuideSectionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.ClientSize = new System.Drawing.Size(1476, 862);
+            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.Name = "GuideSectionForm";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -42,7 +42,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.118.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
@@ -105,6 +107,12 @@
     <Compile Include="ReviewsForm.Designer.cs">
       <DependentUpon>ReviewsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReviewSubmitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewSubmitForm.Designer.cs">
+      <DependentUpon>ReviewSubmitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SchoolsSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +137,7 @@
     <Compile Include="UniversitySectionForm.Designer.cs">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSession.cs" />
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +165,9 @@
     </Compile>
     <EmbeddedResource Include="ReviewsForm.resx">
       <DependentUpon>ReviewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewSubmitForm.resx">
+      <DependentUpon>ReviewSubmitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SchoolsSectionForm.resx">
       <DependentUpon>SchoolsSectionForm.cs</DependentUpon>

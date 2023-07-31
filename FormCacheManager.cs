@@ -30,6 +30,7 @@ namespace WindowsFormsApp2023_Final
             formCache.Add(typeof(ServicesSectionForm), new ServicesSectionForm());
             formCache.Add(typeof(SchoolsSectionForm), new SchoolsSectionForm());
             formCache.Add(typeof(ReviewsForm), new ReviewsForm());
+            formCache.Add(typeof(ReviewSubmitForm), new ReviewSubmitForm());
             formCache.Add(typeof(SlideshowForm), new SlideshowForm());
         }
 
