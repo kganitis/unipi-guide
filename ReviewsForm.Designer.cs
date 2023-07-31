@@ -48,9 +48,10 @@
             this.ContentPanel.Controls.Add(this.pictureBox3);
             this.ContentPanel.Controls.Add(this.pictureBox2);
             this.ContentPanel.Controls.Add(this.pictureBox1);
+            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(8);
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(1147, 539);
+            this.ContentPanel.Size = new System.Drawing.Size(1147, 537);
             this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             this.ContentPanel.Controls.SetChildIndex(this.pictureBox1, 0);
             this.ContentPanel.Controls.SetChildIndex(this.pictureBox2, 0);

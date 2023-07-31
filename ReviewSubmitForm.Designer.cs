@@ -57,7 +57,8 @@
             this.ContentPanel.Controls.Add(this.pictureBox7);
             this.ContentPanel.Controls.Add(this.pictureBox6);
             this.ContentPanel.Controls.Add(this.pictureBox5);
-            this.ContentPanel.Size = new System.Drawing.Size(1045, 538);
+            this.ContentPanel.Location = new System.Drawing.Point(90, 21);
+            this.ContentPanel.Size = new System.Drawing.Size(1003, 512);
             this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             // 
             // pictureBox7
@@ -164,7 +165,6 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(160, 30);
             this.numericUpDown2.TabIndex = 18;
-            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // ReviewSubmitForm
             // 

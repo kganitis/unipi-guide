@@ -53,10 +53,7 @@ namespace WindowsFormsApp2023_Final
 
         }
 
-        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void ContentPanel_Paint(object sender, PaintEventArgs e)
         {
