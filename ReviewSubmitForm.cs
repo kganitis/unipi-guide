@@ -23,12 +23,20 @@ namespace WindowsFormsApp2023_Final
 
         private void SubmitButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Name== " + Username);
+            UserSession session = UserSession.Instance;
+           
+            MessageBox.Show("Name== " + session.Name);
             try
             {
                 connection.Open();
-                string insertSQL = "INSERT INTO reviews(comments) VALUES('" + ReviewTextBox.Text + "')";
+                int grade = (int)numericUpDown2.Value;
+                // string insertSQL = "INSERT INTO reviews(comments,commentatorId,grade) VALUES('" + ReviewTextBox.Text + "','"+session.UserId+"','"+grade+"')";
+                string insertSQL = "INSERT INTO reviews(comments, commentatorId, grade) VALUES(@comments, @commentatorId, @grade)";
                 SQLiteCommand command = new SQLiteCommand(insertSQL, connection);
+                command.Parameters.AddWithValue("@comments", ReviewTextBox.Text);
+                command.Parameters.AddWithValue("@commentatorId", session.UserId);
+                command.Parameters.AddWithValue("@grade", grade);
+
                 command.ExecuteNonQuery();
                 connection.Close();
 
@@ -38,6 +46,18 @@ namespace WindowsFormsApp2023_Final
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
+
+        private void ContentPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

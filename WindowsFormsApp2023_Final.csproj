@@ -137,6 +137,7 @@
     <Compile Include="UniversitySectionForm.Designer.cs">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSession.cs" />
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>

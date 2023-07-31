@@ -19,6 +19,7 @@ namespace WindowsFormsApp2023_Final
         private SpeechSynthesizer synthesizer;
         protected Color highlightedButtonColor = Color.BurlyWood;
 
+
         public string Username
         {
             get { return username; }
