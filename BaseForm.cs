@@ -15,9 +15,16 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class BaseForm : Form
     {
+        private string username;
         private SpeechSynthesizer synthesizer;
         protected Color highlightedButtonColor = Color.BurlyWood;
-        
+
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
+
         public BaseForm()
         {
             InitializeComponent();
@@ -209,10 +216,5 @@ namespace WindowsFormsApp2023_Final
         }
 
         #endregion
-
-        private void ContentPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

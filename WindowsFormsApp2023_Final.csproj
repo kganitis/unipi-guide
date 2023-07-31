@@ -107,6 +107,12 @@
     <Compile Include="ReviewsForm.Designer.cs">
       <DependentUpon>ReviewsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReviewSubmitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewSubmitForm.Designer.cs">
+      <DependentUpon>ReviewSubmitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SchoolsSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     </Compile>
     <EmbeddedResource Include="ReviewsForm.resx">
       <DependentUpon>ReviewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewSubmitForm.resx">
+      <DependentUpon>ReviewSubmitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SchoolsSectionForm.resx">
       <DependentUpon>SchoolsSectionForm.cs</DependentUpon>

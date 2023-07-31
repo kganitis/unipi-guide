@@ -32,8 +32,10 @@
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
-            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
+            this.ContentPanel.Location = new System.Drawing.Point(300, 36);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(10, 12, 10, 12);
+            this.ContentPanel.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
+            this.ContentPanel.Size = new System.Drawing.Size(1176, 672);
             // 
             // NavButton1
             // 
@@ -63,9 +65,9 @@
             // 
             // GuideSectionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(1312, 690);
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.ClientSize = new System.Drawing.Size(1476, 862);
+            this.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.Name = "GuideSectionForm";
             this.ResumeLayout(false);
             this.PerformLayout();
