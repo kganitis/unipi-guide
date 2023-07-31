@@ -43,6 +43,8 @@
             this.ContentPanel.Controls.Add(this.pictureBox1);
             this.ContentPanel.Controls.Add(this.richTextBox1);
             this.ContentPanel.Controls.Add(this.label1);
+            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
             // 
             // NavButton1
             // 
