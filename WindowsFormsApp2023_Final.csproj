@@ -252,6 +252,30 @@
   <ItemGroup>
     <None Include="bin\Debug\pictures\unipi_old.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unipi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unipi_comLab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unipi_grounds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unipi_library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unipi_main.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unipi_main_entr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unipi_old.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unipi_remote1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
