@@ -97,37 +97,37 @@ namespace WindowsFormsApp2023_Final
             FormCacheManager.Instance.NavigateToForm<T>(this);
         }
 
-        private void NavButtonHome_Click(object sender, EventArgs e)
+        protected virtual void NavButtonHome_Click(object sender, EventArgs e)
         {
             NavigateToForm<GuideForm>();
         }
 
-        private void NavButton1_Click(object sender, EventArgs e)
+        protected virtual void NavButton1_Click(object sender, EventArgs e)
         {
             NavigateToForm<UniversitySectionForm>();
         }
 
-        private void NavButton2_Click(object sender, EventArgs e)
+        protected virtual void NavButton2_Click(object sender, EventArgs e)
         {
             NavigateToForm<ServicesSectionForm>();
         }
 
-        private void NavButton3_Click(object sender, EventArgs e)
+        protected virtual void NavButton3_Click(object sender, EventArgs e)
         {
             NavigateToForm<SchoolsSectionForm>();
         }
 
-        private void NavButton4_Click(object sender, EventArgs e)
+        protected virtual void NavButton4_Click(object sender, EventArgs e)
         {
             NavigateToForm<ReviewsForm>();
         }
 
-        private void NavButton5_Click(object sender, EventArgs e)
+        protected virtual void NavButton5_Click(object sender, EventArgs e)
         {
             NavigateToForm<SlideshowForm>();
         }
 
-        private void NavButtonBack_Click(object sender, EventArgs e)
+        protected void NavButtonBack_Click(object sender, EventArgs e)
         {
             FormCacheManager.Instance.NavigateBack(this);
         }

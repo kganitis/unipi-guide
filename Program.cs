@@ -17,7 +17,7 @@ namespace WindowsFormsApp2023_Final
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             FormCacheManager cacheManager = FormCacheManager.Instance;
-            Application.Run(new LoginForm());
+            Application.Run(new UniversitySectionForm());
         }
     }
 }
