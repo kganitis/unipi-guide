@@ -32,6 +32,7 @@ namespace WindowsFormsApp2023_Final
             formCache.Add(typeof(ReviewsForm), new ReviewsForm());
             formCache.Add(typeof(ReviewSubmitForm), new ReviewSubmitForm());
             formCache.Add(typeof(SlideshowForm), new SlideshowForm());
+            formCache.Add(typeof(ViewEventsForm), new ViewEventsForm());
         }
 
         public void NavigateToForm<T>(Form currentForm) where T : Form
