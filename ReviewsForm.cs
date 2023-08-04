@@ -19,58 +19,6 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
             HighlightButton(NavButton4);
-          
-        }
-
-     
-
-        private void ContentPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ReviewsForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-        }
-
-        private void ReviewsForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-     
-        }
-
-        private void NavButton1_Click(object sender, EventArgs e)
-        {
-    
-        }
-
-        private void NavButton2_Click(object sender, EventArgs e)
-        {
-     
-        }
-
-        private void NavButton3_Click(object sender, EventArgs e)
-        {
-    
-        }
-
-        private void NavButton4_Click(object sender, EventArgs e)
-        {
-       
-        }
-
-        private void NavButton5_Click(object sender, EventArgs e)
-        {
-   
-        }
-
-        private void AboutButton_Click(object sender, EventArgs e)
-        {
-    
-        }
-
-        private void ExportButton_Click(object sender, EventArgs e)
-        {
-   
         }
 
         private void ReviewsForm_Load(object sender, EventArgs e)
