@@ -6,6 +6,7 @@ using System.Data.SQLite;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp2023_Final
 {
@@ -19,10 +20,8 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
             HighlightButton(NavButton4);
-          
-        }
 
-     
+        }
 
         private void ContentPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -35,47 +34,54 @@ namespace WindowsFormsApp2023_Final
 
         private void ReviewsForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-     
+
         }
 
         private void NavButton1_Click(object sender, EventArgs e)
         {
-    
+
         }
 
         private void NavButton2_Click(object sender, EventArgs e)
         {
-     
+
         }
 
         private void NavButton3_Click(object sender, EventArgs e)
         {
-    
+
         }
 
         private void NavButton4_Click(object sender, EventArgs e)
         {
-       
+
         }
 
         private void NavButton5_Click(object sender, EventArgs e)
         {
-   
+
         }
 
         private void AboutButton_Click(object sender, EventArgs e)
         {
-    
+
         }
 
         private void ExportButton_Click(object sender, EventArgs e)
         {
-   
+
         }
 
         private void ReviewsForm_Load(object sender, EventArgs e)
         {
+            //Απόκρυψη κουμπιού Αξιολόγησης όταν μπαίνει σαν επισκέπτης
             UserSession session = UserSession.Instance;
+            if (session.Username.Equals(""))
+            {
+                button1.Visible = false; // Απόκρυψη του κουμπιού
+            }
+
+            //Φορτώνει από τη βάση τις καταχωρημένες αξιολογήσεις και τις εμφανίζει
             connection = new SQLiteConnection(connectionString);
             connection.Open();
             String selectSQL = "SELECT comments, grade FROM reviews";
@@ -94,12 +100,6 @@ namespace WindowsFormsApp2023_Final
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            NavigateToForm<ReviewSubmitForm>();
-        }
-
-
-        private void button3_Click(object sender, EventArgs e)
         {
             NavigateToForm<ReviewSubmitForm>();
         }

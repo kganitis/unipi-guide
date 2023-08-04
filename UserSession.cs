@@ -13,6 +13,8 @@
         public string Email { get; set; }
         // Add more user-specific properties as needed
 
+        public string selectedVoice { get; set; }
+
         // Private constructor for the singleton pattern
         private UserSession() { }
 
