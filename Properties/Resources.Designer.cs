@@ -213,20 +213,127 @@ namespace WindowsFormsApp2023_Final.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap unipi_old {
+        internal static System.Drawing.Bitmap users {
             get {
-                object obj = ResourceManager.GetObject("unipi_old", resourceCulture);
+                object obj = ResourceManager.GetObject("users", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to Απόφοιτοι.
         /// </summary>
-        internal static System.Drawing.Bitmap users {
+        internal static string Απόφοιτοι {
             get {
-                object obj = ResourceManager.GetObject("users", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("Απόφοιτοι", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ασύρματες Συνδέσεις.
+        /// </summary>
+        internal static string Ασύρματες_Συνδέσεις {
+            get {
+                return ResourceManager.GetString("Ασύρματες_Συνδέσεις", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Βιβλιοθήκη.
+        /// </summary>
+        internal static string Βιβλιοθήκη {
+            get {
+                return ResourceManager.GetString("Βιβλιοθήκη", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Γραφείο Διασύνδεσης.
+        /// </summary>
+        internal static string Γραφείο_Διασύνδεσης {
+            get {
+                return ResourceManager.GetString("Γραφείο_Διασύνδεσης", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Εξ Αποστάσεως Εκπαίδευση.
+        /// </summary>
+        internal static string Εξ_Αποστάσεως_Εκπαίδευση {
+            get {
+                return ResourceManager.GetString("Εξ_Αποστάσεως_Εκπαίδευση", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ηλεκτρονικές Υπηρεσίες.
+        /// </summary>
+        internal static string Ηλεκτρονικές_Υπηρεσίες {
+            get {
+                return ResourceManager.GetString("Ηλεκτρονικές_Υπηρεσίες", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ηλεκτρονική Γραμματεία.
+        /// </summary>
+        internal static string Ηλεκτρονική_Γραμματεία {
+            get {
+                return ResourceManager.GetString("Ηλεκτρονική_Γραμματεία", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ηλεκτρονικό Ταχυδρομείο.
+        /// </summary>
+        internal static string Ηλεκτρονικό_Ταχυδρομείο {
+            get {
+                return ResourceManager.GetString("Ηλεκτρονικό_Ταχυδρομείο", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ιατρείο.
+        /// </summary>
+        internal static string Ιατρείο {
+            get {
+                return ResourceManager.GetString("Ιατρείο", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Υπηρεσίες.
+        /// </summary>
+        internal static string Υπηρεσίες {
+            get {
+                return ResourceManager.GetString("Υπηρεσίες", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Φοιτητικές Παροχές.
+        /// </summary>
+        internal static string Φοιτητικές_Παροχές {
+            get {
+                return ResourceManager.GetString("Φοιτητικές_Παροχές", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Φοιτητική Ζωή.
+        /// </summary>
+        internal static string Φοιτητική_Ζωή {
+            get {
+                return ResourceManager.GetString("Φοιτητική_Ζωή", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Φοιτητική Μέριμνα.
+        /// </summary>
+        internal static string Φοιτητική_Μέριμνα {
+            get {
+                return ResourceManager.GetString("Φοιτητική_Μέριμνα", resourceCulture);
             }
         }
     }
