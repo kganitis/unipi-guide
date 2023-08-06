@@ -76,10 +76,9 @@
             this.NavigationPanel.Controls.Add(this.NavButton2);
             this.NavigationPanel.Controls.Add(this.NavButton1);
             this.NavigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.NavigationPanel.Location = new System.Drawing.Point(0, 36);
-            this.NavigationPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NavigationPanel.Location = new System.Drawing.Point(0, 24);
             this.NavigationPanel.Name = "NavigationPanel";
-            this.NavigationPanel.Size = new System.Drawing.Size(300, 826);
+            this.NavigationPanel.Size = new System.Drawing.Size(200, 536);
             this.NavigationPanel.TabIndex = 0;
             // 
             // NavButtonHome
@@ -88,10 +87,9 @@
             this.NavButtonHome.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.home;
             this.NavButtonHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.NavButtonHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButtonHome.Location = new System.Drawing.Point(15, 28);
-            this.NavButtonHome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NavButtonHome.Location = new System.Drawing.Point(10, 18);
             this.NavButtonHome.Name = "NavButtonHome";
-            this.NavButtonHome.Size = new System.Drawing.Size(270, 122);
+            this.NavButtonHome.Size = new System.Drawing.Size(180, 79);
             this.NavButtonHome.TabIndex = 6;
             this.NavButtonHome.UseVisualStyleBackColor = false;
             this.NavButtonHome.Click += new System.EventHandler(this.NavButtonHome_Click);
@@ -102,10 +100,9 @@
             this.NavButtonBack.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.restart;
             this.NavButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.NavButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButtonBack.Location = new System.Drawing.Point(15, 688);
-            this.NavButtonBack.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NavButtonBack.Location = new System.Drawing.Point(10, 447);
             this.NavButtonBack.Name = "NavButtonBack";
-            this.NavButtonBack.Size = new System.Drawing.Size(270, 122);
+            this.NavButtonBack.Size = new System.Drawing.Size(180, 79);
             this.NavButtonBack.TabIndex = 5;
             this.NavButtonBack.UseVisualStyleBackColor = false;
             this.NavButtonBack.Click += new System.EventHandler(this.NavButtonBack_Click);
@@ -113,11 +110,10 @@
             // NavButton5
             // 
             this.NavButton5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NavButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton5.Location = new System.Drawing.Point(15, 580);
-            this.NavButton5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NavButton5.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton5.Location = new System.Drawing.Point(10, 377);
             this.NavButton5.Name = "NavButton5";
-            this.NavButton5.Size = new System.Drawing.Size(270, 92);
+            this.NavButton5.Size = new System.Drawing.Size(180, 60);
             this.NavButton5.TabIndex = 4;
             this.NavButton5.Text = "Φωτογραφίες";
             this.NavButton5.UseVisualStyleBackColor = false;
@@ -126,11 +122,10 @@
             // NavButton4
             // 
             this.NavButton4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NavButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton4.Location = new System.Drawing.Point(15, 479);
-            this.NavButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NavButton4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton4.Location = new System.Drawing.Point(10, 311);
             this.NavButton4.Name = "NavButton4";
-            this.NavButton4.Size = new System.Drawing.Size(270, 92);
+            this.NavButton4.Size = new System.Drawing.Size(180, 60);
             this.NavButton4.TabIndex = 3;
             this.NavButton4.Text = "Αξιολογήσεις";
             this.NavButton4.UseVisualStyleBackColor = false;
@@ -139,11 +134,10 @@
             // NavButton3
             // 
             this.NavButton3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NavButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton3.Location = new System.Drawing.Point(15, 378);
-            this.NavButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NavButton3.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton3.Location = new System.Drawing.Point(10, 246);
             this.NavButton3.Name = "NavButton3";
-            this.NavButton3.Size = new System.Drawing.Size(270, 92);
+            this.NavButton3.Size = new System.Drawing.Size(180, 60);
             this.NavButton3.TabIndex = 2;
             this.NavButton3.Text = "Σχολές";
             this.NavButton3.UseVisualStyleBackColor = false;
@@ -152,11 +146,10 @@
             // NavButton2
             // 
             this.NavButton2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NavButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton2.Location = new System.Drawing.Point(15, 275);
-            this.NavButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NavButton2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton2.Location = new System.Drawing.Point(10, 179);
             this.NavButton2.Name = "NavButton2";
-            this.NavButton2.Size = new System.Drawing.Size(270, 92);
+            this.NavButton2.Size = new System.Drawing.Size(180, 60);
             this.NavButton2.TabIndex = 1;
             this.NavButton2.Text = "Υπηρεσίες";
             this.NavButton2.UseVisualStyleBackColor = false;
@@ -165,11 +158,10 @@
             // NavButton1
             // 
             this.NavButton1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NavButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NavButton1.Location = new System.Drawing.Point(15, 174);
-            this.NavButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NavButton1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButton1.Location = new System.Drawing.Point(10, 113);
             this.NavButton1.Name = "NavButton1";
-            this.NavButton1.Size = new System.Drawing.Size(270, 92);
+            this.NavButton1.Size = new System.Drawing.Size(180, 60);
             this.NavButton1.TabIndex = 0;
             this.NavButton1.Text = "Πανεπιστήμιο";
             this.NavButton1.UseVisualStyleBackColor = false;
@@ -183,20 +175,19 @@
             this.ToolsPanel.Controls.Add(this.ExportButton);
             this.ToolsPanel.Controls.Add(this.AboutButton);
             this.ToolsPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ToolsPanel.Location = new System.Drawing.Point(300, 708);
-            this.ToolsPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ToolsPanel.Location = new System.Drawing.Point(200, 460);
             this.ToolsPanel.Name = "ToolsPanel";
-            this.ToolsPanel.Size = new System.Drawing.Size(1176, 154);
+            this.ToolsPanel.Size = new System.Drawing.Size(784, 100);
             this.ToolsPanel.TabIndex = 1;
             // 
             // ExitButton
             // 
             this.ExitButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.close;
             this.ExitButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ExitButton.Location = new System.Drawing.Point(912, 15);
+            this.ExitButton.Location = new System.Drawing.Point(608, 10);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(0);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(180, 122);
+            this.ExitButton.Size = new System.Drawing.Size(120, 79);
             this.ExitButton.TabIndex = 4;
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
@@ -205,10 +196,10 @@
             // 
             this.ListenButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.speaker;
             this.ListenButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ListenButton.Location = new System.Drawing.Point(633, 15);
+            this.ListenButton.Location = new System.Drawing.Point(422, 10);
             this.ListenButton.Margin = new System.Windows.Forms.Padding(0);
             this.ListenButton.Name = "ListenButton";
-            this.ListenButton.Size = new System.Drawing.Size(180, 122);
+            this.ListenButton.Size = new System.Drawing.Size(120, 79);
             this.ListenButton.TabIndex = 3;
             this.ListenButton.UseVisualStyleBackColor = true;
             this.ListenButton.Click += new System.EventHandler(this.ListenButton_Click);
@@ -217,10 +208,10 @@
             // 
             this.ExportButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.save;
             this.ExportButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ExportButton.Location = new System.Drawing.Point(354, 15);
+            this.ExportButton.Location = new System.Drawing.Point(236, 10);
             this.ExportButton.Margin = new System.Windows.Forms.Padding(0);
             this.ExportButton.Name = "ExportButton";
-            this.ExportButton.Size = new System.Drawing.Size(180, 122);
+            this.ExportButton.Size = new System.Drawing.Size(120, 79);
             this.ExportButton.TabIndex = 2;
             this.ExportButton.UseVisualStyleBackColor = true;
             this.ExportButton.Click += new System.EventHandler(this.ExportButton_Click);
@@ -229,10 +220,10 @@
             // 
             this.AboutButton.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.about;
             this.AboutButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.AboutButton.Location = new System.Drawing.Point(75, 15);
+            this.AboutButton.Location = new System.Drawing.Point(50, 10);
             this.AboutButton.Margin = new System.Windows.Forms.Padding(0);
             this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(180, 122);
+            this.AboutButton.Size = new System.Drawing.Size(120, 79);
             this.AboutButton.TabIndex = 1;
             this.AboutButton.UseVisualStyleBackColor = true;
             this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
@@ -240,16 +231,15 @@
             // ContentPanel
             // 
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ContentPanel.Location = new System.Drawing.Point(300, 36);
-            this.ContentPanel.Margin = new System.Windows.Forms.Padding(8);
+            this.ContentPanel.Location = new System.Drawing.Point(200, 24);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ContentPanel.Name = "ContentPanel";
-            this.ContentPanel.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(1176, 672);
+            this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.ContentPanel.Size = new System.Drawing.Size(784, 436);
             this.ContentPanel.TabIndex = 2;
             // 
             // MenuStrip
             // 
-            this.MenuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.MenuStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NavigationToolStripMenuItem,
@@ -257,8 +247,8 @@
             this.HelpToolStripMenuItem});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.MenuStrip.Size = new System.Drawing.Size(1476, 36);
+            this.MenuStrip.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
+            this.MenuStrip.Size = new System.Drawing.Size(984, 24);
             this.MenuStrip.TabIndex = 3;
             this.MenuStrip.Text = "MenuStrip";
             // 
@@ -277,77 +267,77 @@
             this.toolStripSeparator1,
             this.ExitToolStripMenuItem});
             this.NavigationToolStripMenuItem.Name = "NavigationToolStripMenuItem";
-            this.NavigationToolStripMenuItem.Size = new System.Drawing.Size(110, 32);
+            this.NavigationToolStripMenuItem.Size = new System.Drawing.Size(75, 22);
             this.NavigationToolStripMenuItem.Text = "Πλοήγηση";
             // 
             // BackToolStripMenuItem
             // 
             this.BackToolStripMenuItem.Name = "BackToolStripMenuItem";
-            this.BackToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.BackToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.BackToolStripMenuItem.Text = "Πίσω";
             this.BackToolStripMenuItem.Click += new System.EventHandler(this.BackToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(225, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(147, 6);
             // 
             // HomeToolStripMenuItem
             // 
             this.HomeToolStripMenuItem.Name = "HomeToolStripMenuItem";
-            this.HomeToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.HomeToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.HomeToolStripMenuItem.Text = "Αρχική";
             this.HomeToolStripMenuItem.Click += new System.EventHandler(this.HomeToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(225, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(147, 6);
             // 
             // UniversityToolStripMenuItem
             // 
             this.UniversityToolStripMenuItem.Name = "UniversityToolStripMenuItem";
-            this.UniversityToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.UniversityToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.UniversityToolStripMenuItem.Text = "Πανεπιστήμιο";
             this.UniversityToolStripMenuItem.Click += new System.EventHandler(this.UniversityToolStripMenuItem_Click);
             // 
             // ServicesToolStripMenuItem
             // 
             this.ServicesToolStripMenuItem.Name = "ServicesToolStripMenuItem";
-            this.ServicesToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.ServicesToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.ServicesToolStripMenuItem.Text = "Υπηρεσίες";
             this.ServicesToolStripMenuItem.Click += new System.EventHandler(this.ServicesToolStripMenuItem_Click);
             // 
             // SchoolsToolStripMenuItem
             // 
             this.SchoolsToolStripMenuItem.Name = "SchoolsToolStripMenuItem";
-            this.SchoolsToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.SchoolsToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.SchoolsToolStripMenuItem.Text = "Σχολές";
             this.SchoolsToolStripMenuItem.Click += new System.EventHandler(this.SchoolsToolStripMenuItem_Click);
             // 
             // ReviewsToolStripMenuItem
             // 
             this.ReviewsToolStripMenuItem.Name = "ReviewsToolStripMenuItem";
-            this.ReviewsToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.ReviewsToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.ReviewsToolStripMenuItem.Text = "Αξιολογήσεις";
             this.ReviewsToolStripMenuItem.Click += new System.EventHandler(this.ReviewsToolStripMenuItem_Click);
             // 
             // SlideshowToolStripMenuItem
             // 
             this.SlideshowToolStripMenuItem.Name = "SlideshowToolStripMenuItem";
-            this.SlideshowToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.SlideshowToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.SlideshowToolStripMenuItem.Text = "Φωτογραφίες";
             this.SlideshowToolStripMenuItem.Click += new System.EventHandler(this.SlideshowToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(225, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
             // 
             // ExitToolStripMenuItem
             // 
             this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
-            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(228, 34);
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.ExitToolStripMenuItem.Text = "Έξοδος";
             this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -357,20 +347,20 @@
             this.ExportToolStripMenuItem,
             this.ListenToolStripMenuItem});
             this.ToolsToolStripMenuItem.Name = "ToolsToolStripMenuItem";
-            this.ToolsToolStripMenuItem.Size = new System.Drawing.Size(101, 32);
+            this.ToolsToolStripMenuItem.Size = new System.Drawing.Size(66, 22);
             this.ToolsToolStripMenuItem.Text = "Εργαλεία";
             // 
             // ExportToolStripMenuItem
             // 
             this.ExportToolStripMenuItem.Name = "ExportToolStripMenuItem";
-            this.ExportToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.ExportToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.ExportToolStripMenuItem.Text = "Εξαγωγή σε αρχείο";
             this.ExportToolStripMenuItem.Click += new System.EventHandler(this.ExportToolStripMenuItem_Click);
             // 
             // ListenToolStripMenuItem
             // 
             this.ListenToolStripMenuItem.Name = "ListenToolStripMenuItem";
-            this.ListenToolStripMenuItem.Size = new System.Drawing.Size(274, 34);
+            this.ListenToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.ListenToolStripMenuItem.Text = "Εκφώνηση κειμένου";
             this.ListenToolStripMenuItem.Click += new System.EventHandler(this.ListenToolStripMenuItem_Click);
             // 
@@ -379,28 +369,27 @@
             this.HelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AboutToolStripMenuItem});
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
-            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(94, 32);
+            this.HelpToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.HelpToolStripMenuItem.Text = "Βοήθεια";
             // 
             // AboutToolStripMenuItem
             // 
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(320, 34);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.AboutToolStripMenuItem.Text = "Πληροφορίες εφαρμογής";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // BaseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1476, 862);
+            this.ClientSize = new System.Drawing.Size(984, 560);
             this.Controls.Add(this.ContentPanel);
             this.Controls.Add(this.ToolsPanel);
             this.Controls.Add(this.NavigationPanel);
             this.Controls.Add(this.MenuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.MenuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "BaseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

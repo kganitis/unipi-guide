@@ -21,14 +21,6 @@ namespace WindowsFormsApp2023_Final
             HighlightButton(NavButton1);
         }
 
-        protected void UpdateSectionButtonsText(List<GuideSection> subsections)
-        {
-            for (int i = 0; i < subsectionNavButtons.Count; i++)
-            {
-                subsectionNavButtons[i].Text = subsections[i].Name;
-            }
-        }
-
         protected void SubsectionButtonClick(object sender)
         {
             ResetHighlightedButton();
@@ -44,6 +36,14 @@ namespace WindowsFormsApp2023_Final
             }
         }
 
+        protected void UpdateSectionButtonsText(List<GuideSection> subsections)
+        {
+            for (int i = 0; i < subsectionNavButtons.Count; i++)
+            {
+                subsectionNavButtons[i].Text = subsections[i].Name;
+            }
+        }
+
         private GuideSection getClickedSection(Button clickedButton)
         {
             GuideSection clickedSection = null;
@@ -56,7 +56,5 @@ namespace WindowsFormsApp2023_Final
             }
             return clickedSection;
         }
-
-        
     }
 }
