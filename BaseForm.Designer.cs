@@ -98,12 +98,15 @@
             // 
             this.NavButtonBack.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NavButtonBack.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.restart;
-            this.NavButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.NavButtonBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.NavButtonBack.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButtonBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.NavButtonBack.Location = new System.Drawing.Point(10, 447);
             this.NavButtonBack.Name = "NavButtonBack";
             this.NavButtonBack.Size = new System.Drawing.Size(180, 79);
             this.NavButtonBack.TabIndex = 5;
+            this.NavButtonBack.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.NavButtonBack.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NavButtonBack.UseVisualStyleBackColor = false;
             this.NavButtonBack.Click += new System.EventHandler(this.NavButtonBack_Click);
             // 
@@ -232,7 +235,7 @@
             // 
             this.ContentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContentPanel.Location = new System.Drawing.Point(200, 24);
-            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5);
             this.ContentPanel.Name = "ContentPanel";
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.ContentPanel.Size = new System.Drawing.Size(784, 436);
