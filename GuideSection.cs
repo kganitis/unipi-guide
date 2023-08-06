@@ -5,6 +5,7 @@ using System.Linq;
 using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using WindowsFormsApp2023_Final.Properties;
 
 namespace WindowsFormsApp2023_Final
@@ -14,7 +15,7 @@ namespace WindowsFormsApp2023_Final
         private string name;
         private GuideSection parentSection;
         private List<GuideSection> subsections;
-        private string info;
+        private string content;
         private Image[] pictures;
 
         public GuideSection(string name)
@@ -22,13 +23,9 @@ namespace WindowsFormsApp2023_Final
             this.name = name;
             parentSection = null;
             subsections = new List<GuideSection>();
-            info = ReadTextFile(name);
-            if (info == "File not found.")
-            {
-                info = "";
-            }
+            ReadTextFile();
             pictures = new Image[2];
-            ReadImageFiles(name);
+            ReadImageFiles();
         }
 
         public string Name
@@ -59,9 +56,9 @@ namespace WindowsFormsApp2023_Final
             return subsections.Count > 0;
         }
 
-        public string Info
+        public string Content
         { 
-            get { return info; } 
+            get { return content; } 
         }
 
         public Image[] Pictures
@@ -69,26 +66,20 @@ namespace WindowsFormsApp2023_Final
             get { return pictures; }
         }
 
-        private string ReadTextFile(string name)
+        private void ReadTextFile()
         {
-            string content;
             ResourceManager resourceManager = new ResourceManager(typeof(Resources));
             string resourceName = name.Replace(" ", "_"); // Τα ονόματα των resources στο αρχείο resx περιέχουν underscore αντί για κενό
-            try
+            content = resourceManager.GetString(resourceName);
+            if (content == null)
             {
-                content = resourceManager.GetString(resourceName);
+                content = "";
             }
-            catch
-            {
-                content = "File not found.";
-            }
-            return content;
         }
 
-        private void ReadImageFiles(string name)
+        private void ReadImageFiles()
         {
             string resourceName = name.Replace(" ", "_"); // Τα ονόματα των resources στο αρχείο resx περιέχουν underscore αντί για κενό
-
             pictures[0] = (Image)Resources.ResourceManager.GetObject(resourceName + "1");
             pictures[1] = (Image)Resources.ResourceManager.GetObject(resourceName + "2");
         }

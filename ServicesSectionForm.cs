@@ -44,7 +44,6 @@ namespace WindowsFormsApp2023_Final
             subsection = new GuideSection("Απόφοιτοι");
             section.AddSubsection(subsection);
 
-            currentSection = section;
             NavButton1_Click(this, null);
         }
 
@@ -52,14 +51,8 @@ namespace WindowsFormsApp2023_Final
         {
             if (currentSection != null)
             {
-                string title = currentSection.Name; ;
-                string content = currentSection.Info;
-
-                // Αν το περιεχόμενο είναι κενό, μην εμφανίζεις κάποιον τίτλο
-                if (content == "")
-                {
-                    title = "";
-                }
+                string title = currentSection.Name;
+                string content = currentSection.Content;
 
                 // Ενημέρωση τίτλου και κειμένου
                 SectionTitleTextBox.Text = title;

@@ -47,11 +47,25 @@ namespace WindowsFormsApp2023_Final
         private GuideSection getClickedSection(Button clickedButton)
         {
             GuideSection clickedSection = null;
-            foreach (GuideSection subsection in (currentSection.ContainsSubsections() ? currentSection.Subsections : currentSection.ParentSection.Subsections))
+            // TO DO να βάλω comments
+            if (currentSection.ContainsSubsections())
             {
-                if (subsection.Name == clickedButton.Text)
+                foreach (GuideSection subsection in currentSection.Subsections)
                 {
-                    clickedSection = subsection;
+                    if (subsection.Name == clickedButton.Text)
+                    {
+                        clickedSection = subsection;
+                    }
+                }
+            }
+            else
+            {
+                foreach (GuideSection subsection in currentSection.ParentSection.Subsections)
+                {
+                    if (subsection.Name == clickedButton.Text)
+                    {
+                        clickedSection = subsection;
+                    }
                 }
             }
             return clickedSection;
