@@ -64,8 +64,10 @@
             this.ContentPanel.Controls.Add(this.label1);
             this.ContentPanel.Controls.Add(this.pictureBox6);
             this.ContentPanel.Controls.Add(this.pictureBox5);
+            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
             this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             // 
             // label1
@@ -164,7 +166,6 @@
             this.pictureBox6.Size = new System.Drawing.Size(235, 197);
             this.pictureBox6.TabIndex = 1;
             this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox7
             // 
