@@ -34,13 +34,14 @@ namespace WindowsFormsApp2023_Final
             formCache.Add(typeof(SlideshowForm), new SlideshowForm());
         }
 
-        public void NavigateToForm<T>(Form currentForm) where T : Form
+        public void NavigateToForm<T>(BaseForm currentForm) where T : BaseForm
         {
             T nextForm = (T)formCache[typeof(T)];
             // Don't keep LoginForm in history after entering the guide
             if (!(currentForm.GetType() == typeof(LoginForm) && nextForm.GetType() == typeof(GuideForm)))
             {
                 formHistory.Push(currentForm);
+                nextForm.SetBackButtonText("Back");
             }
             currentForm.Hide();
             nextForm.Show();

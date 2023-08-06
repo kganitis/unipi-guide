@@ -147,6 +147,11 @@ namespace WindowsFormsApp2023_Final
             FormCacheManager.Instance.NavigateBack(this);
         }
 
+        public void SetBackButtonText(string text)
+        {
+            NavButtonBack.Text = text;
+        }
+
         #endregion
 
         #region Tool Buttons Methods
