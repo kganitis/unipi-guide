@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
 {
-    public partial class ViewEventsForm : WindowsFormsApp2023_Final.GuideSectionForm
+    public partial class ViewEventsForm : WindowsFormsApp2023_Final.GuideForm
     {
         UserSession session = UserSession.Instance;
 
@@ -55,8 +55,9 @@ namespace WindowsFormsApp2023_Final
                 label_desc.Name = "descreption";
                 label_desc.Size = new Size(192, 132);
                 label_desc.Text = description;
-                label_desc.Click += new EventHandler(myClick);
-                Controls.Add(label_desc);
+                ContentPanel.Controls.Add(label_desc);
+                //label_desc.Click += new EventHandler(myClick);
+                //Controls.Add(label_desc);
 
                 Label label_date = new Label();
                 label_date.AutoSize = true;
@@ -66,8 +67,8 @@ namespace WindowsFormsApp2023_Final
                 label_date.Name = "date";
                 label_date.Size = new Size(32, 32);
                 label_date.Text = date;
-                label_date.Click += new EventHandler(myClick);
-                Controls.Add(label_date);
+                //label_date.Click += new EventHandler(myClick);
+                //Controls.Add(label_date);
 
                 i++;
                 //label2.Text += date + "\n";

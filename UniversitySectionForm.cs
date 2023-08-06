@@ -14,20 +14,38 @@ namespace WindowsFormsApp2023_Final
         public UniversitySectionForm()
         {
             InitializeComponent();
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            section = new GuideSection("Πανεπιστήμιο");
+
+            GuideSection subsection;
+
+            subsection = new GuideSection("Ιστορικη Αναδρομή");
+            section.AddSubsection(subsection);
+
+            subsection = new GuideSection("Εγκαταστάσεις");
+            section.AddSubsection(subsection);
+
+            subsection = new GuideSection("Στρατηγική Πανεπιστημίου");
+            section.AddSubsection(subsection);
+
+            subsection = new GuideSection("Events");
+            section.AddSubsection(subsection);
+
+            //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            //pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            NavButton1_Click(this, null);
         }
        
         
 
         protected override void NavButton2_Click(object sender, EventArgs e)
         {
-            label1.Text = "Ιστορική Αναδρομή";
+            //label1.Text = "Ιστορική Αναδρομή";
 
-            pictureBox1.ImageLocation = "..\\..\\Resources\\unipi_old.png";
-            pictureBox2.ImageLocation = "..\\..\\Resources\\unipi_grounds.png";
+            //pictureBox1.ImageLocation = "..\\..\\Resources\\unipi_old.png";
+            //pictureBox2.ImageLocation = "..\\..\\Resources\\unipi_grounds.png";
             
-            label2.Text = "    Το Πανεπιστήμιο Πειραιώς ιδρύθηκε ως «Σχολή Βιομηχανικών Σπουδών» το 1938 από το Σύνδεσμο Βιομηχάνων και Βιοτεχνών," +
+            /*//label2.Text = "    Το Πανεπιστήμιο Πειραιώς ιδρύθηκε ως «Σχολή Βιομηχανικών Σπουδών» το 1938 από το Σύνδεσμο Βιομηχάνων και Βιοτεχνών," +
                 " σύμφωνα με το Ν.5197/1931 και τον Α.Ν. 28/1936, που σε συνεργασία με το Σύνδεσμο Ανωνύμων Εταιριών της Ελλάδας" +
                 " έβαλαν ως βάσεις την οικονομική, νομική και τεχνική παιδεία των στελεχών της βιομηχανίας.\r\n\r\n " +
                 "   Το 1945 μετονομάσθηκε σε Ανωτέρα Σχολή Βιομηχανικών Σπουδών και σκοπός της ορίσθηκε η συστηματική, " +
@@ -52,31 +70,31 @@ namespace WindowsFormsApp2023_Final
                 " του Ν.3027/28-6-2002/ΦΕΚ 152, μετονομάσθηκε σε Τμήμα Διδακτικής της Τεχνολογίας και Ψηφιακών Συστημάτων. " +
                 "Κατόπιν, σύμφωνα με το Π.Δ. 151/2009, ΦΕΚ 194/Α'/1-11-2009, το Τμήμα μετονομάστηκε σε Τμήμα Ψηφιακών Συστημάτων.\r\n\r\n    " +
                 "Το Τμήμα Διεθνών και Ευρωπαϊκών Σπουδών άρχισε να λειτουργεί από το ακαδημαϊκό έτος 2000-2001.\r\n    " +
-                "Το Τμήμα Τουριστικών Σπουδών άρχισε να λειτουργεί από το ακαδημαϊκό έτος 2017-2018.\r\n";
+                "Το Τμήμα Τουριστικών Σπουδών άρχισε να λειτουργεί από το ακαδημαϊκό έτος 2017-2018.\r\n";*/
         }
 
         protected override void NavButton3_Click(object sender, EventArgs e)
         {
-            label1.Text = "Εγκαταστάσεις Πανεπιστημίου";
-            pictureBox1.ImageLocation = "..\\..\\Resources\\unipi_main_entr.png";
-            pictureBox2.ImageLocation = "..\\..\\Resources\\unipi_remote1.png";
-            label2.Text = "\tΚεντρικό Κτίριο οδ. Καραολή & Δημητρίου 80\r\n\n" +
+            //label1.Text = "Εγκαταστάσεις Πανεπιστημίου";
+            //pictureBox1.ImageLocation = "..\\..\\Resources\\unipi_main_entr.png";
+            //pictureBox2.ImageLocation = "..\\..\\Resources\\unipi_remote1.png";
+            /*label2.Text = "\tΚεντρικό Κτίριο οδ. Καραολή & Δημητρίου 80\r\n\n" +
                                 "\tΚτίρια οδ. Δεληγιώργη & Tσαμαδού\r\n\n" +
                                 "\tΚτίριο οδ. Γρ. Λαμπράκη 21 & Διστόμου\r\n\n" +
                                 "\tΚτίριο οδ. Ανδρούτσου 150\r\n\n" +
                                 "\tΚτίριο οδ. Γρ. Λαμπράκη 126\r\n\n" +
                                 "\tΚτίριο οδ. Ζέας 82\r\n\n" +
-                                "\tΚτιριακό Συγκρότημα Νίκαιας ";
+                                "\tΚτιριακό Συγκρότημα Νίκαιας ";*/
         }
 
         protected override void NavButton4_Click(object sender, EventArgs e)
         {
-            label1.Text = "Αποστολή Πανεπιστημίου";
+            //label1.Text = "Αποστολή Πανεπιστημίου";
 
-            pictureBox1.ImageLocation = "..\\..\\Resources\\unipi_library.png";
-            pictureBox2.ImageLocation = "..\\..\\Resources\\unipi_comLab.png";
+            //pictureBox1.ImageLocation = "..\\..\\Resources\\unipi_library.png";
+            //pictureBox2.ImageLocation = "..\\..\\Resources\\unipi_comLab.png";
 
-            label2.Text = "H αποστολή του Πανεπιστημίου Πειραιώς, στο πλαίσιο που εξ αρχής του ανέθεσε η Ελληνική Πολιτεία, είναι να εκπαιδεύει," +
+            /*label2.Text = "H αποστολή του Πανεπιστημίου Πειραιώς, στο πλαίσιο που εξ αρχής του ανέθεσε η Ελληνική Πολιτεία, είναι να εκπαιδεύει," +
                                 " να παράγει νέα γνώση, να καλλιεργεί το πνεύμα των νέων, να προάγει τις αξίες της ελευθερίας, της δημοκρατίας " +
                                 "και της προσφοράς στις υποθέσεις της Ελλάδας. Ειδικότερα, η αποστολή του Πανεπιστημίου είναι:\r\n1. Nα παράγει " +
                                 "και να μεταδίδει τη γνώση με την έρευνα και τη διδασκαλία, να προετοιμάζει τους φοιτητές για την εφαρμογή της σε " +
@@ -91,14 +109,14 @@ namespace WindowsFormsApp2023_Final
                                 " ως πόλος αναφοράς, πεδίο γόνιμου διαλόγου και ελεύθερης ανάπτυξης ιδεών για το τοπικό και εθνικό οικονομικό " +
                                 "και κοινωνικό οικοσύστημα.\r\nΣτο πλαίσιο της παραπάνω αποστολής του, το Πανεπιστήμιο Πειραιώς παρέχει ποιοτική και" +
                                 " ολοκληρωμένη εκπαίδευση, εναρμονιζόμενη με τις σύγχρονες τάσεις της επιστήμης, της τεχνολογίας " +
-                                "και της διεθνούς επιστημονικής πρακτικής.";
+                                "και της διεθνούς επιστημονικής πρακτικής.";*/
         }
 
         protected override void NavButton5_Click(object sender, EventArgs e)
         {
-            label1.Text = "Δραστηριότητες Πανεπιστημίου";
-            label2.Text = "";
-            NavigateToForm<ViewEventsForm>();
+            //label1.Text = "Δραστηριότητες Πανεπιστημίου";
+            //label2.Text = "";
+            //NavigateToForm<ViewEventsForm>();
         }
 
     }

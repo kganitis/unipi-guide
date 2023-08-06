@@ -28,7 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).BeginInit();
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // MainContentTextBox
+            // 
+            this.MainContentTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.MainContentTextBox.Size = new System.Drawing.Size(656, 479);
+            // 
+            // SectionTitleTextBox
+            // 
+            this.SectionTitleTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.SectionTitleTextBox.Size = new System.Drawing.Size(961, 70);
             // 
             // highlightedButton
             // 
@@ -36,9 +49,9 @@
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(784, 437);
+            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(7);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
             // 
             // NavButton5
             // 
@@ -58,11 +71,14 @@
             // 
             // ServicesSectionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(1312, 690);
+            this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.Name = "ServicesSectionForm";
             this.Text = "Υπηρεσίες";
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).EndInit();
+            this.ContentPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

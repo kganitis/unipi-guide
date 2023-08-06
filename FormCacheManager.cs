@@ -24,8 +24,10 @@ namespace WindowsFormsApp2023_Final
         public void PreloadForms()
         {
             // Create instances of all the forms and add them to the cache
+            
             formCache.Add(typeof(AboutForm), new AboutForm());
             formCache.Add(typeof(GuideForm), new GuideForm());
+            formCache.Add(typeof(GuideSectionForm), new GuideSectionForm());
             formCache.Add(typeof(UniversitySectionForm), new UniversitySectionForm());
             formCache.Add(typeof(ServicesSectionForm), new ServicesSectionForm());
             formCache.Add(typeof(SchoolsSectionForm), new SchoolsSectionForm());
@@ -33,6 +35,7 @@ namespace WindowsFormsApp2023_Final
             formCache.Add(typeof(ReviewSubmitForm), new ReviewSubmitForm());
             formCache.Add(typeof(SlideshowForm), new SlideshowForm());
             formCache.Add(typeof(ViewEventsForm), new ViewEventsForm());
+
         }
 
         public void NavigateToForm<T>(Form currentForm) where T : Form

@@ -28,30 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).BeginInit();
             this.ContentPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // highlightedButton
+            // 
+            this.highlightedButton.Text = "Πανεπιστήμιο";
             // 
             // ContentPanel
             // 
-            this.ContentPanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ContentPanel.Controls.Add(this.label2);
-            this.ContentPanel.Controls.Add(this.pictureBox2);
-            this.ContentPanel.Controls.Add(this.pictureBox1);
-            this.ContentPanel.Controls.Add(this.label1);
+            this.ContentPanel.BackColor = System.Drawing.SystemColors.Control;
             this.ContentPanel.Location = new System.Drawing.Point(267, 30);
             this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
-            // 
-            // NavButton1
-            // 
-            this.NavButton1.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton1.Location = new System.Drawing.Point(13, 128);
-            this.NavButton1.Text = "Πανεπιστήμιο";
             // 
             // NavButton5
             // 
@@ -85,42 +75,6 @@
             this.NavButton2.Text = "Ιστορική Αναδρομή";
             this.NavButton2.Click += new System.EventHandler(this.NavButton2_Click);
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(306, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(406, 49);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Πανεπιστήμιο";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Location = new System.Drawing.Point(734, 105);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(272, 157);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox2.Location = new System.Drawing.Point(734, 336);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(272, 151);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(38, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(648, 382);
-            this.label2.TabIndex = 4;
-            // 
             // UniversitySectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -128,19 +82,14 @@
             this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.Name = "UniversitySectionForm";
             this.Text = "Πανεπιστήμιο";
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).EndInit();
             this.ContentPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
     }
 }

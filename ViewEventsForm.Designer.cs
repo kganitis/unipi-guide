@@ -37,10 +37,10 @@
             // ContentPanel
             // 
             this.ContentPanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ContentPanel.Controls.Add(this.label_date);
             this.ContentPanel.Controls.Add(this.label_desc);
+            this.ContentPanel.Controls.Add(this.label_date);
             this.ContentPanel.Controls.Add(this.label1);
-            this.ContentPanel.Size = new System.Drawing.Size(995, 539);
+            this.ContentPanel.Size = new System.Drawing.Size(995, 541);
             // 
             // NavButton1
             // 
@@ -92,21 +92,19 @@
             // 
             // label_desc
             // 
-            this.label_desc.AutoSize = true;
-            this.label_desc.Location = new System.Drawing.Point(132, 139);
+            this.label_desc.Location = new System.Drawing.Point(630, 104);
             this.label_desc.Name = "label_desc";
-            this.label_desc.Size = new System.Drawing.Size(44, 16);
+            this.label_desc.Size = new System.Drawing.Size(265, 96);
             this.label_desc.TabIndex = 1;
-            this.label_desc.Text = "label2";
+            this.label_desc.Text = "Description";
             // 
             // label_date
             // 
-            this.label_date.AutoSize = true;
-            this.label_date.Location = new System.Drawing.Point(475, 261);
+            this.label_date.Location = new System.Drawing.Point(99, 104);
             this.label_date.Name = "label_date";
-            this.label_date.Size = new System.Drawing.Size(44, 16);
+            this.label_date.Size = new System.Drawing.Size(73, 29);
             this.label_date.TabIndex = 2;
-            this.label_date.Text = "label2";
+            this.label_date.Text = "Date";
             // 
             // ViewEventsForm
             // 
@@ -116,7 +114,6 @@
             this.Name = "ViewEventsForm";
             this.Text = "ViewEventsForm";
             this.ContentPanel.ResumeLayout(false);
-            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
