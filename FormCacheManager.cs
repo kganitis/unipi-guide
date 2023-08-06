@@ -27,7 +27,6 @@ namespace WindowsFormsApp2023_Final
             
             formCache.Add(typeof(AboutForm), new AboutForm());
             formCache.Add(typeof(GuideForm), new GuideForm());
-            formCache.Add(typeof(GuideSectionForm), new GuideSectionForm());
             formCache.Add(typeof(UniversitySectionForm), new UniversitySectionForm());
             formCache.Add(typeof(ServicesSectionForm), new ServicesSectionForm());
             formCache.Add(typeof(SchoolsSectionForm), new SchoolsSectionForm());

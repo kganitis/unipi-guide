@@ -15,62 +15,76 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
 
-            section = new GuideSection("Πανεπιστήμιο");
+            section = new GuideSection("Πανεπιστήμιο");//parent Section1
 
             GuideSection subsection;
 
-            subsection = new GuideSection("Ιστορικη Αναδρομή");
+            subsection = new GuideSection("Ιστορία");//Subsection1.1
             section.AddSubsection(subsection);
 
-            subsection = new GuideSection("Εγκαταστάσεις");
+            subsection = new GuideSection("Περιήγηση");//Subsection1.2
+            subsection.AddSubsection(new GuideSection("Κεντρικό Κτίριο"));//Subsection1.2.1
+            subsection.AddSubsection(new GuideSection("Εξωτερικές Αίθουσες"));//Subsection1.2.2
+            subsection.AddSubsection(new GuideSection("Κτίριο Νίκαιας"));//Subsection1.2.3
+            subsection.AddSubsection(new GuideSection("Λοιποί Χώροι"));//Subsection1.2.4
             section.AddSubsection(subsection);
 
-            subsection = new GuideSection("Στρατηγική Πανεπιστημίου");
+            subsection = new GuideSection("Στρατηγική Ιδρύματος");//Subsection1.3
+            subsection.AddSubsection(new GuideSection("Χαιρετισμός"));//Subsection1.3.1
+            subsection.AddSubsection(new GuideSection("Όραμα"));//Subsection1.3.2
+            subsection.AddSubsection(new GuideSection("Αποστολή"));//Subsection1.3.3
+            subsection.AddSubsection(new GuideSection("Στρατηγική"));//Subsection1.3.4
             section.AddSubsection(subsection);
 
-            subsection = new GuideSection("Events");
+            subsection = new GuideSection("Events");//Subsection1.4
             section.AddSubsection(subsection);
 
-            //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            //pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            ContentPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            ContentPictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             NavButton1_Click(this, null);
         }
-       
-        
+
+        private void UpdateContent()
+        {
+            if (currentSection != null)
+            {
+                string title = currentSection.Name;
+                string content = currentSection.Content;
+
+                // Ενημέρωση τίτλου και κειμένου
+                SectionTitleTextBox.Text = title;
+                MainContentTextBox.Text = content;
+
+                // Ενημέρωση τυχόν εικόνων
+                ContentPictureBox1.Image = currentSection.Pictures[0];
+                ContentPictureBox2.Image = currentSection.Pictures[1];
+
+                // Αν δεν υπάρχουν εικόνες για το συγκεκριμένο τμήμα, μεγάλωσε το TextBox του κυρίως περιεχομένου
+                if (ContentPictureBox1.Image == null && ContentPictureBox2.Image == null)
+                {
+                    MainContentTextBox.Width = 678;
+                }
+                else
+                {
+                    MainContentTextBox.Width = 492;
+                }
+            }
+        }
+
+        protected override void NavButton1_Click(object sender, EventArgs e)
+        {
+            ResetHighlightedButton();
+            currentSection = section;
+            UpdateSectionButtonsText(section.Subsections);
+            HighlightButton(NavButton1);
+            UpdateContent();
+        }
 
         protected override void NavButton2_Click(object sender, EventArgs e)
         {
-            //label1.Text = "Ιστορική Αναδρομή";
+            SubsectionButtonClick(sender);
+            UpdateContent();
 
-            //pictureBox1.ImageLocation = "..\\..\\Resources\\unipi_old.png";
-            //pictureBox2.ImageLocation = "..\\..\\Resources\\unipi_grounds.png";
-            
-            /*//label2.Text = "    Το Πανεπιστήμιο Πειραιώς ιδρύθηκε ως «Σχολή Βιομηχανικών Σπουδών» το 1938 από το Σύνδεσμο Βιομηχάνων και Βιοτεχνών," +
-                " σύμφωνα με το Ν.5197/1931 και τον Α.Ν. 28/1936, που σε συνεργασία με το Σύνδεσμο Ανωνύμων Εταιριών της Ελλάδας" +
-                " έβαλαν ως βάσεις την οικονομική, νομική και τεχνική παιδεία των στελεχών της βιομηχανίας.\r\n\r\n " +
-                "   Το 1945 μετονομάσθηκε σε Ανωτέρα Σχολή Βιομηχανικών Σπουδών και σκοπός της ορίσθηκε η συστηματική, " +
-                "θεωρητική και πρακτική κατάρτιση διοικητικών στελεχών.\r\n\r\n    Το 1949, με το Ν.Δ. 1245/49, ολοκληρώθηκε η οργάνωση της.\r\n\r\n" +
-                "    Τo 1958 Η Ανωτέρα Σχολή Βιομηχανικών Σπουδών μετονομάσθηκε σε Ανωτάτη Βιομηχανική Σχολή και ορίσθηκε έδρα της ο Πειραιάς (ΝΔ 3876/58)." +
-                " Η φοίτηση είναι τετραετής και τα πτυχία που χορηγούνται είναι ισότιμα των άλλων ΑΕΙ.\r\n\r\n    " +
-                "Από το 1966 (ΝΔ 4578/1966) η σχολή λειτούργησε ως ΝΠΔΔ.\r\n\r\n    " +
-                "Από το ακαδημαϊκό έτος 1971-1972 οι σπουδές στη Σχολή διαχωρίστηκαν από το δεύτερο έτος σε σπουδές Οικονομικών Επιστημών " +
-                "και Οργάνωσης και Διοίκησης Επιχειρήσεων (υπ. απόφ. 146652/71)\r\n\r\n    Από το ακαδημαϊκό έτος 1977-1978 λειτούργησε" +
-                " το Στατιστικής και Ασφαλιστικής Επιστήμης.\r\n\r\n    Με το Ν.1268/82 η Σχολή λειτούργησε αρχικά ως μονοτμηματικό ΑΕΙ." +
-                " Με το ΠΔ 43/1984 όμως η Σχολή οργανώθηκε έτσι ώστε να περιλαμβάνει τρία τμήματα : Οικονομικών Επιστημών," +
-                " Οργάνωσης και Διοίκησης Επιχειρήσεων και Στατιστικής και Ασφαλιστικής Επιστήμης.\r\n\r\n    " +
-                "Τον Ιούνιο του 1989, με το ΠΔ 377/89, η Σχολή μετονομάσθηκε σε Πανεπιστήμιο Πειραιώς, στο οποίο προστέθηκαν τρία ακόμα Τμήματα Σπουδών," +
-                " δηλαδή:\r\n\r\n          - Χρηματοοικονομικής και Τραπεζικής Διοικητικής.\r\n          - Ναυτιλιακών Σπουδών\r\n          " +
-                "- Τεχνολογίας και Συστημάτων Παραγωγής\r\n\r\n    Από το ακαδημαϊκό έτος 1990-1991 στα ήδη λειτουργούντα τρία Τμήματα " +
-                "(Οικονομικής Επιστήμης, Οργάνωσης και Διοίκησης Επιχειρήσεων, Στατιστικής και Ασφαλιστικής Επιστήμης), προστέθηκαν σε λειτουργία" +
-                " μόνο τα δύο νέα από τα τρία προβλεπόμενα.\r\n\r\n          - Τμήμα Χρηματοοικονομικής και Τραπεζικής Διοικητικής\r\n          " +
-                "- Τμήμα Ναυτιλιακών Σπουδών\r\n\r\n    Το Τμήμα Βιομηχανικής Διοίκησης και Τεχνολογίας  άρχισε να λειτουργεί από το ακαδημαϊκό έτος " +
-                "1991-1992 ως Τμήμα Τεχνολογίας και Συστημάτων Παραγωγής και μετονομάσθηκε με το Π.Δ. 113/30-4-2002/ ΦΕΚ 95\r\n\r\n    " +
-                "Το Τμήμα Πληροφορικής άρχισε να λειτουργεί από το ακαδημαϊκό έτος 1992-1993.\r\n\r\n    " +
-                "Το Τμήμα Τεχνολογικής Εκπαίδευσης άρχισε να λειτουργεί από το ακαδημαϊκό έτος 1999-2000, το οποίο σύμφωνα με το άρθρο 3 παρ.2δ.γγ." +
-                " του Ν.3027/28-6-2002/ΦΕΚ 152, μετονομάσθηκε σε Τμήμα Διδακτικής της Τεχνολογίας και Ψηφιακών Συστημάτων. " +
-                "Κατόπιν, σύμφωνα με το Π.Δ. 151/2009, ΦΕΚ 194/Α'/1-11-2009, το Τμήμα μετονομάστηκε σε Τμήμα Ψηφιακών Συστημάτων.\r\n\r\n    " +
-                "Το Τμήμα Διεθνών και Ευρωπαϊκών Σπουδών άρχισε να λειτουργεί από το ακαδημαϊκό έτος 2000-2001.\r\n    " +
-                "Το Τμήμα Τουριστικών Σπουδών άρχισε να λειτουργεί από το ακαδημαϊκό έτος 2017-2018.\r\n";*/
         }
 
         protected override void NavButton3_Click(object sender, EventArgs e)
@@ -85,6 +99,10 @@ namespace WindowsFormsApp2023_Final
                                 "\tΚτίριο οδ. Γρ. Λαμπράκη 126\r\n\n" +
                                 "\tΚτίριο οδ. Ζέας 82\r\n\n" +
                                 "\tΚτιριακό Συγκρότημα Νίκαιας ";*/
+
+            SubsectionButtonClick(sender);
+            UpdateContent();
+
         }
 
         protected override void NavButton4_Click(object sender, EventArgs e)
@@ -110,13 +128,19 @@ namespace WindowsFormsApp2023_Final
                                 "και κοινωνικό οικοσύστημα.\r\nΣτο πλαίσιο της παραπάνω αποστολής του, το Πανεπιστήμιο Πειραιώς παρέχει ποιοτική και" +
                                 " ολοκληρωμένη εκπαίδευση, εναρμονιζόμενη με τις σύγχρονες τάσεις της επιστήμης, της τεχνολογίας " +
                                 "και της διεθνούς επιστημονικής πρακτικής.";*/
+
+            SubsectionButtonClick(sender);
+            UpdateContent();
+
         }
 
         protected override void NavButton5_Click(object sender, EventArgs e)
         {
-            //label1.Text = "Δραστηριότητες Πανεπιστημίου";
-            //label2.Text = "";
-            //NavigateToForm<ViewEventsForm>();
+            if (currentSection.Name.Equals("Events"))//In case of subsection Events --> Load ViewEventsForm
+                NavigateToForm<ViewEventsForm>();
+
+            SubsectionButtonClick(sender);
+            UpdateContent();
         }
 
     }

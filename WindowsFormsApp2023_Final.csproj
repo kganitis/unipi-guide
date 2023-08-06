@@ -328,6 +328,54 @@
   <ItemGroup>
     <None Include="Resources\Πολιτιστικές Ομάδες.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ιστορία.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Εξωτερικές Αίθουσες.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Κεντρικό Κτίριο.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Κτίριο Νίκαιας.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Λοιποί Χώροι.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28363%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28364%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28365%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Αποστολή.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Όραμα.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στρατηγική.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Χαιρετισμός.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28366%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28367%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28368%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28369%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
