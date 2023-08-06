@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Resources;
 using System.Text;
@@ -14,6 +15,7 @@ namespace WindowsFormsApp2023_Final
         private GuideSection parentSection;
         private List<GuideSection> subsections;
         private string info;
+        private Image[] pictures;
 
         public GuideSection(string name)
         {
@@ -21,6 +23,12 @@ namespace WindowsFormsApp2023_Final
             parentSection = null;
             subsections = new List<GuideSection>();
             info = ReadTextFile(name);
+            if (info == "File not found.")
+            {
+                info = "";
+            }
+            pictures = new Image[2];
+            ReadImageFiles(name);
         }
 
         public string Name
@@ -56,11 +64,16 @@ namespace WindowsFormsApp2023_Final
             get { return info; } 
         }
 
+        public Image[] Pictures
+        {
+            get { return pictures; }
+        }
+
         private string ReadTextFile(string name)
         {
             string content;
             ResourceManager resourceManager = new ResourceManager(typeof(Resources));
-            string resourceName = name.Replace(" ", "_"); // this is necessary since Resources file names include underscore instead of white space
+            string resourceName = name.Replace(" ", "_"); // Τα ονόματα των resources στο αρχείο resx περιέχουν underscore αντί για κενό
             try
             {
                 content = resourceManager.GetString(resourceName);
@@ -70,6 +83,14 @@ namespace WindowsFormsApp2023_Final
                 content = "File not found.";
             }
             return content;
+        }
+
+        private void ReadImageFiles(string name)
+        {
+            string resourceName = name.Replace(" ", "_"); // Τα ονόματα των resources στο αρχείο resx περιέχουν underscore αντί για κενό
+
+            pictures[0] = (Image)Resources.ResourceManager.GetObject(resourceName + "1");
+            pictures[1] = (Image)Resources.ResourceManager.GetObject(resourceName + "2");
         }
 
     }

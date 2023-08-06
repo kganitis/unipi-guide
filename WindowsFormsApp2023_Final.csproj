@@ -260,7 +260,7 @@
     <None Include="Resources\Ασύρματες Συνδέσεις.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Βιβλιοθήκη.txt" />
+    <None Include="Resources\Βιβλιοθήκη.rtf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Γραφείο Διασύνδεσης.txt" />
@@ -291,6 +291,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Υπηρεσίες.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Βιβλιοθήκη.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Γραφείο Διασύνδεσης.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ιατρείο.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ασύρματες Συνδέσεις.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ηλεκτρονική Γραμματεία.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Άλλες Δραστηριότητες.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Φοιτητικές Παρατάξεις.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Φοιτητικοί Σύλλογοι.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Πολιτιστικές Ομάδες.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
