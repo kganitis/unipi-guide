@@ -32,10 +32,8 @@
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(9, 10, 9, 10);
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(17, 0, 17, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
             // 
             // NavButtonHome
             // 
@@ -43,9 +41,9 @@
             // 
             // GuideForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(1312, 690);
-            this.Margin = new System.Windows.Forms.Padding(5);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(984, 560);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GuideForm";
             this.Text = "Οδηγός Πανεπιστημίου";
             this.ResumeLayout(false);

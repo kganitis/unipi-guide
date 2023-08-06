@@ -30,20 +30,37 @@
         {
             this.SuspendLayout();
             // 
+            // highlightedButton
+            // 
+            this.highlightedButton.Text = "Υπηρεσίες";
+            // 
             // ContentPanel
             // 
-            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
-            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.ContentPanel.Size = new System.Drawing.Size(784, 437);
             // 
-            // NavButton1
+            // NavButton5
             // 
-            this.NavButton1.Text = "Υπηρεσίες";
+            this.NavButton5.Text = "Απόφοιτοι";
+            // 
+            // NavButton4
+            // 
+            this.NavButton4.Text = "Φοιτητική Ζωή";
+            // 
+            // NavButton3
+            // 
+            this.NavButton3.Text = "Ηλεκτρονικές Υπηρεσίες";
+            // 
+            // NavButton2
+            // 
+            this.NavButton2.Text = "Φοιτητικές Παροχές";
             // 
             // ServicesSectionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(1312, 690);
-            this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "ServicesSectionForm";
             this.Text = "Υπηρεσίες";
             this.ResumeLayout(false);

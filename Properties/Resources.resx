@@ -190,4 +190,55 @@
   <data name="unipi_remote1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unipi_remote1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Ασύρματες_Συνδέσεις" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ασύρματες Συνδέσεις.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Γραφείο_Διασύνδεσης" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Γραφείο Διασύνδεσης.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Εξ_Αποστάσεως_Εκπαίδευση" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Εξ Αποστάσεως Εκπαίδευση.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Ηλεκτρονική_Γραμματεία" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ηλεκτρονική Γραμματεία.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Ηλεκτρονικό_Ταχυδρομείο" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ηλεκτρονικό Ταχυδρομείο.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Ιατρείο" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ιατρείο.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Φοιτητική_Μέριμνα" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Φοιτητική Μέριμνα.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Βιβλιοθήκη" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Βιβλιοθήκη.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Γραφείο_Διασύνδεσης1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Γραφείο Διασύνδεσης.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Άλλες_Δραστηριότητες" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Άλλες Δραστηριότητες.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Απόφοιτοι" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Απόφοιτοι.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Ασύρματες_Συνδέσεις1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ασύρματες Συνδέσεις.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ηλεκτρονική_Γραμματεία1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ηλεκτρονική Γραμματεία.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ιατρείο1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ιατρείο.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Πολιτιστικές_Ομάδες" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Πολιτιστικές Ομάδες.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Φοιτητικές_Παρατάξεις" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Φοιτητικές Παρατάξεις.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Φοιτητικοί_Σύλλογοι" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Φοιτητικοί Σύλλογοι.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
 </root>

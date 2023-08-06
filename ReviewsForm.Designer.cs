@@ -52,43 +52,12 @@
             this.ContentPanel.Margin = new System.Windows.Forms.Padding(8);
             this.ContentPanel.Padding = new System.Windows.Forms.Padding(15, 0, 15, 0);
             this.ContentPanel.Size = new System.Drawing.Size(1147, 537);
-            this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             this.ContentPanel.Controls.SetChildIndex(this.pictureBox1, 0);
             this.ContentPanel.Controls.SetChildIndex(this.pictureBox2, 0);
             this.ContentPanel.Controls.SetChildIndex(this.pictureBox3, 0);
             this.ContentPanel.Controls.SetChildIndex(this.richTextBox1, 0);
             this.ContentPanel.Controls.SetChildIndex(this.label1, 0);
             this.ContentPanel.Controls.SetChildIndex(this.button1, 0);
-            // 
-            // AboutButton
-            // 
-            this.AboutButton.Click += new System.EventHandler(this.AboutButton_Click);
-            // 
-            // ExportButton
-            // 
-            this.ExportButton.Click += new System.EventHandler(this.ExportButton_Click);
-            // 
-            // NavButton1
-            // 
-            this.NavButton1.Click += new System.EventHandler(this.NavButton1_Click);
-            // 
-            // NavButton5
-            // 
-            this.NavButton5.Click += new System.EventHandler(this.NavButton5_Click);
-            // 
-            // NavButton4
-            // 
-            this.NavButton4.BackColor = System.Drawing.Color.BurlyWood;
-            this.NavButton4.Enabled = false;
-            this.NavButton4.Click += new System.EventHandler(this.NavButton4_Click);
-            // 
-            // NavButton3
-            // 
-            this.NavButton3.Click += new System.EventHandler(this.NavButton3_Click);
-            // 
-            // NavButton2
-            // 
-            this.NavButton2.Click += new System.EventHandler(this.NavButton2_Click);
             // 
             // pictureBox1
             // 
@@ -165,8 +134,6 @@
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "ReviewsForm";
             this.Text = "Αξιολογήσεις";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ReviewsForm_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ReviewsForm_FormClosed);
             this.Load += new System.EventHandler(this.ReviewsForm_Load);
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();

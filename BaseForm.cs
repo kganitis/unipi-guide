@@ -17,8 +17,9 @@ namespace WindowsFormsApp2023_Final
     {
         private string username;
         private SpeechSynthesizer synthesizer;
+        protected Button highlightedButton;
         protected Color highlightedButtonColor = Color.BurlyWood;
-
+        protected Color defaultButtonColor = SystemColors.Control;
 
         public string Username
         {
@@ -30,6 +31,8 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
             synthesizer = new SpeechSynthesizer();
+
+            // Αν πρόκειται για AboutForm, disable τα σχετικά κουμπιά
             if (GetType() == typeof(AboutForm))
             {
                 AboutButton.Enabled = false;
@@ -39,8 +42,19 @@ namespace WindowsFormsApp2023_Final
 
         protected void HighlightButton(Button button)
         {
+            highlightedButton = button;
             button.Enabled = false;
             button.BackColor = highlightedButtonColor;
+        }
+
+        protected void ResetHighlightedButton()
+        {
+            if (highlightedButton != null) 
+            {
+                highlightedButton.Enabled = true;
+                highlightedButton.BackColor = defaultButtonColor;
+                highlightedButton = null;
+            }
         }
 
         private void Export()
