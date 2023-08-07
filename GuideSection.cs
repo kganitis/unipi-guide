@@ -66,11 +66,15 @@ namespace WindowsFormsApp2023_Final
             get { return pictures; }
         }
 
+        private string GetResourceName()
+        {
+            return name.Replace(" ", "_"); // Τα ονόματα των resources στο αρχείο resx περιέχουν underscore αντί για κενό
+        }
+
         private void ReadTextFile()
         {
             ResourceManager resourceManager = new ResourceManager(typeof(Resources));
-            string resourceName = name.Replace(" ", "_"); // Τα ονόματα των resources στο αρχείο resx περιέχουν underscore αντί για κενό
-            content = resourceManager.GetString(resourceName);
+            content = resourceManager.GetString(GetResourceName());
             if (content == null)
             {
                 content = "";
@@ -79,9 +83,8 @@ namespace WindowsFormsApp2023_Final
 
         private void ReadImageFiles()
         {
-            string resourceName = name.Replace(" ", "_"); // Τα ονόματα των resources στο αρχείο resx περιέχουν underscore αντί για κενό
-            pictures[0] = (Image)Resources.ResourceManager.GetObject(resourceName + "1");
-            pictures[1] = (Image)Resources.ResourceManager.GetObject(resourceName + "2");
+            pictures[0] = (Image)Resources.ResourceManager.GetObject(GetResourceName() + "1");
+            pictures[1] = (Image)Resources.ResourceManager.GetObject(GetResourceName() + "2");
         }
 
     }

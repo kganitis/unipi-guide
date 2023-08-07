@@ -23,7 +23,7 @@ namespace WindowsFormsApp2023_Final
 
         public void PreloadForms()
         {
-            // Create instances of all the forms and add them to the cache
+            // Αρχικοποίηση όλων των forms εδώ
             formCache.Add(typeof(AboutForm), new AboutForm());
             formCache.Add(typeof(GuideForm), new GuideForm());
             formCache.Add(typeof(UniversitySectionForm), new UniversitySectionForm());
@@ -37,11 +37,19 @@ namespace WindowsFormsApp2023_Final
         public void NavigateToForm<T>(BaseForm currentForm) where T : BaseForm
         {
             T nextForm = (T)formCache[typeof(T)];
-            // Don't keep LoginForm in history after entering the guide
+            // Όταν μεταβαίνουμε από το Login στην αρχική σελίδα του οδηγού, δεν θέλουμε να κρατήσουμε την Login στην στοίβα ιστορικού
             if (!(currentForm.GetType() == typeof(LoginForm) && nextForm.GetType() == typeof(GuideForm)))
             {
                 formHistory.Push(currentForm);
-                nextForm.SetBackButtonText("Back");
+            }
+            // Ενημέρωση του back button text
+            if (formHistory.Count == 0)
+            {
+                nextForm.DisableBackButton();
+            }
+            if (formHistory.Count > 0)
+            {
+                nextForm.EnableBackButton(currentForm);
             }
             currentForm.Hide();
             nextForm.Show();

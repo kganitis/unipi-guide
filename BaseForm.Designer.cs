@@ -97,15 +97,13 @@
             // NavButtonBack
             // 
             this.NavButtonBack.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NavButtonBack.BackgroundImage = global::WindowsFormsApp2023_Final.Properties.Resources.restart;
             this.NavButtonBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.NavButtonBack.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NavButtonBack.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButtonBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.NavButtonBack.Location = new System.Drawing.Point(10, 447);
             this.NavButtonBack.Name = "NavButtonBack";
             this.NavButtonBack.Size = new System.Drawing.Size(180, 79);
             this.NavButtonBack.TabIndex = 5;
-            this.NavButtonBack.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NavButtonBack.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.NavButtonBack.UseVisualStyleBackColor = false;
             this.NavButtonBack.Click += new System.EventHandler(this.NavButtonBack_Click);
