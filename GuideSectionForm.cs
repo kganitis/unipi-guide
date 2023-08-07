@@ -34,6 +34,7 @@ namespace WindowsFormsApp2023_Final
             {
                 HighlightButton(clickedButton);
             }
+            UpdateRootSectionButtonText();
         }
 
         protected void UpdateSectionButtonsText(List<GuideSection> subsections)
@@ -69,6 +70,18 @@ namespace WindowsFormsApp2023_Final
                 }
             }
             return clickedSection;
+        }
+
+        protected void UpdateRootSectionButtonText()
+        {
+            if (currentSection != section)
+            {
+                NavButton1.Text = "Πίσω σε " + section.Name;
+            }
+            else
+            {
+                NavButton1.Text = section.Name;
+            }
         }
     }
 }

@@ -43,9 +43,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 560);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GuideForm";
-            this.Text = "Οδηγός Πανεπιστημίου";
+            this.Text = "Αρχική";
             this.ResumeLayout(false);
             this.PerformLayout();
 

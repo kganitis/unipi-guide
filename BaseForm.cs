@@ -107,7 +107,7 @@ namespace WindowsFormsApp2023_Final
 
         #region Navigation Buttons Methods
 
-        protected void NavigateToForm<T>() where T : Form, new()
+        protected void NavigateToForm<T>() where T : BaseForm, new()
         {
             FormCacheManager.Instance.NavigateToForm<T>(this);
         }
@@ -145,6 +145,18 @@ namespace WindowsFormsApp2023_Final
         protected void NavButtonBack_Click(object sender, EventArgs e)
         {
             FormCacheManager.Instance.NavigateBack(this);
+        }
+
+        public void EnableBackButton(BaseForm previousForm)
+        {
+            NavButtonBack.Enabled = true;
+            NavButtonBack.Text = String.Concat("Πίσω σε " , previousForm.Text);
+        }
+
+        public void DisableBackButton()
+        {
+            NavButtonBack.Enabled = false;
+            NavButtonBack.Text = "";
         }
 
         #endregion
