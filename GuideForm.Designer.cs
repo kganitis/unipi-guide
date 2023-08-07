@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class ServicesSectionForm
+    partial class GuideForm
     {
         /// <summary>
         /// Required designer variable.
@@ -35,17 +35,17 @@
             this.ContentPanel.Location = new System.Drawing.Point(267, 30);
             this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
             // 
-            // NavButton1
+            // NavButtonHome
             // 
-            this.NavButton1.Text = "Υπηρεσίες";
+            this.NavButtonHome.Enabled = false;
             // 
-            // ServicesSectionForm
+            // GuideForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.ClientSize = new System.Drawing.Size(1312, 690);
-            this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
-            this.Name = "ServicesSectionForm";
-            this.Text = "Υπηρεσίες";
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "GuideForm";
+            this.Text = "Οδηγός Πανεπιστημίου";
             this.ResumeLayout(false);
             this.PerformLayout();
 

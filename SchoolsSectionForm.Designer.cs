@@ -28,17 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // NavButton1
+            // NavButton4
             // 
-            this.NavButton1.Text = "Σχολές";
+            this.NavButton4.BackColor = System.Drawing.Color.BurlyWood;
+            this.NavButton4.Enabled = false;
             // 
-            // SchoolsForm
+            // ReviewsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Name = "SchoolsForm";
+            this.Name = "ReviewsForm";
+            this.Text = "Αξιολογήσεις";
+            this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

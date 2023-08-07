@@ -1,6 +1,10 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-    partial class GuideIntroForm
+<<<<<<<< HEAD:SchoolsSectionForm.Designer.cs
+    partial class SchoolsSectionForm
+========
+    partial class ReviewsForm
+>>>>>>>> e49aad5de85ab941aa2458160ed1444b5974d21e:ReviewsForm.Designer.cs
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +32,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // NavButtonBack
+            // NavButton4
             // 
-            this.NavButtonBack.Visible = false;
+            this.NavButton4.BackColor = System.Drawing.Color.BurlyWood;
+            this.NavButton4.Enabled = false;
             // 
-            // GuideIntroForm
+            // ReviewsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Name = "GuideIntroForm";
+            this.Name = "ReviewsForm";
+            this.Text = "Αξιολογήσεις";
+            this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

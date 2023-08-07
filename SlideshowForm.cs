@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
 {
-    public partial class GuideSectionForm : WindowsFormsApp2023_Final.GuideForm
+    public partial class SlideshowForm : WindowsFormsApp2023_Final.GuideForm
     {
-        public GuideSectionForm()
+        public SlideshowForm()
         {
             InitializeComponent();
-            HighlightButton(NavButton1);
+            HighlightButton(NavButton5);
         }
     }
 }
