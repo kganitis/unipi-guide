@@ -1,10 +1,7 @@
 ﻿namespace WindowsFormsApp2023_Final
 {
-<<<<<<<< HEAD:SchoolsSectionForm.Designer.cs
-    partial class SchoolsSectionForm
-========
     partial class ReviewsForm
->>>>>>>> e49aad5de85ab941aa2458160ed1444b5974d21e:ReviewsForm.Designer.cs
+
     {
         /// <summary>
         /// Required designer variable.
