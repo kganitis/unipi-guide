@@ -146,9 +146,9 @@ namespace WindowsFormsApp2023_Final
         private void button2_Click(object sender, EventArgs e)
         {
             UserSession session = UserSession.Instance;
-            session.Username = ""; // Replace with actual username
+            session.Username = ""; //Helps in other forms to check if the user is a user or a visitor
           
-            if (comboBox1.Text != "")
+            if (comboBox1.Text != "")//Εάν ο χρήστης έχει επιλέξει γλώσσα
             {
                 if (comboBox1.Text == "Αγγλικά(Ηνωμένου Βασιλείου)")
                 {
@@ -179,7 +179,8 @@ namespace WindowsFormsApp2023_Final
             }
             else
             {
-                NavigateToForm<GuideForm>();
+                  NavigateToForm<GuideForm>();
+              
             }
 
             //Εμφάνιση εγγραφών του πίνακα μαθητή στο richTextBox1
