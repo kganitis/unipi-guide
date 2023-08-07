@@ -26,7 +26,7 @@ namespace WindowsFormsApp2023_Final
             subsection.AddSubsection(new GuideSection("Κεντρικό Κτίριο"));//Subsection1.2.1
             subsection.AddSubsection(new GuideSection("Εξωτερικές Αίθουσες"));//Subsection1.2.2
             subsection.AddSubsection(new GuideSection("Κτίριο Νίκαιας"));//Subsection1.2.3
-            subsection.AddSubsection(new GuideSection("Λοιποί Χώροι"));//Subsection1.2.4
+            subsection.AddSubsection(new GuideSection("Επικοινωνία"));//Subsection1.2.4
             section.AddSubsection(subsection);
 
             subsection = new GuideSection("Στρατηγική Ιδρύματος");//Subsection1.3
@@ -84,22 +84,10 @@ namespace WindowsFormsApp2023_Final
         {
             SubsectionButtonClick(sender);
             UpdateContent();
-
         }
 
         protected override void NavButton3_Click(object sender, EventArgs e)
         {
-            //label1.Text = "Εγκαταστάσεις Πανεπιστημίου";
-            //pictureBox1.ImageLocation = "..\\..\\Resources\\unipi_main_entr.png";
-            //pictureBox2.ImageLocation = "..\\..\\Resources\\unipi_remote1.png";
-            /*label2.Text = "\tΚεντρικό Κτίριο οδ. Καραολή & Δημητρίου 80\r\n\n" +
-                                "\tΚτίρια οδ. Δεληγιώργη & Tσαμαδού\r\n\n" +
-                                "\tΚτίριο οδ. Γρ. Λαμπράκη 21 & Διστόμου\r\n\n" +
-                                "\tΚτίριο οδ. Ανδρούτσου 150\r\n\n" +
-                                "\tΚτίριο οδ. Γρ. Λαμπράκη 126\r\n\n" +
-                                "\tΚτίριο οδ. Ζέας 82\r\n\n" +
-                                "\tΚτιριακό Συγκρότημα Νίκαιας ";*/
-
             SubsectionButtonClick(sender);
             UpdateContent();
 
@@ -107,31 +95,8 @@ namespace WindowsFormsApp2023_Final
 
         protected override void NavButton4_Click(object sender, EventArgs e)
         {
-            //label1.Text = "Αποστολή Πανεπιστημίου";
-
-            //pictureBox1.ImageLocation = "..\\..\\Resources\\unipi_library.png";
-            //pictureBox2.ImageLocation = "..\\..\\Resources\\unipi_comLab.png";
-
-            /*label2.Text = "H αποστολή του Πανεπιστημίου Πειραιώς, στο πλαίσιο που εξ αρχής του ανέθεσε η Ελληνική Πολιτεία, είναι να εκπαιδεύει," +
-                                " να παράγει νέα γνώση, να καλλιεργεί το πνεύμα των νέων, να προάγει τις αξίες της ελευθερίας, της δημοκρατίας " +
-                                "και της προσφοράς στις υποθέσεις της Ελλάδας. Ειδικότερα, η αποστολή του Πανεπιστημίου είναι:\r\n1. Nα παράγει " +
-                                "και να μεταδίδει τη γνώση με την έρευνα και τη διδασκαλία, να προετοιμάζει τους φοιτητές για την εφαρμογή της σε " +
-                                "όλους τους τομείς της οικονομικής και κοινωνικής ζωής.\r\n2. Nα παρέχει υψηλού επιπέδου ανώτατη εκπαίδευση και " +
-                                "να συμβάλλει στη διά βίου μάθηση με σύγχρονες μεθόδους διδασκαλίας, περιλαμβανομένης και της διδασκαλίας από " +
-                                "απόσταση, με βάση την επιστημονική και τεχνολογική έρευνα στο ανώτερο επίπεδο ποιότητας, σύμφωνα με τα " +
-                                "διεθνώς αναγνωρισμένα κριτήρια.\r\n3. Nα προωθεί την αριστεία στην εκπαίδευση και την αξιοποίηση της γνώσης, " +
-                                "με στόχο τη διάπλαση επιστημόνων με αξίες.\r\n4. Nα αναπτύσσει και να υποστηρίζει την έρευνα για την αντιμετώπιση " +
-                                "των προκλήσεων σε τομείς αιχμής.\r\n5. Nα συμβάλλει στην πρόοδο της επιχειρηματικότητας και στην ανάπτυξη " +
-                                "της καινοτομίας.\r\n6. Nα προάγει την εξωστρέφεια και τη συνεργασία με ακαδημαϊκούς, ερευνητικούς," +
-                                " κοινωνικούς και άλλους φορείς, για την ανάπτυξη του Ιδρύματος και της κοινωνίας.\r\n7. Nα λειτουργεί" +
-                                " ως πόλος αναφοράς, πεδίο γόνιμου διαλόγου και ελεύθερης ανάπτυξης ιδεών για το τοπικό και εθνικό οικονομικό " +
-                                "και κοινωνικό οικοσύστημα.\r\nΣτο πλαίσιο της παραπάνω αποστολής του, το Πανεπιστήμιο Πειραιώς παρέχει ποιοτική και" +
-                                " ολοκληρωμένη εκπαίδευση, εναρμονιζόμενη με τις σύγχρονες τάσεις της επιστήμης, της τεχνολογίας " +
-                                "και της διεθνούς επιστημονικής πρακτικής.";*/
-
             SubsectionButtonClick(sender);
             UpdateContent();
-
         }
 
         protected override void NavButton5_Click(object sender, EventArgs e)
