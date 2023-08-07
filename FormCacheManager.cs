@@ -11,8 +11,8 @@ namespace WindowsFormsApp2023_Final
     {
         private static readonly FormCacheManager instance = new FormCacheManager();
 
-        private Stack<Form> formHistory = new Stack<Form>();
-        private Dictionary<Type, Form> formCache = new Dictionary<Type, Form>();
+        private Stack<BaseForm> formHistory = new Stack<BaseForm>();
+        private Dictionary<Type, BaseForm> formCache = new Dictionary<Type, BaseForm>();
 
         public static FormCacheManager Instance { get { return instance; } }
 
@@ -55,11 +55,11 @@ namespace WindowsFormsApp2023_Final
             nextForm.Show();
         }
 
-        public void NavigateBack(Form currentForm)
+        public void NavigateBack(BaseForm currentForm)
         {
             if (formHistory.Count > 0)
             {
-                Form previousForm = formHistory.Pop();
+                BaseForm previousForm = formHistory.Pop();
                 currentForm.Hide();
                 previousForm.Show();
             }

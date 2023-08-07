@@ -79,6 +79,7 @@ namespace WindowsFormsApp2023_Final
             ResetHighlightedButton();
             currentSection = section;
             UpdateSectionButtonsText(section.Subsections);
+            UpdateRootSectionButtonText();
             HighlightButton(NavButton1);
             UpdateContent();
         }
