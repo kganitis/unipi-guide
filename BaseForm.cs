@@ -15,13 +15,24 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class BaseForm : Form
     {
+        private string username;
         private SpeechSynthesizer synthesizer;
+        protected Button highlightedButton;
         protected Color highlightedButtonColor = Color.BurlyWood;
-        
+        protected Color defaultButtonColor = SystemColors.Control;
+
+        public string Username
+        {
+            get { return username; }
+            set { username = value; }
+        }
+
         public BaseForm()
         {
             InitializeComponent();
             synthesizer = new SpeechSynthesizer();
+
+            // Αν πρόκειται για AboutForm, disable τα σχετικά κουμπιά
             if (GetType() == typeof(AboutForm))
             {
                 AboutButton.Enabled = false;
@@ -31,8 +42,19 @@ namespace WindowsFormsApp2023_Final
 
         protected void HighlightButton(Button button)
         {
+            highlightedButton = button;
             button.Enabled = false;
             button.BackColor = highlightedButtonColor;
+        }
+
+        protected void ResetHighlightedButton()
+        {
+            if (highlightedButton != null) 
+            {
+                highlightedButton.Enabled = true;
+                highlightedButton.BackColor = defaultButtonColor;
+                highlightedButton = null;
+            }
         }
 
         private void Export()
@@ -85,44 +107,56 @@ namespace WindowsFormsApp2023_Final
 
         #region Navigation Buttons Methods
 
-        protected void NavigateToForm<T>() where T : Form, new()
+        protected void NavigateToForm<T>() where T : BaseForm, new()
         {
             FormCacheManager.Instance.NavigateToForm<T>(this);
         }
 
-        private void NavButtonHome_Click(object sender, EventArgs e)
+        protected virtual void NavButtonHome_Click(object sender, EventArgs e)
         {
             NavigateToForm<GuideForm>();
         }
 
-        private void NavButton1_Click(object sender, EventArgs e)
+        protected virtual void NavButton1_Click(object sender, EventArgs e)
         {
             NavigateToForm<UniversitySectionForm>();
         }
 
-        private void NavButton2_Click(object sender, EventArgs e)
+        protected virtual void NavButton2_Click(object sender, EventArgs e)
         {
             NavigateToForm<ServicesSectionForm>();
         }
 
-        private void NavButton3_Click(object sender, EventArgs e)
+        protected virtual void NavButton3_Click(object sender, EventArgs e)
         {
             NavigateToForm<SchoolsSectionForm>();
         }
 
-        private void NavButton4_Click(object sender, EventArgs e)
+        protected virtual void NavButton4_Click(object sender, EventArgs e)
         {
             NavigateToForm<ReviewsForm>();
         }
 
-        private void NavButton5_Click(object sender, EventArgs e)
+        protected virtual void NavButton5_Click(object sender, EventArgs e)
         {
             NavigateToForm<SlideshowForm>();
         }
 
-        private void NavButtonBack_Click(object sender, EventArgs e)
+        protected void NavButtonBack_Click(object sender, EventArgs e)
         {
             FormCacheManager.Instance.NavigateBack(this);
+        }
+
+        public void EnableBackButton(BaseForm previousForm)
+        {
+            NavButtonBack.Enabled = true;
+            NavButtonBack.Text = String.Concat("Πίσω σε " , previousForm.Text);
+        }
+
+        public void DisableBackButton()
+        {
+            NavButtonBack.Enabled = false;
+            NavButtonBack.Text = "";
         }
 
         #endregion
@@ -209,10 +243,5 @@ namespace WindowsFormsApp2023_Final
         }
 
         #endregion
-
-        private void ContentPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

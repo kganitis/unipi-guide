@@ -81,6 +81,7 @@
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCacheManager.cs" />
+    <Compile Include="GuideSection.cs" />
     <Compile Include="GuideSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +108,12 @@
     <Compile Include="ReviewsForm.Designer.cs">
       <DependentUpon>ReviewsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReviewSubmitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReviewSubmitForm.Designer.cs">
+      <DependentUpon>ReviewSubmitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SchoolsSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +138,7 @@
     <Compile Include="UniversitySectionForm.Designer.cs">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSession.cs" />
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +166,9 @@
     </Compile>
     <EmbeddedResource Include="ReviewsForm.resx">
       <DependentUpon>ReviewsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReviewSubmitForm.resx">
+      <DependentUpon>ReviewSubmitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SchoolsSectionForm.resx">
       <DependentUpon>SchoolsSectionForm.cs</DependentUpon>
@@ -238,6 +249,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\pictures\unipi_old.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Απόφοιτοι.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ασύρματες Συνδέσεις.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Βιβλιοθήκη.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Γραφείο Διασύνδεσης.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Εξ Αποστάσεως Εκπαίδευση.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ηλεκτρονικές Υπηρεσίες.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ηλεκτρονική Γραμματεία.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ηλεκτρονικό Ταχυδρομείο.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ιατρείο.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Φοιτητικές Παροχές.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Φοιτητική Ζωή.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Φοιτητική Μέριμνα.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Υπηρεσίες.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Βιβλιοθήκη.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Γραφείο Διασύνδεσης.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ιατρείο.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ασύρματες Συνδέσεις.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ηλεκτρονική Γραμματεία.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Άλλες Δραστηριότητες.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Φοιτητικές Παρατάξεις.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Φοιτητικοί Σύλλογοι.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Πολιτιστικές Ομάδες.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
