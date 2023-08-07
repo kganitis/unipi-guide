@@ -213,6 +213,26 @@ namespace WindowsFormsApp2023_Final.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap unipi_library {
+            get {
+                object obj = ResourceManager.GetObject("unipi_library", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unipi_main {
+            get {
+                object obj = ResourceManager.GetObject("unipi_main", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap users {
             get {
                 object obj = ResourceManager.GetObject("users", resourceCulture);
@@ -228,6 +248,22 @@ namespace WindowsFormsApp2023_Final.Properties {
         internal static string Άλλες_Δραστηριότητες {
             get {
                 return ResourceManager.GetString("Άλλες_Δραστηριότητες", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to H αποστολή του Πανεπιστημίου Πειραιώς, στο πλαίσιο που εξ αρχής του ανέθεσε η
+        ///Ελληνική Πολιτεία, είναι να εκπαιδεύει, να παράγει νέα γνώση, να καλλιεργεί το πνεύμα
+        ///των νέων, να προάγει τις αξίες της ελευθερίας, της δημοκρατίας και της προσφοράς στις
+        ///υποθέσεις της Ελλάδας. Ειδικότερα, η αποστολή του Πανεπιστημίου είναι:
+        ///1. να παράγει και να μεταδίδει τη γνώση με την έρευνα και τη διδασκαλία, να
+        ///προετοιμάζει τους φοιτητές για την εφαρμογή της σε όλους τους τομείς της
+        ///οικονομικής και κοινωνικής ζωής,,
+        ///2 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Αποστολή {
+            get {
+                return ResourceManager.GetString("Αποστολή", resourceCulture);
             }
         }
         
@@ -322,6 +358,39 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Κτίρια οδ. Δεληγιώργη &amp; Tσαμαδού: Στο κτίριο της οδού Δεληγιώργη 107 στεγάζονται εργαστήρια και γραφεία καθηγητών του Τμήματος Βιομηχανικής Διοίκησης και Τεχνολογίας,
+        ///ενώ στην οδό Τσαμαδού 78 βρίσκονται δύο κτίρια, από τα οποία στο ένα υπάρχουν αίθουσες διδασκαλίας, ενώ στο άλλο στεγάζεται το φοιτητικό εστιατόριο.
+        ///
+        ///Κτίριο οδ. Γρ. Λαμπράκη 21 &amp; Διστόμου (Εικόνα 1): Στο κτίριο στεγάζονται τα γραφεία καθηγητών του Τμήματος Ναυτιλιακών Σπουδών, καθώς και αίθουσες διδασκαλίας.                              
+        ///        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Εξωτερικές_Αίθουσες {
+            get {
+                return ResourceManager.GetString("Εξωτερικές_Αίθουσες", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Εξωτερικές_Αίθουσες1 {
+            get {
+                object obj = ResourceManager.GetObject("Εξωτερικές_Αίθουσες1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Εξωτερικές_Αίθουσες2 {
+            get {
+                object obj = ResourceManager.GetObject("Εξωτερικές_Αίθουσες2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Στη διεύθυνση sis-portal.unipi.gr λειτουργεί διαδικτυακή εφαρμογή που καλύπτει τα σπουδαστικά θέματα. Από την εφαρμογή αυτή οι φοιτητές έχουν τη δυνατότητα: 
         ///
         ///- να ενημερώνονται για τα μαθήματα του προγράμματος σπουδών, τους διδάσκοντες, τα προτεινόμενα συγγράμματα καθώς και τις ανακοινώσεις που εκδίδει η Γραμματεία και οι διδάσκοντες.
@@ -384,6 +453,156 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Το Πανεπιστήμιο Πειραιώς ιδρύθηκε ως «Σχολή Βιομηχανικών Σπουδών» το 1938 από το Σύνδεσμο Βιομηχάνων και Βιοτεχνών, σύμφωνα με το Ν.5197/1931 και τον Α.Ν. 28/1936,
+        ///που σε συνεργασία με το Σύνδεσμο Ανωνύμων Εταιριών της Ελλάδας έβαλαν ως βάσεις την οικονομική, νομική και τεχνική παιδεία των στελεχών της βιομηχανίας.
+        ///
+        ///Το 1945 μετονομάσθηκε σε Ανωτέρα Σχολή Βιομηχανικών Σπουδών και σκοπός της ορίσθηκε η συστηματική, θεωρητική και πρακτική κατάρτιση διοικητικών στελεχών.
+        ///
+        ///Το 1949, με το Ν.Δ. 1245/49, ολοκλ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Ιστορία {
+            get {
+                return ResourceManager.GetString("Ιστορία", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ιστορία1 {
+            get {
+                object obj = ResourceManager.GetObject("Ιστορία1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ιστορία2 {
+            get {
+                object obj = ResourceManager.GetObject("Ιστορία2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Στο κεντρικό κτίριο του Πανεπιστημίου στεγάζονται υπηρεσίες, γραφεία καθηγητών, αμφιθέατρα, αίθουσες διδασκαλίας, κτλ. 
+        ///
+        ///Πιο συγκεκριμένα:
+        ///
+        ///Υπόγειο: Βιβλιοθήκη, αναγνωστήριο
+        ///
+        ///Ισόγειο: Ιατρείο, διατμηματικά εργαστήρια υπολογιστών, κυλικείο
+        ///
+        ///1ος όρ.: Γραμματείες των Ακαδ. Τμημάτων εκτός των Τμημάτων Πληροφορικής και Ψηφιακών Συστημάτων
+        ///
+        ///1ος-2ος-3ος όρ.: Αμφιθέατρα και αίθουσες διδασκαλίας
+        ///
+        ///3ος όρ.: Γραφεία καθηγητών Τμημάτων Χρηματοοικονομικής και Τραπεζικής Διοικητικής, Βιομηχανικής Διοίκησης και [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Κεντρικό_Κτίριο {
+            get {
+                return ResourceManager.GetString("Κεντρικό_Κτίριο", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Κεντρικό_Κτίριο1 {
+            get {
+                object obj = ResourceManager.GetObject("Κεντρικό_Κτίριο1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Κεντρικό_Κτίριο2 {
+            get {
+                object obj = ResourceManager.GetObject("Κεντρικό_Κτίριο2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Κτιριακό Συγκρότημα Νίκαιας.
+        /// </summary>
+        internal static string Κτίριο_Νίκαιας {
+            get {
+                return ResourceManager.GetString("Κτίριο_Νίκαιας", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Κτίριο_Νίκαιας1 {
+            get {
+                object obj = ResourceManager.GetObject("Κτίριο_Νίκαιας1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Κτίριο_Νίκαιας2 {
+            get {
+                object obj = ResourceManager.GetObject("Κτίριο_Νίκαιας2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string Λοιποί_Χώροι {
+            get {
+                return ResourceManager.GetString("Λοιποί_Χώροι", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Το Όραμα του Πανεπιστημίου Πειραιώς είναι:
+        ///
+        ///να είναι ένα Ίδρυμα διεθνούς κύρους στο σύγχρονο Ακαδημαϊκό Χάρτη και να αναγνωρίζεται για:
+        ///
+        ///- Την αριστεία στην εκπαίδευση και την έρευνα.
+        ///
+        ///- Την παραγωγή, διάδοση και εφαρμογή γνώσης αιχμής.
+        ///
+        ///- τον ηγετικό του ρόλο στη διαμόρφωση αξιών και στην αντιμετώπιση σύγχρονων επιστημονικών, κοινωνικών και οικονομικών προκλήσεων..
+        /// </summary>
+        internal static string Όραμα {
+            get {
+                return ResourceManager.GetString("Όραμα", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Όραμα1 {
+            get {
+                object obj = ResourceManager.GetObject("Όραμα1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Όραμα2 {
+            get {
+                object obj = ResourceManager.GetObject("Όραμα2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Οι πολιτιστικές ομάδες του Πανεπιστημίου Πειραιώς προσφέρουν στα μέλη της Πανεπιστημιακής κοινότητας την ευκαιρία να ασχοληθούν με τα ενδιαφέροντα τους και να καλλιεργήσουν το ταλέντο τους. Προάγουν τον εθελοντισμό και την ενεργή συμμετοχή των φοιτητών και καλύπτουν ένα ευρύ φάσμα δράσεων.
         ///
         ///Πιο συγκεκριμένα, το Πανεπιστήμιο Πειραιώς διαθέτει τις παρακάτω πολιτιστικές ομάδες:
@@ -396,6 +615,22 @@ namespace WindowsFormsApp2023_Final.Properties {
         internal static string Πολιτιστικές_Ομάδες {
             get {
                 return ResourceManager.GetString("Πολιτιστικές_Ομάδες", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Στρατηγικοί Στόχοι Πανεπιστημίου Πειραιώς
+        ///Η Στρατηγική του Πανεπιστημίου διαμορφώνεται και ισχύει για πέντε έτη.
+        ///Οι Στρατηγικοί Στόχοι του Πανεπιστημίου και οι Στόχοι Ποιότητας που τους υποστηρίζουν
+        ///είναι οι ακόλουθοι:
+        ///Σ.Σ.1. Παραγωγή, διάδοση και εφαρμογή γνώσης αιχμής, διεύρυνση των οικονομικών,
+        ///κοινωνικών και τεχνολογικών επιστημονικών πεδίων του και συνεχής προσαρμογή
+        ///των προγραμμάτων σπουδών στις επιστημονικές εξελίξεις και στις ανάγκες της
+        ///κοινωνίας, με προσήλωση στις αρχές της επιστημονικής δε [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Στρατηγική {
+            get {
+                return ResourceManager.GetString("Στρατηγική", resourceCulture);
             }
         }
         
@@ -448,6 +683,46 @@ namespace WindowsFormsApp2023_Final.Properties {
         internal static string Φοιτητικοί_Σύλλογοι {
             get {
                 return ResourceManager.GetString("Φοιτητικοί_Σύλλογοι", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Αγαπητά μέλη του Πανεπιστημίου Πειραιώς
+        ///
+        ///Αγαπητές Φίλες , Αγαπητοί Φίλοι
+        ///
+        ///Το Πανεπιστήμιο Πειραιώς είναι ένα σύγχρονο, καινοτόμο,
+        ///διεθνώς αναγνωρισμένο κορυφαίο πανεπιστήμιο,
+        ///καθοδηγούμενο από τη δέσμευσή του για αριστεία στην
+        ///εκπαίδευση και στην έρευνα. Σε όλη την διάρκεια της
+        ///λειτουργίας του το Πανεπιστήμιο Πειραιώς έχει συμβάλει
+        ///ουσιαστικά στην καλλιέργεια και εδραίωση των επιστημών που
+        ///θεραπεύει, τόσο σε ερευνητικό επίπεδο, όσο και με την
+        ///παραγωγή επιστημόνων που στελεχώνουν τον ιδιωτικό και        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Χαιρετισμός {
+            get {
+                return ResourceManager.GetString("Χαιρετισμός", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Χαιρετισμός1 {
+            get {
+                object obj = ResourceManager.GetObject("Χαιρετισμός1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Χαιρετισμός2 {
+            get {
+                object obj = ResourceManager.GetObject("Χαιρετισμός2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

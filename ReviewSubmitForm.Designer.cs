@@ -57,8 +57,8 @@
             this.ContentPanel.Controls.Add(this.pictureBox7);
             this.ContentPanel.Controls.Add(this.pictureBox6);
             this.ContentPanel.Controls.Add(this.pictureBox5);
-            this.ContentPanel.Location = new System.Drawing.Point(90, 21);
-            this.ContentPanel.Size = new System.Drawing.Size(1003, 512);
+            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 536);
             this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
             // 
             // pictureBox7
