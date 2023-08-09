@@ -16,7 +16,7 @@ namespace WindowsFormsApp2023_Final
     public partial class BaseForm : Form
     {
         private string username;
-        private SpeechSynthesizer synthesizer;
+      //  private SpeechSynthesizer synthesizer;
         protected Color highlightedButtonColor = Color.BurlyWood;
 
 
@@ -29,7 +29,7 @@ namespace WindowsFormsApp2023_Final
         public BaseForm()
         {
             InitializeComponent();
-            synthesizer = new SpeechSynthesizer();
+          //  synthesizer = new SpeechSynthesizer();
             if (GetType() == typeof(AboutForm))
             {
                 AboutButton.Enabled = false;
