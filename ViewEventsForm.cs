@@ -24,11 +24,24 @@ namespace WindowsFormsApp2023_Final
         public ViewEventsForm()
         {
             InitializeComponent();
+            HighlightButton(NavButton1);
         }
 
-        private void myClick(object sender, EventArgs e)
+        static string LineBreak(string input, int position)//method to create line breaks to labels
         {
-            MessageBox.Show("Hi!");
+            StringBuilder sb = new StringBuilder(input);
+
+            if (position < input.Length)
+            {
+                sb.Insert(position, Environment.NewLine);
+            }
+            return sb.ToString();
+        }
+
+
+        protected override void NavButtonHome_Click(object sender, EventArgs e)
+        {
+            //NavigateToForm<GuideForm>();
         }
 
         protected override void NavButton2_Click(object sender, EventArgs e)
@@ -37,42 +50,41 @@ namespace WindowsFormsApp2023_Final
            
             connection = new SQLiteConnection(connectionString);
             connection.Open();
-            String selectSQL = "select description, date from event";
+            String selectSQL = "select description, date from event order by date desc";
             SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
             SQLiteDataReader reader = command.ExecuteReader();
             int i = 0;
             while (reader.Read())
             {
                 description = reader.GetString(0);
+                //description = LineBreak(reader.GetString(0), 76);// in case i want a line break to fit screen
                 date = reader.GetString(1);
 
                 Label label_desc = new Label();
                 label_desc.AutoSize = true;
+                //label_desc.MaximumSize = new Size(this.Width, 0);
+                //label_desc.AutoEllipsis = false;
                 label_desc.Font = new Font("Modern No. 20", 13.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
-                label_desc.BackColor = Color.Maroon;
-                label_desc.ForeColor = Color.Transparent;
-                label_desc.Location = new Point(100, 45 + i * label_desc.Height);
-                label_desc.Name = "descreption";
-                label_desc.Size = new Size(192, 132);
+                label_desc.BackColor = Color.Transparent;
+                label_desc.ForeColor = Color.Black;
+                label_desc.Location = new Point(120, 115 + (3 * i) * label_desc.Height);
+                label_desc.Name = "description";
+                label_desc.Size = new Size(592, 132);
                 label_desc.Text = description;
                 ContentPanel.Controls.Add(label_desc);
-                //label_desc.Click += new EventHandler(myClick);
-                //Controls.Add(label_desc);
 
                 Label label_date = new Label();
                 label_date.AutoSize = true;
                 label_date.Font = new Font("Modern No. 20", 13.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
                 label_date.ForeColor = Color.Maroon;
-                label_date.Location = new Point(100, 45 + i * label_date.Height);
+                label_date.Location = new Point(30, 115 + (3 * i) * label_date.Height);
                 label_date.Name = "date";
                 label_date.Size = new Size(32, 32);
                 label_date.Text = date;
-                //label_date.Click += new EventHandler(myClick);
-                //Controls.Add(label_date);
+                ContentPanel.Controls.Add(label_date);
 
                 i++;
-                //label2.Text += date + "\n";
-                //label3.Text += description + "\n";
+                
             }
             reader.Close();
             command.Dispose();
@@ -82,6 +94,8 @@ namespace WindowsFormsApp2023_Final
         protected override void NavButton3_Click(object sender, EventArgs e)
         {
             label1.Text = "Ημερολόγιο";
+            CalendarForm calendarForm = new CalendarForm();
+            calendarForm.ShowDialog();
         }
 
         protected override void NavButton4_Click(object sender, EventArgs e)

@@ -29,18 +29,16 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label_desc = new System.Windows.Forms.Label();
-            this.label_date = new System.Windows.Forms.Label();
             this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // ContentPanel
             // 
-            this.ContentPanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ContentPanel.Controls.Add(this.label_desc);
-            this.ContentPanel.Controls.Add(this.label_date);
+            this.ContentPanel.AutoScroll = true;
+            this.ContentPanel.BackColor = System.Drawing.SystemColors.Control;
             this.ContentPanel.Controls.Add(this.label1);
-            this.ContentPanel.Size = new System.Drawing.Size(995, 541);
+            this.ContentPanel.Location = new System.Drawing.Point(418, 48);
+            this.ContentPanel.Size = new System.Drawing.Size(1160, 623);
             // 
             // NavButton1
             // 
@@ -83,28 +81,12 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(347, 33);
+            this.label1.Location = new System.Drawing.Point(278, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(291, 49);
+            this.label1.Size = new System.Drawing.Size(416, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Δραστηριότητες";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label_desc
-            // 
-            this.label_desc.Location = new System.Drawing.Point(630, 104);
-            this.label_desc.Name = "label_desc";
-            this.label_desc.Size = new System.Drawing.Size(265, 96);
-            this.label_desc.TabIndex = 1;
-            this.label_desc.Text = "Description";
-            // 
-            // label_date
-            // 
-            this.label_date.Location = new System.Drawing.Point(99, 104);
-            this.label_date.Name = "label_date";
-            this.label_date.Size = new System.Drawing.Size(73, 29);
-            this.label_date.TabIndex = 2;
-            this.label_date.Text = "Date";
             // 
             // ViewEventsForm
             // 
@@ -112,7 +94,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 690);
             this.Name = "ViewEventsForm";
-            this.Text = "ViewEventsForm";
+            this.Text = "Events";
             this.ContentPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -122,7 +104,5 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label_desc;
-        private System.Windows.Forms.Label label_date;
     }
 }

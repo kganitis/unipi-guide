@@ -80,6 +80,12 @@
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarForm.Designer.cs">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCacheManager.cs" />
     <Compile Include="GuideSection.cs" />
     <Compile Include="GuideSectionForm.cs">
@@ -138,6 +144,18 @@
     <Compile Include="UniversitySectionForm.Designer.cs">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserSession.cs" />
     <Compile Include="ViewEventsForm.cs">
       <SubType>Form</SubType>
@@ -150,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarForm.resx">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuideSectionForm.resx">
       <DependentUpon>GuideSectionForm.cs</DependentUpon>
@@ -187,6 +208,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UniversitySectionForm.resx">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEventsForm.resx">
       <DependentUpon>ViewEventsForm.cs</DependentUpon>
