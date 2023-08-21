@@ -69,7 +69,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Sunday";
+            this.label1.Text = "Κυριακή";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // daycontainer
@@ -86,7 +86,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Monday";
+            this.label2.Text = "Δευτέρα";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -96,7 +96,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Tuesday";
+            this.label3.Text = "Τρίτη";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -106,7 +106,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 23);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Wednesday";
+            this.label4.Text = "Τετάρτη";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -116,17 +116,17 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(100, 23);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Thursday";
+            this.label5.Text = "Πέμπτη";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1018, 85);
+            this.label6.Location = new System.Drawing.Point(1012, 85);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.Size = new System.Drawing.Size(119, 23);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Friday";
+            this.label6.Text = "Παρασκευή";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
@@ -136,7 +136,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 23);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Saturday";
+            this.label7.Text = "Σάββατο";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LBDATE

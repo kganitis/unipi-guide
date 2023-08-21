@@ -15,6 +15,8 @@ namespace WindowsFormsApp2023_Final
     public partial class CalendarForm : Form
     {
         int month, year;
+        //let's create a static variable that we can pass to another form for month and year
+        public static int static_month, static_year;
         public CalendarForm()
         {
             InitializeComponent();
@@ -33,6 +35,9 @@ namespace WindowsFormsApp2023_Final
 
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + " " + year;
+
+            static_month = month;
+            static_year = year;
             
             //Let's get the first day of the month
             DateTime startofthemonth = new DateTime(year, month, 1);
@@ -73,6 +78,8 @@ namespace WindowsFormsApp2023_Final
                 year--;
             }
             month--;
+            static_month = month;
+            static_year = year;
 
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + " " + year;
@@ -121,6 +128,8 @@ namespace WindowsFormsApp2023_Final
                 year++;
             }
             month++;
+            static_month = month;
+            static_year = year;
 
             String monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + " " + year;
@@ -145,7 +154,6 @@ namespace WindowsFormsApp2023_Final
                 UserControlDays ucdays = new UserControlDays();
                 ucdays.days(i);
                 daycontainer.Controls.Add(ucdays);
-
             }
         }
     }

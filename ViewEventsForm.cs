@@ -95,7 +95,7 @@ namespace WindowsFormsApp2023_Final
         {
             label1.Text = "Ημερολόγιο";
             CalendarForm calendarForm = new CalendarForm();
-            calendarForm.ShowDialog();
+            calendarForm.Show();
         }
 
         protected override void NavButton4_Click(object sender, EventArgs e)
