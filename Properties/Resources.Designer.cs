@@ -268,6 +268,26 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Αποστολή1 {
+            get {
+                object obj = ResourceManager.GetObject("Αποστολή1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Αποστολή2 {
+            get {
+                object obj = ResourceManager.GetObject("Αποστολή2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Επιστημονική Ένωση Αποφοίτων του Πανεπιστημίου Πειραιώς
         ///
         ///Το σωματείο &quot;Επιστημονική Ένωση Αποφοίτων του Πανεπιστημίου Πειραιώς&quot; (Uni.Pi. Alumni Association) ιδρύθηκε το 2017 με έδρα την πόλη του Πειραιά και κεντρική επιδίωξη τη διατήρηση και ενίσχυση των δεσμών των αποφοίτων μας, αλλά και την προαγωγή των αξιών του -όπως αυτές συμπυκνώνονταν στα ιδρυτικά οράματα για αξιοκρατία, ίσες ευκαιρίες και πολυμερή ανάπτυξη της προσωπικότητας- σε ακαδημαϊκό και κοινωνικό επίπεδο.
@@ -386,6 +406,31 @@ namespace WindowsFormsApp2023_Final.Properties {
         internal static System.Drawing.Bitmap Εξωτερικές_Αίθουσες2 {
             get {
                 object obj = ResourceManager.GetObject("Εξωτερικές_Αίθουσες2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ
+        ///
+        ///Διεύθυνση: Μ. Καραολή &amp; Α. Δημητρίου 80, 18534 Πειραιάς
+        ///
+        ///Τηλ. Κέντρο: 210 4142000
+        ///
+        ///Fax: 210 4142328.
+        /// </summary>
+        internal static string Επικοινωνία {
+            get {
+                return ResourceManager.GetString("Επικοινωνία", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Επικοινωνία1 {
+            get {
+                object obj = ResourceManager.GetObject("Επικοινωνία1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -528,7 +573,9 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Κτιριακό Συγκρότημα Νίκαιας.
+        ///   Looks up a localized string similar to «Θεμιστόκλειο Συγκρότημα» (πρώην Ολυμπιακό Κλειστό Γυμναστήριο Άρσης Βαρών), βρίσκεται στην οδό Κυρά της Ρω 4 στη Νίκαια.
+        ///
+        ///Στεγάζονται αίθουσες του Τμήματος Ψηφιακών Συστημάτων.
         /// </summary>
         internal static string Κτίριο_Νίκαιας {
             get {
@@ -593,16 +640,6 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Όραμα2 {
-            get {
-                object obj = ResourceManager.GetObject("Όραμα2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Οι πολιτιστικές ομάδες του Πανεπιστημίου Πειραιώς προσφέρουν στα μέλη της Πανεπιστημιακής κοινότητας την ευκαιρία να ασχοληθούν με τα ενδιαφέροντα τους και να καλλιεργήσουν το ταλέντο τους. Προάγουν τον εθελοντισμό και την ενεργή συμμετοχή των φοιτητών και καλύπτουν ένα ευρύ φάσμα δράσεων.
         ///
         ///Πιο συγκεκριμένα, το Πανεπιστήμιο Πειραιώς διαθέτει τις παρακάτω πολιτιστικές ομάδες:
@@ -619,18 +656,31 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Στρατηγικοί Στόχοι Πανεπιστημίου Πειραιώς
-        ///Η Στρατηγική του Πανεπιστημίου διαμορφώνεται και ισχύει για πέντε έτη.
+        ///   Looks up a localized string similar to Η Στρατηγική του Πανεπιστημίου διαμορφώνεται και ισχύει για πέντε έτη.
+        ///
         ///Οι Στρατηγικοί Στόχοι του Πανεπιστημίου και οι Στόχοι Ποιότητας που τους υποστηρίζουν
         ///είναι οι ακόλουθοι:
+        ///
         ///Σ.Σ.1. Παραγωγή, διάδοση και εφαρμογή γνώσης αιχμής, διεύρυνση των οικονομικών,
         ///κοινωνικών και τεχνολογικών επιστημονικών πεδίων του και συνεχής προσαρμογή
         ///των προγραμμάτων σπουδών στις επιστημονικές εξελίξεις και στις ανάγκες της
-        ///κοινωνίας, με προσήλωση στις αρχές της επιστημονικής δε [rest of string was truncated]&quot;;.
+        ///κοινωνίας, με προσήλωση στις αρχές της επιστημονικής δεοντολογίας.
+        ///
+        ///	Σ.Π.1.1. Διάπλαση επιστ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Στρατηγική {
             get {
                 return ResourceManager.GetString("Στρατηγική", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Στρατηγική1 {
+            get {
+                object obj = ResourceManager.GetObject("Στρατηγική1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

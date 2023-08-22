@@ -169,7 +169,7 @@
   <data name="Κεντρικό_Κτίριο1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unipi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Όραμα1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Αποστολή1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unipi_comLab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Κεντρικό_Κτίριο2" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -268,7 +268,7 @@
   <data name="Όραμα" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Όραμα.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="Όραμα2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Αποστολή2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Στιγμιότυπο οθόνης (369).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Αποστολή" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -283,7 +283,19 @@
   <data name="Χαιρετισμός1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Στιγμιότυπο οθόνης (367).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Όραμα1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (372).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Επικοινωνία" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Επικοινωνία.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Επικοινωνία1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (373).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Στρατηγική1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (374).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Χαιρετισμός2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Στιγμιότυπο οθόνης (368).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Resources\Στιγμιότυπο οθόνης (371).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

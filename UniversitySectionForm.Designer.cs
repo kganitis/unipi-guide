@@ -44,8 +44,7 @@
             // ContentPanel
             // 
             this.ContentPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
-            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 541);
             // 
             // NavButton5
             // 
@@ -66,8 +65,8 @@
             // NavButton3
             // 
             this.NavButton3.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton3.Location = new System.Drawing.Point(13, 298);
-            this.NavButton3.Size = new System.Drawing.Size(240, 65);
+            this.NavButton3.Location = new System.Drawing.Point(13, 280);
+            this.NavButton3.Size = new System.Drawing.Size(240, 83);
             this.NavButton3.Text = "Περιήγηση";
             this.NavButton3.Click += new System.EventHandler(this.NavButton3_Click);
             // 
@@ -75,7 +74,7 @@
             // 
             this.NavButton2.Font = new System.Drawing.Font("Arial Narrow", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.NavButton2.Location = new System.Drawing.Point(13, 221);
-            this.NavButton2.Size = new System.Drawing.Size(240, 69);
+            this.NavButton2.Size = new System.Drawing.Size(240, 51);
             this.NavButton2.Text = "Ιστορία";
             this.NavButton2.Click += new System.EventHandler(this.NavButton2_Click);
             // 
