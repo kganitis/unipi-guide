@@ -17,18 +17,12 @@ namespace WindowsFormsApp2023_Final
         SQLiteConnection connection;
         //let's create another static variable for day
         public static string static_day;
-        public UserControlDays()
+
+        public UserControlDays(int numday)
         {
             InitializeComponent();
-        }
-
-        private void UserControlDays_Load(object sender, EventArgs e)
-        {
-            
-        }
-        public void days(int numday)
-        {
             lbdays.Text = numday + "";
+            displayEvent();
         }
 
         private void UserControlDays_Click(object sender, EventArgs e)
@@ -49,7 +43,7 @@ namespace WindowsFormsApp2023_Final
             String selectSQL = "select description from event where date = @date";
             SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
             command.Parameters.AddWithValue("@date", 
-            CalendarForm.static_year + "-" + CalendarForm.static_month + "-" + UserControlDays.static_day);
+            CalendarForm.static_year + "-" + CalendarForm.static_month.ToString("00") + "-" + lbdays.Text.PadLeft(2, '0'));
             SQLiteDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {
@@ -64,6 +58,7 @@ namespace WindowsFormsApp2023_Final
         {
 
         }
+
         //create a timer for auto display event if new event is added
         private void timer1_Tick(object sender, EventArgs e)
         {

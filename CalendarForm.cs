@@ -57,8 +57,7 @@ namespace WindowsFormsApp2023_Final
             //now lets create usercontrol for days
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucdays = new UserControlDays();
-                ucdays.days(i);
+                UserControlDays ucdays = new UserControlDays(i);
                 daycontainer.Controls.Add(ucdays);
             }
         }
@@ -101,8 +100,7 @@ namespace WindowsFormsApp2023_Final
             //now lets create usercontrol for days
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucdays = new UserControlDays();
-                ucdays.days(i);
+                UserControlDays ucdays = new UserControlDays(i);
                 daycontainer.Controls.Add(ucdays);
 
             }
@@ -151,8 +149,7 @@ namespace WindowsFormsApp2023_Final
             //now lets create usercontrol for days
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucdays = new UserControlDays();
-                ucdays.days(i);
+                UserControlDays ucdays = new UserControlDays(i);
                 daycontainer.Controls.Add(ucdays);
             }
         }
