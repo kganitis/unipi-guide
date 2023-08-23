@@ -81,6 +81,7 @@ namespace WindowsFormsApp2023_Final
             else
             {
                 SubsectionButtonClick(sender);
+                UpdateContent();
             }
         }
 
