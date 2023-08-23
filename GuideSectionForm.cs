@@ -25,7 +25,7 @@ namespace WindowsFormsApp2023_Final
         {
             ResetHighlightedButton();
             Button clickedButton = (Button)sender;
-            currentSection = getClickedSection(clickedButton);
+            currentSection = GetCurrentlyClickedSection(clickedButton);
             if (currentSection.ContainsSubsections())
             {
                 UpdateSectionButtonsText(currentSection.Subsections);
@@ -45,7 +45,7 @@ namespace WindowsFormsApp2023_Final
             }
         }
 
-        private GuideSection getClickedSection(Button clickedButton)
+        private GuideSection GetCurrentlyClickedSection(Button clickedButton)
         {
             GuideSection clickedSection = null;
             // TO DO να βάλω comments

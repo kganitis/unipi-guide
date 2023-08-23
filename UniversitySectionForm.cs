@@ -76,6 +76,7 @@ namespace WindowsFormsApp2023_Final
             ResetHighlightedButton();
             currentSection = section;
             UpdateSectionButtonsText(section.Subsections);
+            UpdateRootSectionButtonText();
             HighlightButton(NavButton1);
             UpdateContent();
         }
@@ -90,7 +91,6 @@ namespace WindowsFormsApp2023_Final
         {
             SubsectionButtonClick(sender);
             UpdateContent();
-
         }
 
         protected override void NavButton4_Click(object sender, EventArgs e)
