@@ -82,6 +82,7 @@
             this.MainContentTextBox.Size = new System.Drawing.Size(492, 316);
             this.MainContentTextBox.TabIndex = 1;
             this.MainContentTextBox.Text = "Κυρίως περιεχόμενο";
+            this.MainContentTextBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainContentTextBox_MouseDown);
             // 
             // SectionTitleTextBox
             // 
@@ -95,6 +96,7 @@
             this.SectionTitleTextBox.Size = new System.Drawing.Size(721, 46);
             this.SectionTitleTextBox.TabIndex = 2;
             this.SectionTitleTextBox.Text = "Τίτλος τμήματος";
+            this.SectionTitleTextBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SectionTitleTextBox_MouseDown);
             // 
             // ContentPictureBox1
             // 

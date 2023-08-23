@@ -46,8 +46,23 @@ namespace WindowsFormsApp2023_Final
 
         protected override void NavButton2_Click(object sender, EventArgs e)
         {
-            label1.Text = "Όλες οι Δραστηριότητες";
-           
+            List<Label> labelsToRemove = new List<Label>();
+
+            foreach (Label label in ContentPanel.Controls)
+            {
+                if (!label.Text.Equals("Δραστηριότητες"))
+                {
+                    labelsToRemove.Add(label);
+                }
+            }
+
+            foreach (Label labelToRemove in labelsToRemove)
+            {
+                ContentPanel.Controls.Remove(labelToRemove);
+            }
+
+            label1.Text = "Δραστηριότητες";
+
             connection = new SQLiteConnection(connectionString);
             connection.Open();
             String selectSQL = "select description, date from event order by date desc";
@@ -93,7 +108,6 @@ namespace WindowsFormsApp2023_Final
 
         protected override void NavButton3_Click(object sender, EventArgs e)
         {
-            label1.Text = "Ημερολόγιο";
             CalendarForm calendarForm = new CalendarForm();
             calendarForm.Show();
         }

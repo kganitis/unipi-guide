@@ -107,17 +107,5 @@ namespace WindowsFormsApp2023_Final
             SubsectionButtonClick(sender);
             UpdateContent();
         }
-
-        // Αλλαγή του focus όταν ο χρήστης κάνει κλικ στα TextBox, ώστε να μην εμφανίζεται ο κέρσορας που αναβοσβήνει
-        // πιστεύοντας έτσι ο χρήστης ότι μπορεί να επεξεργαστεί το κείμενο
-        private void MainContentTextBox_MouseDown(object sender, MouseEventArgs e)
-        {
-            ContentPanel.Focus();
-        }
-
-        private void SectionTitleTextBox_MouseDown(object sender, MouseEventArgs e)
-        {
-            ContentPanel.Focus();
-        }
     }
 }

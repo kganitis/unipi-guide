@@ -83,5 +83,44 @@ namespace WindowsFormsApp2023_Final
                 NavButton1.Text = section.Name;
             }
         }
+
+        protected void UpdateContent()
+        {
+            if (currentSection != null)
+            {
+                string title = currentSection.Name;
+                string content = currentSection.Content;
+
+                // Ενημέρωση τίτλου και κειμένου
+                SectionTitleTextBox.Text = title;
+                MainContentTextBox.Text = content;
+
+                // Ενημέρωση τυχόν εικόνων
+                ContentPictureBox1.Image = currentSection.Pictures[0];
+                ContentPictureBox2.Image = currentSection.Pictures[1];
+
+                // Αν δεν υπάρχουν εικόνες για το συγκεκριμένο τμήμα, μεγάλωσε το TextBox του κυρίως περιεχομένου
+                if (ContentPictureBox1.Image == null && ContentPictureBox2.Image == null)
+                {
+                    MainContentTextBox.Width = 678;
+                }
+                else
+                {
+                    MainContentTextBox.Width = 492;
+                }
+            }
+        }
+
+        // Αλλαγή του focus όταν ο χρήστης κάνει κλικ στα TextBox, ώστε να μην εμφανίζεται ο κέρσορας που αναβοσβήνει
+        // πιστεύοντας έτσι ο χρήστης ότι μπορεί να επεξεργαστεί το κείμενο
+        private void MainContentTextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            ContentPanel.Focus();
+        }
+
+        private void SectionTitleTextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            ContentPanel.Focus();
+        }
     }
 }
