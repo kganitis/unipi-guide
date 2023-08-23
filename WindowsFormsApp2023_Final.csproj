@@ -74,11 +74,23 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEventForm.Designer.cs">
+      <DependentUpon>AddEventForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarForm.Designer.cs">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCacheManager.cs" />
     <Compile Include="GuideSection.cs" />
@@ -138,12 +150,36 @@
     <Compile Include="UniversitySectionForm.Designer.cs">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserSession.cs" />
+    <Compile Include="ViewEventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEventsForm.Designer.cs">
+      <DependentUpon>ViewEventsForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddEventForm.resx">
+      <DependentUpon>AddEventForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarForm.resx">
+      <DependentUpon>CalendarForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuideSectionForm.resx">
       <DependentUpon>GuideSectionForm.cs</DependentUpon>
@@ -181,6 +217,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UniversitySectionForm.resx">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEventsForm.resx">
+      <DependentUpon>ViewEventsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -318,6 +363,72 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Πολιτιστικές Ομάδες.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ιστορία.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Εξωτερικές Αίθουσες.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Κεντρικό Κτίριο.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Κτίριο Νίκαιας.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Λοιποί Χώροι.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28363%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28364%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28365%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Αποστολή.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Όραμα.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στρατηγική.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Χαιρετισμός.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28366%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28367%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28368%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28369%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28370%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Επικοινωνία.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28371%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28372%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28373%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28374%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

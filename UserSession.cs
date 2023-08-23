@@ -11,7 +11,6 @@
         public string Name { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
-        // Add more user-specific properties as needed
 
         // Private constructor for the singleton pattern
         private UserSession() { }
@@ -27,12 +26,10 @@
             }
         }
 
-        // Method to clear user session data on logout or application close
-        public void ClearSession()
+        // Method to check if the user is logged in
+        public bool IsLoggedIn()
         {
-            Username = null;
-            UserId = 0;
-            // Clear other user-specific data
+            return !string.IsNullOrEmpty(Username);
         }
     }
 }

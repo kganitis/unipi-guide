@@ -28,7 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).BeginInit();
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // MainContentTextBox
+            // 
+            this.MainContentTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            // 
+            // SectionTitleTextBox
+            // 
+            this.SectionTitleTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SectionTitleTextBox.Size = new System.Drawing.Size(721, 57);
             // 
             // highlightedButton
             // 
@@ -63,6 +75,9 @@
             this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "ServicesSectionForm";
             this.Text = "Υπηρεσίες";
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).EndInit();
+            this.ContentPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -39,12 +39,10 @@
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Controls.Add(this.ContentPictureBox2);
-            this.ContentPanel.Controls.Add(this.ContentPictureBox1);
-            this.ContentPanel.Controls.Add(this.SectionTitleTextBox);
             this.ContentPanel.Controls.Add(this.MainContentTextBox);
-            this.ContentPanel.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.ContentPanel.Padding = new System.Windows.Forms.Padding(13, 0, 13, 0);
+            this.ContentPanel.Controls.Add(this.SectionTitleTextBox);
+            this.ContentPanel.Controls.Add(this.ContentPictureBox1);
+            this.ContentPanel.Controls.Add(this.ContentPictureBox2);
             // 
             // NavButton1
             // 
@@ -84,6 +82,7 @@
             this.MainContentTextBox.Size = new System.Drawing.Size(492, 316);
             this.MainContentTextBox.TabIndex = 1;
             this.MainContentTextBox.Text = "Κυρίως περιεχόμενο";
+            this.MainContentTextBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainContentTextBox_MouseDown);
             // 
             // SectionTitleTextBox
             // 
@@ -97,6 +96,7 @@
             this.SectionTitleTextBox.Size = new System.Drawing.Size(721, 46);
             this.SectionTitleTextBox.TabIndex = 2;
             this.SectionTitleTextBox.Text = "Τίτλος τμήματος";
+            this.SectionTitleTextBox.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SectionTitleTextBox_MouseDown);
             // 
             // ContentPictureBox1
             // 
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 560);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "GuideSectionForm";
             this.ContentPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).EndInit();
