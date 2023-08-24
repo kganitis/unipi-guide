@@ -18,9 +18,9 @@ namespace WindowsFormsApp2023_Final
         private void ReviewsForm_Load(object sender, EventArgs e)
         {
             // Απόκρυψη κουμπιού υποβολής σχολίου για τους επισκέπτες
-            if (String.IsNullOrEmpty(UserSession.Instance.Username))
+            if (UserSession.Instance.IsVisitor())
             {
-                ReviewSubmitButton.Visible = false; // Απόκρυψη του κουμπιού
+                ReviewSubmitButton.Visible = false;
             }
         }
 
