@@ -142,12 +142,12 @@ namespace WindowsFormsApp2023_Final
             NavigateToForm<AboutForm>();
         }
 
-        private void ExportButton_Click(object sender, EventArgs e)
+        protected virtual void ExportButton_Click(object sender, EventArgs e)
         {
             Export();
         }
 
-        private void ListenButton_Click(object sender, EventArgs e)
+        protected virtual void ListenButton_Click(object sender, EventArgs e)
         {
 
         }
