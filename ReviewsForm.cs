@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SQLite;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
 {
@@ -23,7 +17,18 @@ namespace WindowsFormsApp2023_Final
 
         private void ReviewsForm_Load(object sender, EventArgs e)
         {
-            UserSession session = UserSession.Instance;
+            // Απόκρυψη κουμπιού υποβολής σχολίου για τους επισκέπτες
+            if (String.IsNullOrEmpty(UserSession.Instance.Username))
+            {
+                ReviewSubmitButton.Visible = false; // Απόκρυψη του κουμπιού
+            }
+        }
+
+        private void ReviewsForm_Activated(object sender, EventArgs e)
+        {
+            ReviewsTextBox.Clear();
+
+            // Φορτώνει από τη βάση τις καταχωρημένες αξιολογήσεις και τις εμφανίζει
             connection = new SQLiteConnection(connectionString);
             connection.Open();
             String selectSQL = "SELECT comments, grade FROM reviews";
@@ -31,26 +36,19 @@ namespace WindowsFormsApp2023_Final
             SQLiteDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                richTextBox1.AppendText(Environment.NewLine);
-                richTextBox1.AppendText(Environment.NewLine);
-                richTextBox1.AppendText(reader.GetString(0));
-                richTextBox1.AppendText(" Total grade:  ");
-                richTextBox1.AppendText(reader.GetInt32(1).ToString());
-                richTextBox1.AppendText(" / 100");
+                ReviewsTextBox.AppendText(Environment.NewLine);
+                ReviewsTextBox.AppendText(Environment.NewLine);
+                ReviewsTextBox.AppendText(reader.GetString(0));
+                ReviewsTextBox.AppendText(" Total grade:  ");
+                ReviewsTextBox.AppendText(reader.GetInt32(1).ToString());
+                ReviewsTextBox.AppendText(" / 100");
             }
             connection.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ReviewSubmitButton_Click(object sender, EventArgs e)
         {
             NavigateToForm<ReviewSubmitForm>();
         }
-
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            NavigateToForm<ReviewSubmitForm>();
-        }
-
     }
 }

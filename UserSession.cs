@@ -12,6 +12,8 @@
         public string Password { get; set; }
         public string Email { get; set; }
 
+        public string selectedVoice { get; set; }
+
         // Private constructor for the singleton pattern
         private UserSession() { }
 
