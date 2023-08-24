@@ -57,18 +57,17 @@
             this.ContentPanel.Controls.Add(this.pictureBox7);
             this.ContentPanel.Controls.Add(this.pictureBox6);
             this.ContentPanel.Controls.Add(this.pictureBox5);
-            this.ContentPanel.Location = new System.Drawing.Point(90, 21);
-            this.ContentPanel.Size = new System.Drawing.Size(1003, 512);
-            this.ContentPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.ContentPanel_Paint);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ContentPanel.Padding = new System.Windows.Forms.Padding(8, 0, 8, 0);
             // 
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(111, 197);
+            this.pictureBox7.Size = new System.Drawing.Size(83, 160);
             this.pictureBox7.TabIndex = 12;
             this.pictureBox7.TabStop = false;
             // 
@@ -76,10 +75,10 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox6.Location = new System.Drawing.Point(811, 0);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox6.Location = new System.Drawing.Point(608, 0);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(235, 197);
+            this.pictureBox6.Size = new System.Drawing.Size(176, 160);
             this.pictureBox6.TabIndex = 11;
             this.pictureBox6.TabStop = false;
             // 
@@ -87,10 +86,10 @@
             // 
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox5.Image = global::WindowsFormsApp2023_Final.Properties.Resources.pic1;
-            this.pictureBox5.Location = new System.Drawing.Point(107, 0);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBox5.Location = new System.Drawing.Point(80, 0);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(711, 197);
+            this.pictureBox5.Size = new System.Drawing.Size(533, 160);
             this.pictureBox5.TabIndex = 10;
             this.pictureBox5.TabStop = false;
             // 
@@ -99,35 +98,37 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(0, 201);
+            this.label1.Location = new System.Drawing.Point(0, 163);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1045, 47);
+            this.label1.Size = new System.Drawing.Size(784, 38);
             this.label1.TabIndex = 13;
-            this.label1.Text = "       Μοιραστείτε σχόλια και εμπειρίες για το Πανεπιστήμιο και παραθέστε τη δική" +
-    " σας γνώμη για βελτίωση των υπαρχόντων υπηρεσιών";
+            this.label1.Text = "Μοιραστείτε σχόλια και εμπειρίες για το Πανεπιστήμιο και παραθέστε τη δική σας γν" +
+    "ώμη για βελτίωση των υπαρχόντων υπηρεσιών";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ReviewTextBox
             // 
             this.ReviewTextBox.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ReviewTextBox.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.ReviewTextBox.Location = new System.Drawing.Point(3, 250);
-            this.ReviewTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ReviewTextBox.Location = new System.Drawing.Point(2, 203);
+            this.ReviewTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ReviewTextBox.Multiline = true;
             this.ReviewTextBox.Name = "ReviewTextBox";
-            this.ReviewTextBox.Size = new System.Drawing.Size(1039, 171);
+            this.ReviewTextBox.Size = new System.Drawing.Size(780, 140);
             this.ReviewTextBox.TabIndex = 14;
-            this.ReviewTextBox.Text = "Enter your review here...";
+            this.ReviewTextBox.Text = "Γράψτε εδώ τα σχόλιά σας...";
+            this.ReviewTextBox.Click += new System.EventHandler(this.ReviewTextBox_Click);
             // 
             // SubmitButton
             // 
             this.SubmitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
             this.SubmitButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.SubmitButton.ForeColor = System.Drawing.Color.White;
-            this.SubmitButton.Location = new System.Drawing.Point(863, 476);
-            this.SubmitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.SubmitButton.Location = new System.Drawing.Point(647, 387);
+            this.SubmitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SubmitButton.Name = "SubmitButton";
-            this.SubmitButton.Size = new System.Drawing.Size(168, 54);
+            this.SubmitButton.Size = new System.Drawing.Size(126, 44);
             this.SubmitButton.TabIndex = 15;
             this.SubmitButton.Text = "Καταχώρηση";
             this.SubmitButton.UseVisualStyleBackColor = false;
@@ -137,12 +138,11 @@
             // 
             this.numericUpDown1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.numericUpDown1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.numericUpDown1.Location = new System.Drawing.Point(21, 549);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.numericUpDown1.Location = new System.Drawing.Point(16, 446);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(368, 38);
+            this.numericUpDown1.Size = new System.Drawing.Size(276, 32);
             this.numericUpDown1.TabIndex = 16;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label2
             // 
@@ -150,10 +150,9 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(6, 423);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(4, 344);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(717, 23);
+            this.label2.Size = new System.Drawing.Size(560, 18);
             this.label2.TabIndex = 17;
             this.label2.Text = "Βαθμολόγησε με άριστα το 100 πόσο ικανοποιημένος είσαι από το Πανεπιστήμιο";
             // 
@@ -161,16 +160,17 @@
             // 
             this.numericUpDown2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.numericUpDown2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.numericUpDown2.Location = new System.Drawing.Point(67, 476);
+            this.numericUpDown2.Location = new System.Drawing.Point(50, 387);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(160, 30);
+            this.numericUpDown2.Size = new System.Drawing.Size(120, 26);
             this.numericUpDown2.TabIndex = 18;
             // 
             // ReviewSubmitForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(1312, 689);
-            this.Margin = new System.Windows.Forms.Padding(7);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(984, 560);
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "ReviewSubmitForm";
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();

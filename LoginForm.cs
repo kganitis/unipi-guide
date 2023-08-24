@@ -138,6 +138,8 @@ namespace WindowsFormsApp2023_Final
 
         private void VisitorButton_Click(object sender, EventArgs e)
         {
+            UserSession session = UserSession.Instance;
+
             if (LanguageComboBox.Text != "") // Εάν ο χρήστης έχει επιλέξει γλώσσα
             {
                 if (LanguageComboBox.Text == "Αγγλικά(Ηνωμένου Βασιλείου)")
