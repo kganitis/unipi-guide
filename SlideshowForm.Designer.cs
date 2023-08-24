@@ -69,6 +69,7 @@
             this.ContentPanel.Controls.Add(this.firstUC1);
             this.guna2Transition2.SetDecoration(this.ContentPanel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this.ContentPanel, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.ContentPanel.Size = new System.Drawing.Size(784, 437);
             // 
             // AboutButton
             // 
@@ -149,10 +150,10 @@
             this.guna2Transition2.SetDecoration(this.firstUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.firstUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.firstUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.firstUC1.Location = new System.Drawing.Point(17, 0);
-            this.firstUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstUC1.Location = new System.Drawing.Point(13, 0);
+            this.firstUC1.Margin = new System.Windows.Forms.Padding(2);
             this.firstUC1.Name = "firstUC1";
-            this.firstUC1.Size = new System.Drawing.Size(750, 437);
+            this.firstUC1.Size = new System.Drawing.Size(758, 437);
             this.firstUC1.TabIndex = 1;
             this.firstUC1.Visible = false;
             // 
@@ -164,10 +165,10 @@
             this.guna2Transition2.SetDecoration(this.secondUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.secondUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.secondUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.secondUC1.Location = new System.Drawing.Point(17, 0);
-            this.secondUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.secondUC1.Location = new System.Drawing.Point(13, 0);
+            this.secondUC1.Margin = new System.Windows.Forms.Padding(2);
             this.secondUC1.Name = "secondUC1";
-            this.secondUC1.Size = new System.Drawing.Size(750, 437);
+            this.secondUC1.Size = new System.Drawing.Size(758, 437);
             this.secondUC1.TabIndex = 2;
             this.secondUC1.Visible = false;
             // 
@@ -200,10 +201,10 @@
             this.guna2Transition2.SetDecoration(this.thirdUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.thirdUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.thirdUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
-            this.thirdUC1.Location = new System.Drawing.Point(17, 0);
-            this.thirdUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.thirdUC1.Location = new System.Drawing.Point(13, 0);
+            this.thirdUC1.Margin = new System.Windows.Forms.Padding(2);
             this.thirdUC1.Name = "thirdUC1";
-            this.thirdUC1.Size = new System.Drawing.Size(750, 437);
+            this.thirdUC1.Size = new System.Drawing.Size(758, 437);
             this.thirdUC1.TabIndex = 3;
             this.thirdUC1.Visible = false;
             // 
@@ -215,10 +216,10 @@
             this.guna2Transition2.SetDecoration(this.forthUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.forthUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.forthUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
-            this.forthUC1.Location = new System.Drawing.Point(17, 0);
-            this.forthUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.forthUC1.Location = new System.Drawing.Point(13, 0);
+            this.forthUC1.Margin = new System.Windows.Forms.Padding(2);
             this.forthUC1.Name = "forthUC1";
-            this.forthUC1.Size = new System.Drawing.Size(750, 437);
+            this.forthUC1.Size = new System.Drawing.Size(758, 437);
             this.forthUC1.TabIndex = 4;
             this.forthUC1.Visible = false;
             // 
@@ -230,10 +231,10 @@
             this.guna2Transition2.SetDecoration(this.fifthUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.fifthUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fifthUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
-            this.fifthUC1.Location = new System.Drawing.Point(17, 0);
-            this.fifthUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fifthUC1.Location = new System.Drawing.Point(13, 0);
+            this.fifthUC1.Margin = new System.Windows.Forms.Padding(2);
             this.fifthUC1.Name = "fifthUC1";
-            this.fifthUC1.Size = new System.Drawing.Size(750, 437);
+            this.fifthUC1.Size = new System.Drawing.Size(758, 437);
             this.fifthUC1.TabIndex = 5;
             this.fifthUC1.Visible = false;
             // 
@@ -245,10 +246,10 @@
             this.guna2Transition2.SetDecoration(this.sixthUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.sixthUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sixthUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.sixthUC1.Location = new System.Drawing.Point(17, 0);
-            this.sixthUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sixthUC1.Location = new System.Drawing.Point(13, 0);
+            this.sixthUC1.Margin = new System.Windows.Forms.Padding(2);
             this.sixthUC1.Name = "sixthUC1";
-            this.sixthUC1.Size = new System.Drawing.Size(750, 437);
+            this.sixthUC1.Size = new System.Drawing.Size(758, 437);
             this.sixthUC1.TabIndex = 6;
             this.sixthUC1.Visible = false;
             // 
@@ -260,10 +261,10 @@
             this.guna2Transition2.SetDecoration(this.seventhUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.seventhUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.seventhUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.seventhUC1.Location = new System.Drawing.Point(17, 0);
+            this.seventhUC1.Location = new System.Drawing.Point(13, 0);
             this.seventhUC1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.seventhUC1.Name = "seventhUC1";
-            this.seventhUC1.Size = new System.Drawing.Size(750, 437);
+            this.seventhUC1.Size = new System.Drawing.Size(758, 437);
             this.seventhUC1.TabIndex = 7;
             this.seventhUC1.Visible = false;
             // 
@@ -275,10 +276,10 @@
             this.guna2Transition2.SetDecoration(this.eighthUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.eighthUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.eighthUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
-            this.eighthUC1.Location = new System.Drawing.Point(17, 0);
-            this.eighthUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.eighthUC1.Location = new System.Drawing.Point(13, 0);
+            this.eighthUC1.Margin = new System.Windows.Forms.Padding(2);
             this.eighthUC1.Name = "eighthUC1";
-            this.eighthUC1.Size = new System.Drawing.Size(750, 437);
+            this.eighthUC1.Size = new System.Drawing.Size(758, 437);
             this.eighthUC1.TabIndex = 8;
             this.eighthUC1.Visible = false;
             // 
@@ -290,10 +291,10 @@
             this.guna2Transition2.SetDecoration(this.ninthUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.ninthUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ninthUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
-            this.ninthUC1.Location = new System.Drawing.Point(17, 0);
-            this.ninthUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ninthUC1.Location = new System.Drawing.Point(13, 0);
+            this.ninthUC1.Margin = new System.Windows.Forms.Padding(2);
             this.ninthUC1.Name = "ninthUC1";
-            this.ninthUC1.Size = new System.Drawing.Size(750, 437);
+            this.ninthUC1.Size = new System.Drawing.Size(758, 437);
             this.ninthUC1.TabIndex = 9;
             // 
             // seventhUC2
@@ -304,10 +305,10 @@
             this.guna2Transition2.SetDecoration(this.seventhUC2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.seventhUC2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.seventhUC2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.seventhUC2.Location = new System.Drawing.Point(17, 0);
+            this.seventhUC2.Location = new System.Drawing.Point(13, 0);
             this.seventhUC2.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.seventhUC2.Name = "seventhUC2";
-            this.seventhUC2.Size = new System.Drawing.Size(750, 437);
+            this.seventhUC2.Size = new System.Drawing.Size(758, 437);
             this.seventhUC2.TabIndex = 10;
             this.seventhUC2.Visible = false;
             // 
@@ -319,9 +320,10 @@
             this.guna2Transition2.SetDecoration(this.tenthUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.tenthUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tenthUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.tenthUC1.Location = new System.Drawing.Point(17, 0);
+            this.tenthUC1.Location = new System.Drawing.Point(13, 0);
+            this.tenthUC1.Margin = new System.Windows.Forms.Padding(4);
             this.tenthUC1.Name = "tenthUC1";
-            this.tenthUC1.Size = new System.Drawing.Size(750, 437);
+            this.tenthUC1.Size = new System.Drawing.Size(758, 437);
             this.tenthUC1.TabIndex = 11;
             this.tenthUC1.Visible = false;
             // 
@@ -333,10 +335,10 @@
             this.guna2Transition2.SetDecoration(this.eleventhUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.eleventhUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.eleventhUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.eleventhUC1.Location = new System.Drawing.Point(17, 0);
-            this.eleventhUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.eleventhUC1.Location = new System.Drawing.Point(13, 0);
+            this.eleventhUC1.Margin = new System.Windows.Forms.Padding(2);
             this.eleventhUC1.Name = "eleventhUC1";
-            this.eleventhUC1.Size = new System.Drawing.Size(750, 437);
+            this.eleventhUC1.Size = new System.Drawing.Size(758, 437);
             this.eleventhUC1.TabIndex = 12;
             this.eleventhUC1.Visible = false;
             // 
@@ -348,10 +350,10 @@
             this.guna2Transition2.SetDecoration(this.twelfthUC1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.twelfthUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.twelfthUC1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic);
-            this.twelfthUC1.Location = new System.Drawing.Point(17, 0);
-            this.twelfthUC1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.twelfthUC1.Location = new System.Drawing.Point(13, 0);
+            this.twelfthUC1.Margin = new System.Windows.Forms.Padding(2);
             this.twelfthUC1.Name = "twelfthUC1";
-            this.twelfthUC1.Size = new System.Drawing.Size(750, 437);
+            this.twelfthUC1.Size = new System.Drawing.Size(758, 437);
             this.twelfthUC1.TabIndex = 13;
             // 
             // guna2Transition2
@@ -390,10 +392,10 @@
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.guna2Transition2.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "SlideshowForm";
             this.Text = "Φωτογραφίες";
+            this.Deactivate += new System.EventHandler(this.SlideshowForm_Deactivate);
             this.ContentPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

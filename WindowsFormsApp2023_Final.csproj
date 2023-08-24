@@ -168,6 +168,78 @@
     <Compile Include="UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\EighthUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EighthUC.Designer.cs">
+      <DependentUpon>EighthUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\EleventhUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\EleventhUC.Designer.cs">
+      <DependentUpon>EleventhUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FifthUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FifthUC.Designer.cs">
+      <DependentUpon>FifthUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FirstUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\FirstUC.Designer.cs">
+      <DependentUpon>FirstUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ForthUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ForthUC.Designer.cs">
+      <DependentUpon>ForthUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NinthUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NinthUC.Designer.cs">
+      <DependentUpon>NinthUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SecondUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SecondUC.Designer.cs">
+      <DependentUpon>SecondUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SeventhUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SeventhUC.Designer.cs">
+      <DependentUpon>SeventhUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SixthUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SixthUC.Designer.cs">
+      <DependentUpon>SixthUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TenthUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TenthUC.Designer.cs">
+      <DependentUpon>TenthUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ThirdUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ThirdUC.Designer.cs">
+      <DependentUpon>ThirdUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TwelfthUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\TwelfthUC.Designer.cs">
+      <DependentUpon>TwelfthUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserSession.cs" />
     <Compile Include="ViewEventsForm.cs">
       <SubType>Form</SubType>
@@ -229,6 +301,42 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EighthUC.resx">
+      <DependentUpon>EighthUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\EleventhUC.resx">
+      <DependentUpon>EleventhUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FifthUC.resx">
+      <DependentUpon>FifthUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\FirstUC.resx">
+      <DependentUpon>FirstUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ForthUC.resx">
+      <DependentUpon>ForthUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NinthUC.resx">
+      <DependentUpon>NinthUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SecondUC.resx">
+      <DependentUpon>SecondUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SeventhUC.resx">
+      <DependentUpon>SeventhUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SixthUC.resx">
+      <DependentUpon>SixthUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TenthUC.resx">
+      <DependentUpon>TenthUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ThirdUC.resx">
+      <DependentUpon>ThirdUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\TwelfthUC.resx">
+      <DependentUpon>TwelfthUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewEventsForm.resx">
       <DependentUpon>ViewEventsForm.cs</DependentUpon>

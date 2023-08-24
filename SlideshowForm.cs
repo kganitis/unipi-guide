@@ -16,6 +16,8 @@ namespace WindowsFormsApp2023_Final
         private UserControl[] slides;
         private int currentIndex = 0;
 
+        // Γιατί λείπει το πάνω μέρος του παραθύρου από τη φόρμα; (minimize, close κλπ)
+
         public SlideshowForm()
         {
             InitializeComponent();
@@ -47,6 +49,13 @@ namespace WindowsFormsApp2023_Final
         }
 
         protected override void ListenButton_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            player.Stop();
+            guna2Transition1.ShowSync(slides[11]);
+        }
+
+        private void SlideshowForm_Deactivate(object sender, EventArgs e)
         {
             timer1.Stop();
             player.Stop();
