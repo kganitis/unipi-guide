@@ -1,15 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SQLite;
 using System.Speech.Synthesis;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
-using System.Reflection;
-using System.Reflection.Emit;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp2023_Final
 {
@@ -59,7 +51,6 @@ namespace WindowsFormsApp2023_Final
             }
         }
 
-        // Εισοδος χρήστη
         private void LoginButton_Click(object sender, EventArgs e)
         {
             connection = new SQLiteConnection(connectionString);
@@ -100,42 +91,42 @@ namespace WindowsFormsApp2023_Final
                 session.Email = email;
                 session.Password = password;
 
-                if (LanguageComboBox.Text != "")
+                if (LanguageComboBox.Text != "") // Εάν ο χρήστης έχει επιλέξει γλώσσα
                 {
                     if (LanguageComboBox.Text == "Αγγλικά(Ηνωμένου Βασιλείου)")
                     {
                         engine.SelectVoice("Microsoft Zira Desktop");
-                        engine.SpeakAsync("Hello" + session.Name + "Welcome to the University of Piraeus");
+                        engine.SpeakAsync("Hello" + session.Name + "! Welcome to the University of Piraeus");
                     }
                     else if (LanguageComboBox.Text == "Αγγλικά(ΗΠΑ)")
                     {
                         engine.SelectVoice("Microsoft Hazel Desktop");
-                        engine.SpeakAsync("Hello" + session.Name + "Welcome to the University of Piraeus");
+                        engine.SpeakAsync("Hello" + session.Name + "! Welcome to the University of Piraeus");
                     }
                     else if (LanguageComboBox.Text == "Γερμανικά")
                     {
                         engine.SelectVoice("Microsoft Hedda Desktop");
-                        engine.SpeakAsync("Hallo" + session.Name + "Willkommen an der Universität Piräus");
+                        engine.SpeakAsync("Hallo" + session.Name + "! Willkommen an der Universität Piräus");
                     }
                     else if (LanguageComboBox.Text == "Γαλλικά")
                     {
                         engine.SelectVoice("Microsoft Hortense Desktop");
-                        engine.SpeakAsync("Bonjour" + session.Name + "Bienvenue à l'Université du Pirée");
+                        engine.SpeakAsync("Bonjour" + session.Name + "! Bienvenue à l'Université du Pirée");
                     }
                     else if (LanguageComboBox.Text == "Ισπανικά")
                     {
                         engine.SelectVoice("Microsoft Helena Desktop");
-                        engine.SpeakAsync("¡Hola" + session.Name + "Bienvenido a la Universidad del Pireo");
+                        engine.SpeakAsync("¡Hola" + session.Name + "! Bienvenido a la Universidad del Pireo");
                     }
-                    timer1.Start();
                 }
                 else
                 {
                     MessageBox.Show("Γεια σου " + session.Name + ". Καλωσόρισες στο Πανεπιστήμιο Πειραιώς");
-                    NavigateToForm<GuideForm>();
-                    UsernameTextBox.Clear();
-                    PasswordTextBox.Clear();
                 }
+
+                NavigateToForm<GuideForm>();
+                UsernameTextBox.Clear();
+                PasswordTextBox.Clear();
             }
             else
             {
@@ -145,7 +136,6 @@ namespace WindowsFormsApp2023_Final
             }
         }
 
-        //Είσοδος Επισκέπτη--Κουμπί
         private void VisitorButton_Click(object sender, EventArgs e)
         {
             if (LanguageComboBox.Text != "") // Εάν ο χρήστης έχει επιλέξει γλώσσα
@@ -153,27 +143,27 @@ namespace WindowsFormsApp2023_Final
                 if (LanguageComboBox.Text == "Αγγλικά(Ηνωμένου Βασιλείου)")
                 {
                     engine.SelectVoice("Microsoft Zira Desktop");
-                    engine.SpeakAsync("Hello!Welcome to the University of Piraeus");
+                    engine.SpeakAsync("Hello! Welcome to the University of Piraeus");
                 }
                 else if (LanguageComboBox.Text == "Αγγλικά(ΗΠΑ)")
                 {
                     engine.SelectVoice("Microsoft Hazel Desktop");
-                    engine.SpeakAsync("Hello!Welcome to the University of Piraeus");
+                    engine.SpeakAsync("Hello! Welcome to the University of Piraeus");
                 }
                 else if (LanguageComboBox.Text == "Γερμανικά")
                 {
                     engine.SelectVoice("Microsoft Hedda Desktop");
-                    engine.SpeakAsync("Hallo!Willkommen an der Universität Piräus");
+                    engine.SpeakAsync("Hallo! Willkommen an der Universität Piräus");
                 }
                 else if (LanguageComboBox.Text == "Γαλλικά")
                 {
                     engine.SelectVoice("Microsoft Hortense Desktop");
-                    engine.SpeakAsync("Bonjour!Bienvenue à l'Université du Pirée");
+                    engine.SpeakAsync("Bonjour! Bienvenue à l'Université du Pirée");
                 }
                 else if (LanguageComboBox.Text == "Ισπανικά")
                 {
                     engine.SelectVoice("Microsoft Helena Desktop");
-                    engine.SpeakAsync("¡Hola!Bienvenido a la Universidad del Pireo");
+                    engine.SpeakAsync("¡Hola! Bienvenido a la Universidad del Pireo");
                 }
             }
             NavigateToForm<GuideForm>();
