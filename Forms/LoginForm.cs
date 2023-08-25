@@ -106,6 +106,15 @@ namespace WindowsFormsApp2023_Final
 
         private void SpeakWelcomeMessage()
         {
+            String welcomeMessage;
+            
+            // Προσθήκη ενός space στο όνομα (εάν έχει τεθεί όνομα) για εμφάνιση στο μήνυμα παρακάτω
+            String welcomeName = name;
+            if (!String.IsNullOrEmpty(welcomeName))
+            {
+                welcomeName = " " + welcomeName;
+            }
+
             bool isSetLanguage = LanguageComboBox.Text != "";
             if (isSetLanguage)
             {
@@ -113,28 +122,35 @@ namespace WindowsFormsApp2023_Final
                 {
                     case "Αγγλικά(Ηνωμένου Βασιλείου)":
                         engine.SelectVoice("Microsoft Zira Desktop");
-                        engine.SpeakAsync("Hello " + name + "! Welcome to the University of Piraeus!");
+                        welcomeMessage = "Hello" + welcomeName + "! Welcome to the University of Piraeus!";
                         break;
                     case "Αγγλικά(ΗΠΑ)":
                         engine.SelectVoice("Microsoft Hazel Desktop");
-                        engine.SpeakAsync("Hello " + name + "! Welcome to the University of Piraeus!");
+                        welcomeMessage = "Hello" + welcomeName + "! Welcome to the University of Piraeus!";
                         break;
                     case "Γερμανικά":
                         engine.SelectVoice("Microsoft Hedda Desktop");
-                        engine.SpeakAsync("Hallo " + name + "! Willkommen an der Universität Piräus!");
+                        welcomeMessage = "Hallo" + welcomeName + "! Willkommen an der Universität Piräus!";
                         break;
                     case "Γαλλικά":
                         engine.SelectVoice("Microsoft Hortense Desktop");
-                        engine.SpeakAsync("Bonjour " + name + "! Bienvenue à l'Université du Pirée!");
+                        welcomeMessage = "Bonjour" + welcomeName + "! Bienvenue à l'Université du Pirée!";
                         break;
                     case "Ισπανικά":
                         engine.SelectVoice("Microsoft Helena Desktop");
-                        engine.SpeakAsync("¡Hola " + name + "! Bienvenido a la Universidad del Pireo!");
+                        welcomeMessage = "¡Hola" + welcomeName + "! Bienvenido a la Universidad del Pireo!";
+                        break;
+                    default:
+                        welcomeMessage = "";
                         break;
                 }
-                return;
+                engine.SpeakAsync(welcomeMessage);
             }
-            MessageBox.Show("Γεια σου " + name + ". Καλωσόρισες στο Πανεπιστήμιο Πειραιώς!");
+            else
+            {
+                welcomeMessage = "Γεια σου" + welcomeName + ". Καλωσόρισες στο Πανεπιστήμιο Πειραιώς!";
+            }
+            FormCacheManager.Instance.GetFormInstance<GuideForm>().UpdateWelcomeMessage(welcomeMessage);
         }
 
         private void VisitorButton_Click(object sender, EventArgs e)

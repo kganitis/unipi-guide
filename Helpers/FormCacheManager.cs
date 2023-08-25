@@ -31,9 +31,18 @@ namespace WindowsFormsApp2023_Final
             formCache.Add(typeof(ViewEventsForm), new ViewEventsForm());
         }
 
+        public T GetFormInstance<T>() where T : BaseForm
+        {
+            if (formCache.ContainsKey(typeof(T)))
+            {
+                return (T)formCache[typeof(T)];
+            }
+            return null;
+        }
+
         public void NavigateToForm<T>(BaseForm currentForm) where T : BaseForm
         {
-            T nextForm = (T)formCache[typeof(T)];
+            T nextForm = GetFormInstance<T>();
             // Όταν μεταβαίνουμε από το Login στην αρχική σελίδα του οδηγού, δεν θέλουμε να κρατήσουμε την Login στην στοίβα ιστορικού
             if (!(currentForm.GetType() == typeof(LoginForm) && nextForm.GetType() == typeof(GuideForm)))
             {
@@ -61,5 +70,6 @@ namespace WindowsFormsApp2023_Final
                 previousForm.Show();
             }
         }
+
     }
 }
