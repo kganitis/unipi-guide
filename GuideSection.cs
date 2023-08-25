@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using WindowsFormsApp2023_Final.Properties;
 
 namespace WindowsFormsApp2023_Final
