@@ -76,18 +76,13 @@ namespace WindowsFormsApp2023_Final
                 password = reader.GetString(0);
                 username = reader.GetString(1);
                 if (textBox2.Text.Equals(password) && textBox1.Text.Equals(username))
-
-                    password = reader.GetString(0);
-                Username = reader.GetString(1);
-                if (textBox2.Text.Equals(password) && textBox1.Text.Equals(Username))
-
                 {
-                    foundMatch = true;
                     password = reader.GetString(0);
                     username = reader.GetString(1);
                     name = reader.GetString(2);
                     id = reader.GetInt32(3);
                     email = reader.GetString(4);
+                    foundMatch = true;
                     break;
                 }
             }
@@ -96,10 +91,10 @@ namespace WindowsFormsApp2023_Final
             if (foundMatch)
             {
                 UserSession session = UserSession.Instance;
-                session.Username = username; // Replace with actual username
-                session.UserId = id; // Replace with actual user ID or relevant data
-                session.Name = name; // Replace with actual username
-                session.Email = email; // Replace with actual user ID or relevant data
+                session.Username = username; 
+                session.UserId = id; 
+                session.Name = name; 
+                session.Email = email; 
                 session.Password = password;
 
                 if (comboBox1.Text != "") {
@@ -128,7 +123,7 @@ namespace WindowsFormsApp2023_Final
                 }
                 else
                 {
-                    MessageBox.Show("Γεια σου " + session.Name + ". Καλωσόρισες στο Πανεπιστήμιο Πειραιώς");
+                 //   MessageBox.Show("Γεια σου " + session.Name + ". Καλωσόρισες στο Πανεπιστήμιο Πειραιώς");
                     NavigateToForm<GuideForm>();
                     textBox1.Clear();
                     textBox2.Clear();
@@ -238,5 +233,6 @@ namespace WindowsFormsApp2023_Final
             NavigateToForm<GuideForm>();
             timer1.Stop();
         }
+
     }
 }

@@ -366,7 +366,15 @@
   <ItemGroup>
     <None Include="bin\Debug\pictures\unipi_old.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellowNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blackStar3.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
