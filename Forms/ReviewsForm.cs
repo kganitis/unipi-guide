@@ -5,8 +5,6 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class ReviewsForm : WindowsFormsApp2023_Final.GuideForm
     {
-
-        String connectionString = "Data source=rad19900.db;Version=3;";
         SQLiteConnection connection;
 
         public ReviewsForm()

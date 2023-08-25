@@ -7,8 +7,9 @@ namespace WindowsFormsApp2023_Final
     public partial class CalendarForm : Form
     {
         int month, year;
-        //let's create a static variable that we can pass to another form for month and year
+        // create a static variable that we can pass to another form for month and year
         public static int static_month, static_year;
+
         public CalendarForm()
         {
             InitializeComponent();

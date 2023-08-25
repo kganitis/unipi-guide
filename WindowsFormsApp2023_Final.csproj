@@ -74,198 +74,198 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutForm.cs">
+    <Compile Include="Forms\AboutForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutForm.Designer.cs">
+    <Compile Include="Forms\AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddEventForm.cs">
+    <Compile Include="Forms\AddEventForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddEventForm.Designer.cs">
+    <Compile Include="Forms\AddEventForm.Designer.cs">
       <DependentUpon>AddEventForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="BaseForm.cs">
+    <Compile Include="Forms\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BaseForm.Designer.cs">
+    <Compile Include="Forms\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalendarForm.cs">
+    <Compile Include="Forms\CalendarForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalendarForm.Designer.cs">
+    <Compile Include="Forms\CalendarForm.Designer.cs">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCacheManager.cs" />
-    <Compile Include="GuideSection.cs" />
-    <Compile Include="GuideSectionForm.cs">
+    <Compile Include="Helpers\FormCacheManager.cs" />
+    <Compile Include="Helpers\GuideSection.cs" />
+    <Compile Include="Forms\GuideSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuideSectionForm.Designer.cs">
+    <Compile Include="Forms\GuideSectionForm.Designer.cs">
       <DependentUpon>GuideSectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GuideForm.cs">
+    <Compile Include="Forms\GuideForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GuideForm.Designer.cs">
+    <Compile Include="Forms\GuideForm.Designer.cs">
       <DependentUpon>GuideForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReviewsForm.cs">
+    <Compile Include="Forms\ReviewsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReviewsForm.Designer.cs">
+    <Compile Include="Forms\ReviewsForm.Designer.cs">
       <DependentUpon>ReviewsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ReviewSubmitForm.cs">
+    <Compile Include="Forms\ReviewSubmitForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReviewSubmitForm.Designer.cs">
+    <Compile Include="Forms\ReviewSubmitForm.Designer.cs">
       <DependentUpon>ReviewSubmitForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SchoolsSectionForm.cs">
+    <Compile Include="Forms\SchoolsSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SchoolsSectionForm.Designer.cs">
+    <Compile Include="Forms\SchoolsSectionForm.Designer.cs">
       <DependentUpon>SchoolsSectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ServicesSectionForm.cs">
+    <Compile Include="Forms\ServicesSectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ServicesSectionForm.Designer.cs">
+    <Compile Include="Forms\ServicesSectionForm.Designer.cs">
       <DependentUpon>ServicesSectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SlideshowForm.cs">
+    <Compile Include="Forms\SlideshowForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SlideshowForm.Designer.cs">
+    <Compile Include="Forms\SlideshowForm.Designer.cs">
       <DependentUpon>SlideshowForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UniversitySectionForm.cs">
+    <Compile Include="Forms\UniversitySectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UniversitySectionForm.Designer.cs">
+    <Compile Include="Forms\UniversitySectionForm.Designer.cs">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlBlank.cs">
+    <Compile Include="UserControls\UserControlBlank.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlBlank.Designer.cs">
+    <Compile Include="UserControls\UserControlBlank.Designer.cs">
       <DependentUpon>UserControlBlank.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControlDays.cs">
+    <Compile Include="UserControls\UserControlDays.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlDays.Designer.cs">
+    <Compile Include="UserControls\UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\EighthUC.cs">
+    <Compile Include="UserControls\SlidesUC\EighthUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\EighthUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\EighthUC.Designer.cs">
       <DependentUpon>EighthUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\EleventhUC.cs">
+    <Compile Include="UserControls\SlidesUC\EleventhUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\EleventhUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\EleventhUC.Designer.cs">
       <DependentUpon>EleventhUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\FifthUC.cs">
+    <Compile Include="UserControls\SlidesUC\FifthUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\FifthUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\FifthUC.Designer.cs">
       <DependentUpon>FifthUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\FirstUC.cs">
+    <Compile Include="UserControls\SlidesUC\FirstUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\FirstUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\FirstUC.Designer.cs">
       <DependentUpon>FirstUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ForthUC.cs">
+    <Compile Include="UserControls\SlidesUC\ForthUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ForthUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\ForthUC.Designer.cs">
       <DependentUpon>ForthUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\NinthUC.cs">
+    <Compile Include="UserControls\SlidesUC\NinthUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\NinthUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\NinthUC.Designer.cs">
       <DependentUpon>NinthUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\SecondUC.cs">
+    <Compile Include="UserControls\SlidesUC\SecondUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\SecondUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\SecondUC.Designer.cs">
       <DependentUpon>SecondUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\SeventhUC.cs">
+    <Compile Include="UserControls\SlidesUC\SeventhUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\SeventhUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\SeventhUC.Designer.cs">
       <DependentUpon>SeventhUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\SixthUC.cs">
+    <Compile Include="UserControls\SlidesUC\SixthUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\SixthUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\SixthUC.Designer.cs">
       <DependentUpon>SixthUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\TenthUC.cs">
+    <Compile Include="UserControls\SlidesUC\TenthUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\TenthUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\TenthUC.Designer.cs">
       <DependentUpon>TenthUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\ThirdUC.cs">
+    <Compile Include="UserControls\SlidesUC\ThirdUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\ThirdUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\ThirdUC.Designer.cs">
       <DependentUpon>ThirdUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\TwelfthUC.cs">
+    <Compile Include="UserControls\SlidesUC\TwelfthUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\TwelfthUC.Designer.cs">
+    <Compile Include="UserControls\SlidesUC\TwelfthUC.Designer.cs">
       <DependentUpon>TwelfthUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserSession.cs" />
-    <Compile Include="ViewEventsForm.cs">
+    <Compile Include="Helpers\UserSession.cs" />
+    <Compile Include="Forms\ViewEventsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ViewEventsForm.Designer.cs">
+    <Compile Include="Forms\ViewEventsForm.Designer.cs">
       <DependentUpon>ViewEventsForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AboutForm.resx">
+    <EmbeddedResource Include="Forms\AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddEventForm.resx">
+    <EmbeddedResource Include="Forms\AddEventForm.resx">
       <DependentUpon>AddEventForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BaseForm.resx">
+    <EmbeddedResource Include="Forms\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalendarForm.resx">
+    <EmbeddedResource Include="Forms\CalendarForm.resx">
       <DependentUpon>CalendarForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuideSectionForm.resx">
+    <EmbeddedResource Include="Forms\GuideSectionForm.resx">
       <DependentUpon>GuideSectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GuideForm.resx">
+    <EmbeddedResource Include="Forms\GuideForm.resx">
       <DependentUpon>GuideForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -278,67 +278,67 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ReviewsForm.resx">
+    <EmbeddedResource Include="Forms\ReviewsForm.resx">
       <DependentUpon>ReviewsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReviewSubmitForm.resx">
+    <EmbeddedResource Include="Forms\ReviewSubmitForm.resx">
       <DependentUpon>ReviewSubmitForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SchoolsSectionForm.resx">
+    <EmbeddedResource Include="Forms\SchoolsSectionForm.resx">
       <DependentUpon>SchoolsSectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ServicesSectionForm.resx">
+    <EmbeddedResource Include="Forms\ServicesSectionForm.resx">
       <DependentUpon>ServicesSectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SlideshowForm.resx">
+    <EmbeddedResource Include="Forms\SlideshowForm.resx">
       <DependentUpon>SlideshowForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UniversitySectionForm.resx">
+    <EmbeddedResource Include="Forms\UniversitySectionForm.resx">
       <DependentUpon>UniversitySectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlBlank.resx">
+    <EmbeddedResource Include="UserControls\UserControlBlank.resx">
       <DependentUpon>UserControlBlank.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControlDays.resx">
+    <EmbeddedResource Include="UserControls\UserControlDays.resx">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\EighthUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\EighthUC.resx">
       <DependentUpon>EighthUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\EleventhUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\EleventhUC.resx">
       <DependentUpon>EleventhUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\FifthUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\FifthUC.resx">
       <DependentUpon>FifthUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\FirstUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\FirstUC.resx">
       <DependentUpon>FirstUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ForthUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\ForthUC.resx">
       <DependentUpon>ForthUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\NinthUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\NinthUC.resx">
       <DependentUpon>NinthUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SecondUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\SecondUC.resx">
       <DependentUpon>SecondUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SeventhUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\SeventhUC.resx">
       <DependentUpon>SeventhUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SixthUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\SixthUC.resx">
       <DependentUpon>SixthUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\TenthUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\TenthUC.resx">
       <DependentUpon>TenthUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\ThirdUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\ThirdUC.resx">
       <DependentUpon>ThirdUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\TwelfthUC.resx">
+    <EmbeddedResource Include="UserControls\SlidesUC\TwelfthUC.resx">
       <DependentUpon>TwelfthUC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewEventsForm.resx">
+    <EmbeddedResource Include="Forms\ViewEventsForm.resx">
       <DependentUpon>ViewEventsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

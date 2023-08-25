@@ -9,13 +9,8 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class ViewEventsForm : WindowsFormsApp2023_Final.GuideForm
     {
-        UserSession session = UserSession.Instance;
-
-        String connectionString = "Data source=rad19900.db;Version=3;";
         SQLiteConnection connection;
-
         string description, date;
-
 
         public ViewEventsForm()
         {
@@ -32,12 +27,6 @@ namespace WindowsFormsApp2023_Final
                 sb.Insert(position, Environment.NewLine);
             }
             return sb.ToString();
-        }
-
-
-        protected override void NavButtonHome_Click(object sender, EventArgs e)
-        {
-            //NavigateToForm<GuideForm>();
         }
 
         protected override void NavButton2_Click(object sender, EventArgs e)
@@ -113,7 +102,7 @@ namespace WindowsFormsApp2023_Final
             label1.Text = "Καταχώρηση";
         }
 
-        protected override void NavButton5_Click(object sender, EventArgs e)// μόνο για εγγεγραμένους χρήστες
+        protected override void NavButton5_Click(object sender, EventArgs e)
         {
             label1.Text = "Καταχώρηση νέου Event";
         }

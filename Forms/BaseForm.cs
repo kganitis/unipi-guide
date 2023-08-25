@@ -8,45 +8,22 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class BaseForm : Form
     {
-        private string username;
-        private SpeechSynthesizer synthesizer;
+        protected String connectionString = "Data source=rad19900.db;Version=3;";
+        protected SpeechSynthesizer engine;
         protected Button highlightedButton;
         protected Color highlightedButtonColor = Color.BurlyWood;
         protected Color defaultButtonColor = SystemColors.Control;
-
-        public string Username
-        {
-            get { return username; }
-            set { username = value; }
-        }
-
+        
         public BaseForm()
         {
             InitializeComponent();
-            synthesizer = new SpeechSynthesizer();
+            engine = new SpeechSynthesizer();
 
             // Αν πρόκειται για AboutForm, disable τα σχετικά κουμπιά
             if (GetType() == typeof(AboutForm))
             {
                 AboutButton.Enabled = false;
                 HelpToolStripMenuItem.Enabled = false;
-            }
-        }
-
-        protected void HighlightButton(Button button)
-        {
-            highlightedButton = button;
-            button.Enabled = false;
-            button.BackColor = highlightedButtonColor;
-        }
-
-        protected void ResetHighlightedButton()
-        {
-            if (highlightedButton != null) 
-            {
-                highlightedButton.Enabled = true;
-                highlightedButton.BackColor = defaultButtonColor;
-                highlightedButton = null;
             }
         }
 
@@ -61,7 +38,24 @@ namespace WindowsFormsApp2023_Final
             writer.Close();
         }
 
-        #region Hide Controls Methods
+        #region Controls Handling Methods
+
+        protected void HighlightButton(Button button)
+        {
+            highlightedButton = button;
+            button.Enabled = false;
+            button.BackColor = highlightedButtonColor;
+        }
+
+        protected void ResetHighlightedButton()
+        {
+            if (highlightedButton != null)
+            {
+                highlightedButton.Enabled = true;
+                highlightedButton.BackColor = defaultButtonColor;
+                highlightedButton = null;
+            }
+        }
 
         protected void HideAllControls()
         {
