@@ -16,6 +16,7 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
             HighlightButton(NavButton1);
+            HomeToolStripMenuItem.Enabled = true;
         }
 
         static string LineBreak(string input, int position)//method to create line breaks to labels

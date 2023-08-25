@@ -142,6 +142,7 @@
             // 
             this.guna2Transition1.SetDecoration(this.NavButtonHome, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.NavButtonHome, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.NavButtonHome.Enabled = true;
             // 
             // firstUC1
             // 

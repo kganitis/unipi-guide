@@ -5,7 +5,10 @@
         public GuideForm()
         {
             InitializeComponent();
-            HomeToolStripMenuItem.Enabled = false;
+            if (Text.Equals("Αρχική"))
+            {
+                HomeToolStripMenuItem.Enabled = false;
+            }
         }
     }
 }

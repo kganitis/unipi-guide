@@ -14,6 +14,7 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
             HighlightButton(NavButton5);
+            HomeToolStripMenuItem.Enabled = true;
             ExportToolStripMenuItem.Text = ExportButton.Text;
             ListenToolStripMenuItem.Text = ListenButton.Text;
             slides = new UserControl[] { firstUC1, secondUC1, thirdUC1, forthUC1, fifthUC1, sixthUC1, seventhUC1, eighthUC1, ninthUC1, tenthUC1, eleventhUC1, twelfthUC1 };

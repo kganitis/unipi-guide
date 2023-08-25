@@ -16,6 +16,7 @@ namespace WindowsFormsApp2023_Final
             InitializeComponent();
             subsectionNavButtons = new List<Button>() { NavButton2, NavButton3, NavButton4, NavButton5 };
             HighlightButton(NavButton1);
+            HomeToolStripMenuItem.Enabled = true;
             ExportButton.Enabled = true;
             ExportToolStripMenuItem.Enabled = true;
         }
