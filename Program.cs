@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
@@ -17,7 +14,7 @@ namespace WindowsFormsApp2023_Final
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             FormCacheManager cacheManager = FormCacheManager.Instance;
-            Application.Run(new UniversitySectionForm());
+            Application.Run(new LoginForm());
         }
     }
 }
