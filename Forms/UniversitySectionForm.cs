@@ -31,7 +31,7 @@ namespace WindowsFormsApp2023_Final
             subsection.AddSubsection(new GuideSection("Στρατηγική"));//Subsection1.3.4
             section.AddSubsection(subsection);
 
-            subsection = new GuideSection("Events");//Subsection1.4
+            subsection = new GuideSection("Δραστηριότητες");//Subsection1.4
             section.AddSubsection(subsection);
 
             ContentPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -39,37 +39,9 @@ namespace WindowsFormsApp2023_Final
             NavButton1_Click(this, null);
         }
 
-        protected override void NavButton1_Click(object sender, EventArgs e)
-        {
-            ResetHighlightedButton();
-            currentSection = section;
-            UpdateSectionButtonsText(section.Subsections);
-            UpdateRootSectionButtonText();
-            HighlightButton(NavButton1);
-            UpdateContent();
-        }
-
-        protected override void NavButton2_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
-
-        protected override void NavButton3_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
-
-        protected override void NavButton4_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
-
         protected override void NavButton5_Click(object sender, EventArgs e)
         {
-            if (((Button)sender).Text.Equals("Events")) //In case of subsection Events --> Load ViewEventsForm
+            if (((Button)sender).Text.Equals("Δραστηριότητες"))
             {
                 NavigateToForm<ViewEventsForm>();
             }

@@ -35,11 +35,11 @@
             // 
             // MainContentTextBox
             // 
-            this.MainContentTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainContentTextBox.Margin = new System.Windows.Forms.Padding(2);
             // 
             // SectionTitleTextBox
             // 
-            this.SectionTitleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SectionTitleTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.SectionTitleTextBox.Size = new System.Drawing.Size(721, 37);
             // 
             // ContentPictureBox1
@@ -59,7 +59,7 @@
             // 
             // NavButton5
             // 
-            this.NavButton5.Text = "Events";
+            this.NavButton5.Text = "Δραστηριότητες";
             // 
             // NavButton4
             // 

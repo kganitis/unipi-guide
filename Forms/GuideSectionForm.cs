@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Security.Permissions;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2023_Final
@@ -14,13 +16,50 @@ namespace WindowsFormsApp2023_Final
             InitializeComponent();
             subsectionNavButtons = new List<Button>() { NavButton2, NavButton3, NavButton4, NavButton5 };
             HighlightButton(NavButton1);
+            ExportButton.Enabled = true;
+            ExportToolStripMenuItem.Enabled = true;
+        }
+
+        protected override void NavButton1_Click(object sender, EventArgs e)
+        {
+            ResetHighlightedButton();
+            currentSection = section;
+            UpdateSectionButtonsText(section.Subsections);
+            UpdateRootSectionButtonText();
+            HighlightButton(NavButton1);
+            UpdateContent();
+            Text = currentSection.Name;
+        }
+
+        protected override void NavButton2_Click(object sender, EventArgs e)
+        {
+            SubsectionButtonClick(sender);
+            UpdateContent();
+        }
+
+        protected override void NavButton3_Click(object sender, EventArgs e)
+        {
+            SubsectionButtonClick(sender);
+            UpdateContent();
+        }
+
+        protected override void NavButton4_Click(object sender, EventArgs e)
+        {
+            SubsectionButtonClick(sender);
+            UpdateContent();
+        }
+
+        protected override void NavButton5_Click(object sender, EventArgs e)
+        {
+            SubsectionButtonClick(sender);
+            UpdateContent();
         }
 
         protected void SubsectionButtonClick(object sender)
         {
             ResetHighlightedButton();
             Button clickedButton = (Button)sender;
-            currentSection = GetCurrentlyClickedSection(clickedButton);
+            UpdateCurrentSection(clickedButton);
             if (currentSection.ContainsSubsections())
             {
                 UpdateSectionButtonsText(currentSection.Subsections);
@@ -30,6 +69,7 @@ namespace WindowsFormsApp2023_Final
                 HighlightButton(clickedButton);
             }
             UpdateRootSectionButtonText();
+            Text = currentSection.Name;
         }
 
         protected void UpdateSectionButtonsText(List<GuideSection> subsections)
@@ -40,31 +80,36 @@ namespace WindowsFormsApp2023_Final
             }
         }
 
-        private GuideSection GetCurrentlyClickedSection(Button clickedButton)
+        /**
+         * Σκοπός της μεθόδου είναι να να ενημερωθεί το currentSection με βάση το αντίστοιχο κουμπί που κάναμε κλικ.
+         * ΣΗΜΑΝΤΙΚΟ: Το Text των κουμπιών δεν έχει γίνει ακόμη update.
+         * Η λογική είναι να βρούμε το subsection του οποίου το όνομα ταυτίζεται με το text του κουμπιού που μόλις πατήσαμε.
+         * Αν το κουμπί που μόλις πατήσαμε αντιστοιχεί σε subsection που έχει περαιτέρω subsections,
+         * τότε πρέπει να κάνουμε αναζήτηση στη λίστα των subsection του μέχρι πρότινος currentSubsection.
+         * Αν δεν έχει περαιτέρω subsections, τότε για να βρούμε τη λίστα των subsections θα πρέπει να πάμε στο parentSection του currentSection.
+         */
+        private void UpdateCurrentSection(Button clickedButton)
         {
             GuideSection clickedSection = null;
-            // TO DO να βάλω comments
+
+            List<GuideSection> subsectionsToSearch;
             if (currentSection.ContainsSubsections())
             {
-                foreach (GuideSection subsection in currentSection.Subsections)
-                {
-                    if (subsection.Name == clickedButton.Text)
-                    {
-                        clickedSection = subsection;
-                    }
-                }
+                subsectionsToSearch = currentSection.Subsections;
             }
             else
             {
-                foreach (GuideSection subsection in currentSection.ParentSection.Subsections)
+                subsectionsToSearch = currentSection.ParentSection.Subsections;
+            }
+
+            foreach (GuideSection subsection in subsectionsToSearch)
+            {
+                if (subsection.Name == clickedButton.Text)
                 {
-                    if (subsection.Name == clickedButton.Text)
-                    {
-                        clickedSection = subsection;
-                    }
+                    clickedSection = subsection;
                 }
             }
-            return clickedSection;
+            currentSection = clickedSection;
         }
 
         protected void UpdateRootSectionButtonText()
@@ -116,6 +161,22 @@ namespace WindowsFormsApp2023_Final
         private void SectionTitleTextBox_MouseDown(object sender, MouseEventArgs e)
         {
             ContentPanel.Focus();
+        }
+
+        protected override void ExportButton_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(MainContentTextBox.Text))
+            {
+                Export(MainContentTextBox.Text);
+            }
+        }
+
+        protected override void ExportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(MainContentTextBox.Text))
+            {
+                Export(MainContentTextBox.Text);
+            }
         }
     }
 }

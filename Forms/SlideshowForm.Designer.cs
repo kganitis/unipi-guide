@@ -94,6 +94,7 @@
             this.ListenButton.BackgroundImage = null;
             this.guna2Transition1.SetDecoration(this.ListenButton, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Transition2.SetDecoration(this.ListenButton, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.ListenButton.Enabled = false;
             this.ListenButton.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ListenButton.ForeColor = System.Drawing.Color.White;
             this.ListenButton.Text = "Παύση";

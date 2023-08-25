@@ -39,39 +39,5 @@ namespace WindowsFormsApp2023_Final
 
             NavButton1_Click(this, null);
         }
-
-        protected override void NavButton1_Click(object sender, EventArgs e)
-        {
-            ResetHighlightedButton();
-            currentSection = section;
-            UpdateSectionButtonsText(section.Subsections);
-            UpdateRootSectionButtonText();
-            HighlightButton(NavButton1);
-            UpdateContent();
-        }
-
-        protected override void NavButton2_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
-
-        protected override void NavButton3_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
-
-        protected override void NavButton4_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
-
-        protected override void NavButton5_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
     }
 }

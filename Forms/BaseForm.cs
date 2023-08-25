@@ -25,17 +25,28 @@ namespace WindowsFormsApp2023_Final
                 AboutButton.Enabled = false;
                 HelpToolStripMenuItem.Enabled = false;
             }
+
+            if (GetType() != typeof(GuideSectionForm) && GetType() != typeof(SlideshowForm))
+            {
+                ExportButton.Enabled = false;
+                ExportToolStripMenuItem.Enabled = false;
+            }
         }
 
-        private void Export()
+        protected void Export(string textToExport)
         {
-            string textToExport = Text;
             string filename = Text;
             string filePath = "..\\..\\exports\\" + filename + ".txt";
             StreamWriter writer = new StreamWriter(filePath);
             writer.Write(textToExport);
             MessageBox.Show("Οι πληροφορίες εξήχθησαν με επιτυχία!");
             writer.Close();
+        }
+
+        protected void Speak()
+        {
+            engine.SelectVoice("Microsoft Zira Desktop");
+            engine.Speak("Greek language is not yet supported");
         }
 
         #region Controls Handling Methods
@@ -88,6 +99,18 @@ namespace WindowsFormsApp2023_Final
             ToolsToolStripMenuItem.Enabled = false;
             ExportToolStripMenuItem.Enabled = false;
             ListenToolStripMenuItem.Enabled = false;
+        }
+
+        protected void ToogleExportEnabled(bool enabled)
+        {
+            ExportButton.Enabled = enabled;
+            ExportToolStripMenuItem.Enabled = enabled;
+        }
+
+        protected void ToogleListenEnabled(bool enabled)
+        {
+            ListenButton.Enabled = enabled;
+            ListenToolStripMenuItem.Enabled = enabled;
         }
 
         #endregion
@@ -157,12 +180,12 @@ namespace WindowsFormsApp2023_Final
 
         protected virtual void ExportButton_Click(object sender, EventArgs e)
         {
-            Export();
+            
         }
 
         protected virtual void ListenButton_Click(object sender, EventArgs e)
         {
-
+            Speak();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -214,14 +237,14 @@ namespace WindowsFormsApp2023_Final
             Application.Exit();
         }
 
-        private void ExportToolStripMenuItem_Click(object sender, EventArgs e)
+        protected virtual void ExportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Export();
+            
         }
 
-        private void ListenToolStripMenuItem_Click(object sender, EventArgs e)
+        protected virtual void ListenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Speak();
         }
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
