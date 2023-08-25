@@ -27,7 +27,7 @@ namespace WindowsFormsApp2023_Final
         {
             UserSession session = UserSession.Instance;
            
-            MessageBox.Show("Name== " + session.Name);
+           // MessageBox.Show("Name== " + session.Name);
             try
             {
                 connection.Open();
@@ -43,6 +43,13 @@ namespace WindowsFormsApp2023_Final
                 connection.Close();
 
                 MessageBox.Show("Comment added successfully!");
+                SubmitButton.Enabled = false;
+                ReviewTextBox.Text = "";
+                guna2Button1.BackgroundImage = Properties.Resources.blackStar3;
+                guna2Button2.BackgroundImage = Properties.Resources.blackStar3;
+                guna2Button3.BackgroundImage = Properties.Resources.blackStar3;
+                guna2Button4.BackgroundImage = Properties.Resources.blackStar3;
+                guna2Button5.BackgroundImage = Properties.Resources.blackStar3;
             }
             catch (Exception ex)
             {
