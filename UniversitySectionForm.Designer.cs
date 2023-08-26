@@ -83,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).EndInit();
             this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
