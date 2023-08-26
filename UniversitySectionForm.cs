@@ -10,7 +10,6 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class UniversitySectionForm : WindowsFormsApp2023_Final.GuideSectionForm
     {
-     
         public UniversitySectionForm()
         {
             InitializeComponent();

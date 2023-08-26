@@ -430,6 +430,15 @@
   <ItemGroup>
     <None Include="Resources\Στιγμιότυπο οθόνης %28374%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Οικονομικής Επιστήμης.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Οικονομικής_Επιστήμης1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Οικονομικής_Επιστήμης2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
