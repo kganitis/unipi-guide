@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).BeginInit();
+            this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // ContentPanel
             // 
             this.ContentPanel.Location = new System.Drawing.Point(267, 30);
             this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
-            // 
-            // NavButton1
-            // 
-            this.NavButton1.Text = "Σχολές";
             // 
             // SchoolsSectionForm
             // 
@@ -46,6 +45,9 @@
             this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.Name = "SchoolsSectionForm";
             this.Text = "Σχολές";
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).EndInit();
+            this.ContentPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

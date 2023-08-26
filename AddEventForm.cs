@@ -27,8 +27,11 @@ namespace WindowsFormsApp2023_Final
             //let's call the static variable we declare
             txdate.Text = CalendarForm.static_year + "-" + CalendarForm.static_month.ToString("00") + "-" + UserControlDays.static_day.PadLeft(2, '0');
         }
-
-        private void btnregister_Click(object sender, EventArgs e)// for registered users only
+        /* For registered users only
+         * I need to get the UserID through session to complete the INSERT query
+         * In example below the UserID is hardcoded - 2 (simos)
+         */
+        private void btnregister_Click(object sender, EventArgs e)
         {
             string date = txdate.Text;
             string description = rtxdescr.Text;
@@ -43,8 +46,6 @@ namespace WindowsFormsApp2023_Final
             MessageBox.Show("Η Δραστηριότητα καταχωρήθηκε επιτυχώς!");
             this.Close();
             connection.Close();
-
-            
         }
     }
 }

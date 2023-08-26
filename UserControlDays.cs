@@ -17,6 +17,7 @@ namespace WindowsFormsApp2023_Final
         SQLiteConnection connection;
         //let's create another static variable for day
         public static string static_day;
+        UserSession session;
 
         public UserControlDays(int numday)
         {
@@ -30,9 +31,14 @@ namespace WindowsFormsApp2023_Final
             static_day = lbdays.Text;
             //start timer if usercontroldays is clicked
             //timer1.Start();
-            //displayEvent();
             AddEventForm addEvent = new AddEventForm();
             addEvent.Show();
+            /*if (session.IsLoggedIn()) TODO --> app crashes, gotta figure out session functionality
+            {
+                AddEventForm addEvent = new AddEventForm();
+                addEvent.Show();
+            }*/
+
         }
 
         //Create a new method to display an event
@@ -42,21 +48,40 @@ namespace WindowsFormsApp2023_Final
             connection.Open();
             String selectSQL = "select description from event where date = @date";
             SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
-            command.Parameters.AddWithValue("@date", 
+            command.Parameters.AddWithValue("@date",
             CalendarForm.static_year + "-" + CalendarForm.static_month.ToString("00") + "-" + lbdays.Text.PadLeft(2, '0'));
             SQLiteDataReader reader = command.ExecuteReader();
-            if (reader.Read())
+            int labelnum = 1;//label number for updating the two labels
+            while (reader.Read())
             {
-                lbevent1.Text = reader.GetString(0);
+                if (labelnum == 1)
+                {
+                    lbevent1.Text = reader.GetString(0);
+                }
+                else if (labelnum == 2)
+                {
+                    lbevent2.Text = reader.GetString(0);
+                }
+                labelnum++;
+                if (labelnum >= 3)
+                {
+                    break;
+                }
+            }
+            //if there is no event or events, the labels become invisible, so the area is clickable
+            if (lbevent1.Text.Equals(""))
+            {
+                lbevent1.Visible = false;
+            }
+            //if there is no senond event, the first event all the space
+            if (lbevent2.Text.Equals(""))
+            {
+                lbevent2.Visible = false;
+                lbevent1.Size = new Size(140, 60);
             }
             reader.Close();
             command.Dispose();
             connection.Close();
-        }
-        
-        private void displayAllEvents()
-        {
-
         }
 
         //create a timer for auto display event if new event is added

@@ -44,7 +44,7 @@
             // 
             // btnnext
             // 
-            this.btnnext.Location = new System.Drawing.Point(1282, 824);
+            this.btnnext.Location = new System.Drawing.Point(835, 26);
             this.btnnext.Name = "btnnext";
             this.btnnext.Size = new System.Drawing.Size(98, 29);
             this.btnnext.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             // btnprevious
             // 
-            this.btnprevious.Location = new System.Drawing.Point(1154, 824);
+            this.btnprevious.Location = new System.Drawing.Point(425, 27);
             this.btnprevious.Name = "btnprevious";
             this.btnprevious.Size = new System.Drawing.Size(112, 29);
             this.btnprevious.TabIndex = 2;
@@ -142,9 +142,9 @@
             // LBDATE
             // 
             this.LBDATE.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.LBDATE.Location = new System.Drawing.Point(452, 26);
+            this.LBDATE.Location = new System.Drawing.Point(553, 26);
             this.LBDATE.Name = "LBDATE";
-            this.LBDATE.Size = new System.Drawing.Size(479, 36);
+            this.LBDATE.Size = new System.Drawing.Size(269, 36);
             this.LBDATE.TabIndex = 10;
             this.LBDATE.Text = "MONTH YEAR";
             this.LBDATE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -164,6 +164,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1407, 865);
+            this.Controls.Add(this.btnnext);
             this.Controls.Add(this.closebtn);
             this.Controls.Add(this.LBDATE);
             this.Controls.Add(this.label7);
@@ -174,7 +175,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnprevious);
-            this.Controls.Add(this.btnnext);
             this.Controls.Add(this.daycontainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CalendarForm";
