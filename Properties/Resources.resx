@@ -307,4 +307,49 @@
   <data name="Οικονομικής_Επιστήμης2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Οικονομικής_Επιστήμης2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Βιομηχανικής_Διοικησης_Τεχνολογίας" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Βιομηχανικής Διοικησης Τεχνολογίας.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Διεθνών_και_Ευρωπαικών_Σπουδών" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Διεθνών και Ευρωπαικών Σπουδών.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Διεθνών_και_Ευρωπαικών_Σπουδών1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (390).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ναυτιλιακών_Σπουδών" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ναυτιλιακών Σπουδών.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Οργάνωσης_Διοίκησης_Επιχειρήσεων" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Οργάνωσης &amp; Διοίκησης Επιχειρήσεων.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Οργάνωσης_Διοίκησης_Επιχειρήσεων1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (389).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Πληροφορικής" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Πληροφορικής.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Πληροφορικής1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (392).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Πληροφορικής2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (393).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Στατιστικής_και_Ασφαλιστικής_Επιστήμης" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στατιστικής και Ασφαλιστικής Επιστήμης.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Τουριστικών_Σπουδών" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Τουριστικών Σπουδών.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Χρηματοοικονομικής_και_Τραπεζικής_Διοικητικής" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Χρηματοοικονομικής και Τραπεζικής Διοικητικής.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Ψηφιακών_Συστημάτων" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ψηφιακών Συστημάτων.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Ψηφιακών_Συστημάτων1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (395).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ψηφιακών_Συστημάτων2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (394).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

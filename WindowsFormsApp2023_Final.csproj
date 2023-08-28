@@ -439,6 +439,54 @@
   <ItemGroup>
     <None Include="Resources\Οικονομικής_Επιστήμης2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Οργάνωσης &amp; Διοίκησης Επιχειρήσεων.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28389%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Διεθνών και Ευρωπαικών Σπουδών.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28390%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Τουριστικών Σπουδών.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ναυτιλιακών Σπουδών.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28391%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Βιομηχανικής Διοικησης Τεχνολογίας.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Χρηματοοικονομικής και Τραπεζικής Διοικητικής.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στατιστικής και Ασφαλιστικής Επιστήμης.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Πληροφορικής.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28392%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28393%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ψηφιακών Συστημάτων.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28395%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Στιγμιότυπο οθόνης %28394%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

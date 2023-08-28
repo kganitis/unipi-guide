@@ -20,21 +20,21 @@ namespace WindowsFormsApp2023_Final
 
             subsection = new GuideSection("Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών");//Subsection1.1
             subsection.AddSubsection(new GuideSection("Οικονομικής Επιστήμης"));//Subsection1.1.1
-            subsection.AddSubsection(new GuideSection("Οργάνωσης & Διοίκησης Επιχειρήσεων"));//Subsection1.1.2
-            subsection.AddSubsection(new GuideSection("Διεθνών & Ευρωπαικών Σπουδών"));//Subsection1.1.3
+            subsection.AddSubsection(new GuideSection("Οργάνωσης Διοίκησης Επιχειρήσεων"));//Subsection1.1.2
+            subsection.AddSubsection(new GuideSection("Διεθνών και Ευρωπαικών Σπουδών"));//Subsection1.1.3
             subsection.AddSubsection(new GuideSection("Τουριστικών Σπουδών"));//Subsection1.1.4
             section.AddSubsection(subsection);
 
             subsection = new GuideSection("Ναυτιλίας και Βιομαχανίας");//Subsection1.2
             subsection.AddSubsection(new GuideSection("Ναυτιλιακών Σπουδών"));//Subsection1.2.1
-            subsection.AddSubsection(new GuideSection("Βιομηχανικής Διοικησης & Τεχνολογίας"));//Subsection1.2.2
+            subsection.AddSubsection(new GuideSection("Βιομηχανικής Διοικησης Τεχνολογίας"));//Subsection1.2.2
             subsection.AddSubsection(new GuideSection(""));//Subsection1.2.3
             subsection.AddSubsection(new GuideSection(""));//Subsection1.2.4
             section.AddSubsection(subsection);
 
             subsection = new GuideSection("Χρηματοοικονομικής και Στατιστικής");//Subsection1.3
-            subsection.AddSubsection(new GuideSection("Χρηματοοικονομικής & Τραπεζικής Διοικητικής"));//Subsection1.3.1
-            subsection.AddSubsection(new GuideSection("Στατιστικής & Ασφαλιστικής Επιστήμης"));//Subsection1.3.2
+            subsection.AddSubsection(new GuideSection("Χρηματοοικονομικής και Τραπεζικής Διοικητικής"));//Subsection1.3.1
+            subsection.AddSubsection(new GuideSection("Στατιστικής και Ασφαλιστικής Επιστήμης"));//Subsection1.3.2
             subsection.AddSubsection(new GuideSection(""));//Subsection1.3.3
             subsection.AddSubsection(new GuideSection(""));//Subsection1.3.4
             section.AddSubsection(subsection);

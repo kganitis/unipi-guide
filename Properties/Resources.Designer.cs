@@ -342,6 +342,15 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tο Tμήμα Βιομηχανικής Διοίκησης &amp; Tεχνολογίας έχει σκοπό την εκπαίδευση, μόρφωση και ανάδειξη στελεχών στην επιστήμη της Διοίκησης της Παραγωγής, με έμφαση στις εφαρμογές των νέων τεχνολογιών στα συστήματα παραγωγής. Στόχος του Tμήματος, με το σύγχρονο πρόγραμμα σπουδών, είναι να εφοδιάσει τους φοιτητές με τη γνώση της επιστημονικής μεθοδολογίας που απαιτείται για την ανάλυση, το σχεδιασμό, την υλοποίηση και την οργάνωση κατάλληλων συστημάτων, με σκοπό την αποτελεσματική αντιμετώπιση των πολύπλοκων προβλημά [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Βιομηχανικής_Διοικησης_Τεχνολογίας {
+            get {
+                return ResourceManager.GetString("Βιομηχανικής_Διοικησης_Τεχνολογίας", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Το Γραφείο Διασύνδεσης του Πανεπιστημίου Πειραιώς ιδρύθηκε το 1997 με χρηματοδότηση από το πρόγραμμα Ε.Π.Ε.Α.Ε.Κ στο πλαίσιο του Β&apos; ΚΠΣ και συνεχίζει να λειτουργεί στο πλαίσιο του ΕΣΠΑ με Επιστημονικό Υπεύθυνο τον Καθηγητή Νικόλαο Γεωργόπουλο.
         ///
         ///Βασική του επιδίωξη είναι η πολύπλευρη υποστήριξη των φοιτητών/αποφοίτων για την ομαλή ένταξή τους στην αγορά εργασίας και για μια επιτυχημένη σταδιοδρομία.
@@ -360,6 +369,27 @@ namespace WindowsFormsApp2023_Final.Properties {
         internal static System.Drawing.Bitmap Γραφείο_Διασύνδεσης1 {
             get {
                 object obj = ResourceManager.GetObject("Γραφείο_Διασύνδεσης1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Το Τμήμα ΔΕΣ έχει ως αποστολή, σύμφωνα με το άρθρο 1 του ιδρυτικού του Προεδρικού Διατάγματος, να καλλιεργεί και να προάγει την επιστήμη με την ακαδημαϊκή και εφαρμοσμένη έρευνα και αναζήτηση και να παρέχει στους φοιτητές τα απαραίτητα εφόδια που εξασφαλίζουν την άρτια κατάρτισή τους για την επιστημονική και επαγγελματική τους σταδιοδρομία και εξέλιξη. 
+        ///
+        ///Ειδικότερα, το Τμήμα έχει ως αποστολή: «να συμβάλλει στη δημιουργία επιστημόνων υψηλού επιπέδου με άρτια επιστημονική κατάρτιση επί ευρωπαϊκών και διεθνώ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Διεθνών_και_Ευρωπαικών_Σπουδών {
+            get {
+                return ResourceManager.GetString("Διεθνών_και_Ευρωπαικών_Σπουδών", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Διεθνών_και_Ευρωπαικών_Σπουδών1 {
+            get {
+                object obj = ResourceManager.GetObject("Διεθνών_και_Ευρωπαικών_Σπουδών1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -613,6 +643,20 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Το Τμήμα Ναυτιλιακών Σπουδών αποτελεί κορυφαία επιλογή για σπουδές στη ναυτιλία και τις μεταφορές.  Συγκαταλέγεται μεταξύ των πρωτοπόρων πανεπιστημιακών τμημάτων, σε παγκόσμιο επίπεδο, που θεμελίωσαν τις σπουδές στα συγκεκριμένα πεδία.
+        ///
+        ///Το Τμήμα προσφέρει στους φοιτητές και τις φοιτήτριες του άρτια επιστημονική κατάρτιση σε προπτυχιακό, μεταπτυχιακό και διδακτορικό επίπεδο σπουδών, καθώς διαθέτει:
+        ///
+        ///    συσσωρευμένη εμπειρία και γνώση, απόρροια των τεσσάρων δεκαετιών λειτουργίας του,
+        ///    υψηλής ποιότητα [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Ναυτιλιακών_Σπουδών {
+            get {
+                return ResourceManager.GetString("Ναυτιλιακών_Σπουδών", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Το Τμήμα μας έχει έναν σταθερό και μακροχρόνιο στόχο: να παρέχει υψηλής ποιότητας γνώση και έρευνα στο πεδίο της Οικονομικής Επιστήμης.
         ///
         ///Το τετραετές Προπτυχιακό Πρόγραμμα αποτελείται από πλήθος μαθημάτων, βασικά μαθήματα κορμού και σύγχρονα μαθήματα επιλογής, που παρέχουν τόσο θεωρητική όσο και εμπειρική γνώση, απαραίτητη για την κατανόηση σύνθετων οικονομικών καταστάσεων. Επιπρόσθετα, το πρόγραμμα παρέχει τη δυνατότητα στους φοιτητές μας να μεταβούν σε αντίστοιχα Τμήματα Πανεπιστημίων του εξωτερικού, μέ [rest of string was truncated]&quot;;.
@@ -671,6 +715,59 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Στόχος του Τμήματος είναι η παροχή θεωρητικής και πρακτικής εκπαίδευσης σε θέματα που αφορούν τη διοίκηση επιχειρήσεων του ιδιωτικού και δημόσιου τομέα.
+        ///
+        ///Στα πλαίσια του γενικότερου αυτού στόχου, το πρόγραμμα σπουδών του τμήματος στηρίζεται σε ένα σύστημα γνώσεων και μεθόδων, που προάγει επιστημονικά τους φοιτητές, τους εξοικειώνει με τη ζωή και τη δράση των
+        ///επιχειρήσεων και διευρύνει τους επαγγελματικούς τους προσανατολισμούς. Οργανωτικά το πρόγραμμα περιλαμβάνει μεγάλο αριθμό μαθημάτων που καλύπτουν τι [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Οργάνωσης_Διοίκησης_Επιχειρήσεων {
+            get {
+                return ResourceManager.GetString("Οργάνωσης_Διοίκησης_Επιχειρήσεων", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Οργάνωσης_Διοίκησης_Επιχειρήσεων1 {
+            get {
+                object obj = ResourceManager.GetObject("Οργάνωσης_Διοίκησης_Επιχειρήσεων1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Το Τμήμα Πληροφορικής του Πανεπιστημίου Πειραιώς ιδρύθηκε με ΦΕΚ του 1991 και λειτουργεί από το 1992. Είναι ένα από τα αρχαιότερα Τμήματα Πληροφορικής στην Ελλάδα.
+        ///
+        ///Οι βασικοί άξονες του Τμήματος είναι η εκπαίδευση και η έρευνα. Η εκπαίδευση, παρέχεται σε 3 επίπεδα. Στο πρώτο επίπεδο παρέχονται οι προπτυχιακές σπουδές με την εισαγωγή φοιτητών από τις Πανελλαδικές εξετάσεις της χώρας που οδηγούν στην απόκτηση Πτυχίου Πληροφορικής. Στο δεύτερο επίπεδο παρέχονται μεταπτυχιακές σπουδές που οδηγούν στην απόκτη [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Πληροφορικής {
+            get {
+                return ResourceManager.GetString("Πληροφορικής", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Πληροφορικής1 {
+            get {
+                object obj = ResourceManager.GetObject("Πληροφορικής1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Πληροφορικής2 {
+            get {
+                object obj = ResourceManager.GetObject("Πληροφορικής2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Οι πολιτιστικές ομάδες του Πανεπιστημίου Πειραιώς προσφέρουν στα μέλη της Πανεπιστημιακής κοινότητας την ευκαιρία να ασχοληθούν με τα ενδιαφέροντα τους και να καλλιεργήσουν το ταλέντο τους. Προάγουν τον εθελοντισμό και την ενεργή συμμετοχή των φοιτητών και καλύπτουν ένα ευρύ φάσμα δράσεων.
         ///
         ///Πιο συγκεκριμένα, το Πανεπιστήμιο Πειραιώς διαθέτει τις παρακάτω πολιτιστικές ομάδες:
@@ -683,6 +780,17 @@ namespace WindowsFormsApp2023_Final.Properties {
         internal static string Πολιτιστικές_Ομάδες {
             get {
                 return ResourceManager.GetString("Πολιτιστικές_Ομάδες", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Πότε Ιδρύθηκε: Το Τμήμα δημιουργήθηκε και λειτούργησε για πρώτη φορά με την ονομασία «Τμήμα Στατιστικής» το Ακαδημαϊκό Έτος 1977-78 στο πλαίσιο της Ανώτατης Βιομηχανικής Σχολής Πειραιώς (Υπ. Απόφ. 96792/21-9-77, Φ.Ε.Κ. 984Β/8-10-77). Με το Νόμο Πλαίσιο για τα Α.Ε.Ι. και από το Ακαδημαϊκό Έτος 1984-85 (Ν.Δ. 1268/82 και Π.Δ. 43/1984) λειτούργησε ως ανεξάρτητο Τμήμα Στατιστικής και Ασφαλιστικής Επιστήμης.
+        ///
+        ///Ποιος ο σκοπός του: Σκοπός το Τμήματος είναι η θεωρητική εκπαίδευση και η πρακτική κατάρτιση των φοιτητ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Στατιστικής_και_Ασφαλιστικής_Επιστήμης {
+            get {
+                return ResourceManager.GetString("Στατιστικής_και_Ασφαλιστικής_Επιστήμης", resourceCulture);
             }
         }
         
@@ -709,6 +817,15 @@ namespace WindowsFormsApp2023_Final.Properties {
             get {
                 object obj = ResourceManager.GetObject("Στρατηγική1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Το Τμήμα Τουριστικών Σπουδών έχει ως βασικό σκοπό να καλύπτει τις ανάγκες του ευρύτατου πεδίου του Τουρισμού, με στελέχη ανώτατης πανεπιστημιακής εκπαίδευσης που θα πληρούν όλες τις προϋποθέσεις για μια εξαίρετη σταδιοδρομία σε μεσαίες, ανώτερες και ανώτατες θέσεις σε όλους τους κλάδους της Τουριστικής Βιομηχανίας, αλλά και σε όλους τους φορείς τουριστικών ενδιαφερόντων που δρουν σε μάκρο-επίπεδο, που ασχολούνται δηλαδή με την ανάπτυξη και την πολιτική στον Τουρισμό σε εθνικό, περιφερειακό και τοπικό επίπεδ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Τουριστικών_Σπουδών {
+            get {
+                return ResourceManager.GetString("Τουριστικών_Σπουδών", resourceCulture);
             }
         }
         
@@ -800,6 +917,55 @@ namespace WindowsFormsApp2023_Final.Properties {
         internal static System.Drawing.Bitmap Χαιρετισμός2 {
             get {
                 object obj = ResourceManager.GetObject("Χαιρετισμός2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Το Τμήμα Χρηματοοικονομικής και Τραπεζικής Διοικητικής δημιουργήθηκε το 1989 με το Π.Δ. 377. Είναι το μοναδικό Πανεπιστημιακό Τμήμα στην Ελλάδα με αποκλειστικό αντικείμενο τη Χρηματοοικονομική και Τραπεζική Διοικητική και φιλοδοξεί να παραμείνει πρωτοπόρο στη διδασκαλία της θεωρίας και των σύγχρονων εφαρμογών των σχετικών γνωστικών αντικειμένων.
+        ///
+        ///Το παλαιότερο Τμήμα στον χώρο του (Έτος ιδρύσεως: 1989, πρώτοι εισακτέοι: 1990)
+        ///
+        ///Διεθνώς αναγνωρισμένο: Το 1ο Τμήμα στην Ελλάδα στις Επιστήμες Διοίκησης και Οι [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Χρηματοοικονομικής_και_Τραπεζικής_Διοικητικής {
+            get {
+                return ResourceManager.GetString("Χρηματοοικονομικής_και_Τραπεζικής_Διοικητικής", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Το Τμήμα Ψηφιακών Συστημάτων του Πανεπιστημίου Πειραιώς ιδρύθηκε το 1999 και καλύπτει δύο σημαντικούς κλάδους της Ψηφιακής Οικονομίας και της Κοινωνίας της Γνώσης:
+        ///
+        ///    τον κλάδο των Δικτυοκεντρικών Συστημάτων και Υπηρεσιών
+        ///    τον κλάδο των Τηλεπικοινωνιακών Συστημάτων και Δικτύων
+        ///
+        ///Η μετάβαση στην Κοινωνία της Πληροφορίας και της Γνώσης απαιτεί την ανάδειξη εξειδικευμένων επιστημόνων ικανών να συμβάλλουν στην ανάπτυξη, υλοποίηση και διαχείριση συστημάτων σύγχρονης ψηφιακής τεχνολογίας.
+        ///
+        ///Στη βάση αυτ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Ψηφιακών_Συστημάτων {
+            get {
+                return ResourceManager.GetString("Ψηφιακών_Συστημάτων", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ψηφιακών_Συστημάτων1 {
+            get {
+                object obj = ResourceManager.GetObject("Ψηφιακών_Συστημάτων1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ψηφιακών_Συστημάτων2 {
+            get {
+                object obj = ResourceManager.GetObject("Ψηφιακών_Συστημάτων2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -35,14 +35,13 @@
             // 
             // highlightedButton
             // 
-            this.highlightedButton.Location = new System.Drawing.Point(14, 87);
+            this.highlightedButton.Location = new System.Drawing.Point(14, 85);
             this.highlightedButton.Size = new System.Drawing.Size(240, 80);
             this.highlightedButton.Text = "Σχολές";
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
-            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 541);
             // 
             // NavButton5
             // 
@@ -54,21 +53,21 @@
             // NavButton4
             // 
             this.NavButton4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton4.Location = new System.Drawing.Point(14, 365);
+            this.NavButton4.Location = new System.Drawing.Point(14, 367);
             this.NavButton4.Size = new System.Drawing.Size(240, 69);
             this.NavButton4.Text = "Χρηματοοικονομικής και Στατιστικής";
             // 
             // NavButton3
             // 
             this.NavButton3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton3.Location = new System.Drawing.Point(14, 273);
-            this.NavButton3.Size = new System.Drawing.Size(240, 84);
+            this.NavButton3.Location = new System.Drawing.Point(14, 267);
+            this.NavButton3.Size = new System.Drawing.Size(240, 95);
             this.NavButton3.Text = "Ναυτιλίας και Βιομαχανίας";
             // 
             // NavButton2
             // 
             this.NavButton2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton2.Location = new System.Drawing.Point(14, 172);
+            this.NavButton2.Location = new System.Drawing.Point(14, 167);
             this.NavButton2.Size = new System.Drawing.Size(240, 96);
             this.NavButton2.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών";
             // 
