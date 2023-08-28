@@ -17,8 +17,9 @@ namespace WindowsFormsApp2023_Final
         SQLiteConnection connection;
         //let's create another static variable for day
         public static string static_day;
-        UserSession session;
-
+        /*
+         * TODO --> addition of some kind of display to alert the user that he can add an event??
+         */
         public UserControlDays(int numday)
         {
             InitializeComponent();
@@ -31,17 +32,13 @@ namespace WindowsFormsApp2023_Final
             static_day = lbdays.Text;
             //start timer if usercontroldays is clicked
             //timer1.Start();
-            AddEventForm addEvent = new AddEventForm();
-            addEvent.Show();
-            /*if (session.IsLoggedIn()) TODO --> app crashes, gotta figure out session functionality
+            if (UserSession.Instance.IsLoggedIn())
             {
                 AddEventForm addEvent = new AddEventForm();
                 addEvent.Show();
-            }*/
-
+            }
         }
 
-        //Create a new method to display an event
         private void displayEvent()
         {
             connection = new SQLiteConnection(connectionString);
@@ -84,7 +81,7 @@ namespace WindowsFormsApp2023_Final
             connection.Close();
         }
 
-        //create a timer for auto display event if new event is added
+        //TODO --> create a timer for auto display event if new event is added
         private void timer1_Tick(object sender, EventArgs e)
         {
             //call the display Event method

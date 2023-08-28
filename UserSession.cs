@@ -26,10 +26,15 @@
             }
         }
 
-        // Method to check if the user is logged in
+        // Methods to check if the user is logged in or is a visitor
         public bool IsLoggedIn()
         {
             return !string.IsNullOrEmpty(Username);
+        }
+
+        public bool IsVisitor()
+        {
+            return !IsLoggedIn();
         }
     }
 }
