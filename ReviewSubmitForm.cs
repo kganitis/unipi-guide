@@ -44,12 +44,18 @@ namespace WindowsFormsApp2023_Final
 
                 MessageBox.Show("Comment added successfully!");
                 SubmitButton.Enabled = false;
-                ReviewTextBox.Text = "";
                 guna2Button1.BackgroundImage = Properties.Resources.blackStar3;
                 guna2Button2.BackgroundImage = Properties.Resources.blackStar3;
                 guna2Button3.BackgroundImage = Properties.Resources.blackStar3;
                 guna2Button4.BackgroundImage = Properties.Resources.blackStar3;
                 guna2Button5.BackgroundImage = Properties.Resources.blackStar3;
+                guna2Button1.Enabled = false;
+                guna2Button2.Enabled = false;
+                guna2Button3.Enabled = false;
+                guna2Button4.Enabled = false;
+                guna2Button5.Enabled = false;
+                ReviewTextBox.Enabled = false;
+                ReviewTextBox.Text = "Έχετε υποβάλει αξιολόγηση";
             }
             catch (Exception ex)
             {
@@ -67,6 +73,10 @@ namespace WindowsFormsApp2023_Final
         {
             grade = 1;
             guna2Button1.BackgroundImage = Properties.Resources.yellow;
+            guna2Button2.BackgroundImage = Properties.Resources.blackStar3;
+            guna2Button3.BackgroundImage = Properties.Resources.blackStar3;
+            guna2Button4.BackgroundImage = Properties.Resources.blackStar3;
+            guna2Button5.BackgroundImage = Properties.Resources.blackStar3;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -74,6 +84,9 @@ namespace WindowsFormsApp2023_Final
             grade = 2;
             guna2Button1.BackgroundImage = Properties.Resources.yellow;
             guna2Button2.BackgroundImage = Properties.Resources.yellow;
+            guna2Button3.BackgroundImage = Properties.Resources.blackStar3;
+            guna2Button4.BackgroundImage = Properties.Resources.blackStar3;
+            guna2Button5.BackgroundImage = Properties.Resources.blackStar3;
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -82,6 +95,8 @@ namespace WindowsFormsApp2023_Final
             guna2Button1.BackgroundImage = Properties.Resources.yellow;
             guna2Button2.BackgroundImage = Properties.Resources.yellow;
             guna2Button3.BackgroundImage = Properties.Resources.yellow;
+            guna2Button4.BackgroundImage = Properties.Resources.blackStar3;
+            guna2Button5.BackgroundImage = Properties.Resources.blackStar3;
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
@@ -91,6 +106,7 @@ namespace WindowsFormsApp2023_Final
             guna2Button2.BackgroundImage = Properties.Resources.yellow;
             guna2Button3.BackgroundImage = Properties.Resources.yellow;
             guna2Button4.BackgroundImage = Properties.Resources.yellow;
+            guna2Button5.BackgroundImage = Properties.Resources.blackStar3;
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
