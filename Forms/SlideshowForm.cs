@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Media;
 using System.Windows.Forms;
+using WindowsFormsApp2023_Final.Properties;
 
 namespace WindowsFormsApp2023_Final
 {
@@ -26,14 +27,14 @@ namespace WindowsFormsApp2023_Final
         {
             TransitionToNextSlide();
         }
+
         private void BeginSlideshow()
         {
             ToogleListenEnabled(true);
-            player.SoundLocation = "../../Resources/Music/music3.wav"; // Δε δουλεύει !!!
+            timer1.Start();
+            player.Stream = Resources.music3;
             player.Play();
             guna2Transition2.HideSync(slides[11]);
-            TransitionToNextSlide(); // Γενικά να δούμε τι παίζει με το σταμάτα/ξεκίνα, το delay δεν είναι πάντα το ίδιο
-            timer1.Start();
             ToogleExportEnabled(false);
         }
 

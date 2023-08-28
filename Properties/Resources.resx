@@ -118,184 +118,193 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="restart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\restart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="speaker_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speaker-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pic11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="users" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="speaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\speaker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Κεντρικό_Κτίριο1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unipi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Αποστολή1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unipi_comLab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Κεντρικό_Κτίριο2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unipi_grounds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unipi_library" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unipi_library.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unipi_main" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unipi_main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ιστορία2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unipi_main_entr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ιστορία1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unipi_old.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Εξωτερικές_Αίθουσες1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unipi_remote1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ασύρματες_Συνδέσεις" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ασύρματες Συνδέσεις.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Γραφείο_Διασύνδεσης" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Γραφείο Διασύνδεσης.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Εξ_Αποστάσεως_Εκπαίδευση" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Εξ Αποστάσεως Εκπαίδευση.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Ηλεκτρονική_Γραμματεία" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ηλεκτρονική Γραμματεία.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Ηλεκτρονικό_Ταχυδρομείο" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ηλεκτρονικό Ταχυδρομείο.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Ιατρείο" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ιατρείο.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Φοιτητική_Μέριμνα" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Φοιτητική Μέριμνα.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Βιβλιοθήκη" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Βιβλιοθήκη.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Γραφείο_Διασύνδεσης1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Γραφείο Διασύνδεσης.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Άλλες_Δραστηριότητες" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Άλλες Δραστηριότητες.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Απόφοιτοι" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Απόφοιτοι.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Ασύρματες_Συνδέσεις1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ασύρματες Συνδέσεις.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ηλεκτρονική_Γραμματεία1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ηλεκτρονική Γραμματεία.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ιατρείο1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ιατρείο.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Πολιτιστικές_Ομάδες" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Πολιτιστικές Ομάδες.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Φοιτητικές_Παρατάξεις" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Φοιτητικές Παρατάξεις.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Φοιτητικοί_Σύλλογοι" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Φοιτητικοί Σύλλογοι.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Ιστορία" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ιστορία.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Εξωτερικές_Αίθουσες" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Εξωτερικές Αίθουσες.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Κεντρικό_Κτίριο" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Κεντρικό Κτίριο.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Κτίριο_Νίκαιας" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Κτίριο Νίκαιας.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Λοιποί_Χώροι" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Λοιποί Χώροι.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1253</value>
-  </data>
-  <data name="Εξωτερικές_Αίθουσες2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Στιγμιότυπο οθόνης (363).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Κτίριο_Νίκαιας1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Στιγμιότυπο οθόνης (364).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Κτίριο_Νίκαιας2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Στιγμιότυπο οθόνης (365).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Όραμα" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Όραμα.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Αποστολή2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Στιγμιότυπο οθόνης (369).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Αποστολή" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Αποστολή.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Στρατηγική" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Στρατηγική.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Χαιρετισμός" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Χαιρετισμός.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Χαιρετισμός1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Στιγμιότυπο οθόνης (367).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Όραμα1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Στιγμιότυπο οθόνης (372).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Επικοινωνία" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Επικοινωνία.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="Επικοινωνία1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Στιγμιότυπο οθόνης (373).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Στρατηγική1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Στιγμιότυπο οθόνης (374).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Κτίριο_Νίκαιας" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Κτίριο Νίκαιας.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Γραφείο_Διασύνδεσης" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Γραφείο Διασύνδεσης.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="unipi_library" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unipi_library.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Κεντρικό_Κτίριο2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unipi_grounds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Εξ_Αποστάσεως_Εκπαίδευση" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Εξ Αποστάσεως Εκπαίδευση.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ιατρείο1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ιατρείο.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ηλεκτρονική_Γραμματεία1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ηλεκτρονική Γραμματεία.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Χαιρετισμός1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (367).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Φοιτητικοί_Σύλλογοι" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Φοιτητικοί Σύλλογοι.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Κτίριο_Νίκαιας2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (365).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Απόφοιτοι" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Απόφοιτοι.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="unipi_main" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unipi_main.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pic11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ηλεκτρονικό_Ταχυδρομείο" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ηλεκτρονικό Ταχυδρομείο.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ασύρματες_Συνδέσεις" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ασύρματες Συνδέσεις.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Πολιτιστικές_Ομάδες" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Πολιτιστικές Ομάδες.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Χαιρετισμός" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Χαιρετισμός.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Γραφείο_Διασύνδεσης1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Γραφείο Διασύνδεσης.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Εξωτερικές_Αίθουσες1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unipi_remote1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Στρατηγική" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στρατηγική.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Εξωτερικές_Αίθουσες" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Εξωτερικές Αίθουσες.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Ιστορία" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ιστορία.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Βιβλιοθήκη" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Βιβλιοθήκη.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="speaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\speaker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Αποστολή" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Αποστολή.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Κεντρικό_Κτίριο" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Κεντρικό Κτίριο.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Εξωτερικές_Αίθουσες2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (363).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ιστορία2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unipi_main_entr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ιστορία1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unipi_old.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Κεντρικό_Κτίριο1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unipi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Κτίριο_Νίκαιας1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (364).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Αποστολή1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unipi_comLab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pic1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Αποστολή2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (369).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Φοιτητικές_Παρατάξεις" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Φοιτητικές Παρατάξεις.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Όραμα" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Όραμα.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Λοιποί_Χώροι" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Λοιποί Χώροι.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1253</value>
+  </data>
+  <data name="Φοιτητική_Μέριμνα" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Φοιτητική Μέριμνα.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="speaker_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\speaker-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ηλεκτρονική_Γραμματεία" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ηλεκτρονική Γραμματεία.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Άλλες_Δραστηριότητες" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Άλλες Δραστηριότητες.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Επικοινωνία" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Επικοινωνία.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
   <data name="Χαιρετισμός2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Στιγμιότυπο οθόνης (371).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Επικοινωνία1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (373).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ασύρματες_Συνδέσεις1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ασύρματες Συνδέσεις.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ιατρείο" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ιατρείο.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Όραμα1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Στιγμιότυπο οθόνης (372).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star-black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star-black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\star-gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="music3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music\music3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

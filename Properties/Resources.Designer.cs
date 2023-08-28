@@ -131,6 +131,15 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream music3 {
+            get {
+                return ResourceManager.GetStream("music3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap mute {
@@ -196,6 +205,26 @@ namespace WindowsFormsApp2023_Final.Properties {
         internal static System.Drawing.Bitmap speaker_2 {
             get {
                 object obj = ResourceManager.GetObject("speaker_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap star_black {
+            get {
+                object obj = ResourceManager.GetObject("star-black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap star_gold {
+            get {
+                object obj = ResourceManager.GetObject("star_gold", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -658,15 +687,12 @@ namespace WindowsFormsApp2023_Final.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Η Στρατηγική του Πανεπιστημίου διαμορφώνεται και ισχύει για πέντε έτη.
         ///
-        ///Οι Στρατηγικοί Στόχοι του Πανεπιστημίου και οι Στόχοι Ποιότητας που τους υποστηρίζουν
-        ///είναι οι ακόλουθοι:
+        ///Οι Στρατηγικοί Στόχοι του Πανεπιστημίου και οι Στόχοι Ποιότητας που τους υποστηρίζουν είναι οι ακόλουθοι:
         ///
-        ///Σ.Σ.1. Παραγωγή, διάδοση και εφαρμογή γνώσης αιχμής, διεύρυνση των οικονομικών,
-        ///κοινωνικών και τεχνολογικών επιστημονικών πεδίων του και συνεχής προσαρμογή
-        ///των προγραμμάτων σπουδών στις επιστημονικές εξελίξεις και στις ανάγκες της
-        ///κοινωνίας, με προσήλωση στις αρχές της επιστημονικής δεοντολογίας.
+        ///Σ.Σ.1. Παραγωγή, διάδοση και εφαρμογή γνώσης αιχμής, διεύρυνση των οικονομικών, κοινωνικών και τεχνολογικών επιστημονικών πεδίων του και συνεχής προσαρμογή
+        ///των προγραμμάτων σπουδών στις επιστημονικές εξελίξεις και στις ανάγκες της κοινωνίας, με προσήλωση στις αρχές της επιστημονικής δεοντολογίας.
         ///
-        ///	Σ.Π.1.1. Διάπλαση επιστ [rest of string was truncated]&quot;;.
+        ///	Σ.Π.1.1. Διάπλαση επιστημό [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Στρατηγική {
             get {
