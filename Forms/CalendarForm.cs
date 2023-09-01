@@ -19,7 +19,7 @@ namespace WindowsFormsApp2023_Final
         {
             DisplayDays();
         }
-
+        
         private void DisplayDays()
         {
             DateTime now = DateTime.Now;
@@ -41,13 +41,13 @@ namespace WindowsFormsApp2023_Final
             // convert the startofthemonth to integer
             int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
 
-            //first let's create a blank usercontrol
+            
             for (int i = 1; i < dayoftheweek; i++)
             {
                 UserControlBlank ucblank = new UserControlBlank();
                 daycontainer.Controls.Add(ucblank);
             }
-            //now lets create usercontrol for days
+            
             for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucdays = new UserControlDays(i);
@@ -57,7 +57,6 @@ namespace WindowsFormsApp2023_Final
 
         private void btnprevious_Click(object sender, EventArgs e)
         {
-            //clear container
             daycontainer.Controls.Clear();
 
             /**
@@ -84,18 +83,16 @@ namespace WindowsFormsApp2023_Final
             // convert the startofthemonth to integer
             int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
 
-            //first let's create a blank usercontrol
             for (int i = 1; i < dayoftheweek; i++)
             {
                 UserControlBlank ucblank = new UserControlBlank();
                 daycontainer.Controls.Add(ucblank);
             }
-            //now lets create usercontrol for days
+            
             for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucdays = new UserControlDays(i);
                 daycontainer.Controls.Add(ucdays);
-
             }
         }
 
@@ -106,7 +103,6 @@ namespace WindowsFormsApp2023_Final
 
         private void btnnext_Click(object sender, EventArgs e)
         {
-            //clear container
             daycontainer.Controls.Clear();
 
             /**
@@ -133,18 +129,19 @@ namespace WindowsFormsApp2023_Final
             // convert the startofthemonth to integer
             int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
 
-            //first let's create a blank usercontrol
             for (int i = 1; i < dayoftheweek; i++)
             {
                 UserControlBlank ucblank = new UserControlBlank();
                 daycontainer.Controls.Add(ucblank);
             }
-            //now lets create usercontrol for days
+            
             for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucdays = new UserControlDays(i);
                 daycontainer.Controls.Add(ucdays);
             }
         }
+
     }
+
 }

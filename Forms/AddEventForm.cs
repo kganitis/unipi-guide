@@ -23,19 +23,19 @@ namespace WindowsFormsApp2023_Final
         {
             string date = txdate.Text;
             string description = rtxdescr.Text;
+            int userID = UserSession.Instance.UserId;
             connection = new SQLiteConnection(connectionString);
             connection.Open();
             String insertSQL = "insert INTO event (description, date, student_ID) values" +
-                "(@description, @date, 2)";
+                "(@description, @date, @userID)";
             SQLiteCommand command = new SQLiteCommand(insertSQL, connection);
             command.Parameters.AddWithValue("@date", date);
             command.Parameters.AddWithValue("@description", description);
+            command.Parameters.AddWithValue("userID", userID);
             command.ExecuteNonQuery();
             MessageBox.Show("Η Δραστηριότητα καταχωρήθηκε επιτυχώς!");
             this.Close();
             connection.Close();
-
-            
         }
     }
 }
