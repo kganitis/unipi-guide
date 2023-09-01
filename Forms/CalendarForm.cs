@@ -54,7 +54,7 @@ namespace WindowsFormsApp2023_Final
             
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucdays = new UserControlDays(i);
+                UserControlDays ucdays = new UserControlDays(i, this);
                 daycontainer.Controls.Add(ucdays);
             }
         }
@@ -95,7 +95,7 @@ namespace WindowsFormsApp2023_Final
             
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucdays = new UserControlDays(i);
+                UserControlDays ucdays = new UserControlDays(i, this);
                 daycontainer.Controls.Add(ucdays);
             }
         }
@@ -141,7 +141,7 @@ namespace WindowsFormsApp2023_Final
             
             for (int i = 1; i <= days; i++)
             {
-                UserControlDays ucdays = new UserControlDays(i);
+                UserControlDays ucdays = new UserControlDays(i, this);
                 daycontainer.Controls.Add(ucdays);
             }
         }

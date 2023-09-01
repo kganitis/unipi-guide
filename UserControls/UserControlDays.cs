@@ -9,12 +9,14 @@ namespace WindowsFormsApp2023_Final
     {
         private String connectionString = "Data source=rad19900.db;Version=3;";
         private SQLiteConnection connection;
+        private CalendarForm calendar;
         public static string static_day;
 
-        public UserControlDays(int numday)
+        public UserControlDays(int numday, CalendarForm calendar)
         {
             InitializeComponent();
             lbdays.Text = numday + "";
+            this.calendar = calendar;
             displayEvent();
         }
 
@@ -23,7 +25,7 @@ namespace WindowsFormsApp2023_Final
             static_day = lbdays.Text;
             if (UserSession.Instance.IsLoggedIn())
             {
-                AddEventForm addEvent = new AddEventForm();
+                AddEventForm addEvent = new AddEventForm(calendar);
                 addEvent.Show();
             }
         }

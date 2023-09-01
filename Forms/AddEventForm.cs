@@ -8,10 +8,12 @@ namespace WindowsFormsApp2023_Final
     {
         private String connectionString = "Data source=rad19900.db;Version=3;";
         private SQLiteConnection connection;
+        private CalendarForm calendar;
 
-        public AddEventForm()
+        public AddEventForm(CalendarForm calendar)
         {
             InitializeComponent();
+            this.calendar = calendar;
         }
 
         private void AddEventForm_Load(object sender, EventArgs e)
@@ -33,6 +35,8 @@ namespace WindowsFormsApp2023_Final
             command.Parameters.AddWithValue("@description", description);
             command.Parameters.AddWithValue("userID", userID);
             command.ExecuteNonQuery();
+            calendar.Close();
+            new CalendarForm().Show();
             MessageBox.Show("Η Δραστηριότητα καταχωρήθηκε επιτυχώς!");
             this.Close();
             connection.Close();
