@@ -6,8 +6,8 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class AddEventForm : Form
     {
-        String connectionString = "Data source=rad19900.db;Version=3;";
-        SQLiteConnection connection;
+        private String connectionString = "Data source=rad19900.db;Version=3;";
+        private SQLiteConnection connection;
 
         public AddEventForm()
         {

@@ -6,13 +6,17 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class CalendarForm : Form
     {
-        int month, year;
-        // create a static variable that we can pass to another form for month and year
+        private int month, year;
+        // variables that we can pass to another form for month and year
         public static int static_month, static_year;
 
         public CalendarForm()
         {
             InitializeComponent();
+            if (UserSession.Instance.IsVisitor())
+            {
+                AddEventLabel.Visible = false;
+            }
         }
 
         private void CalendarForm_Load(object sender, EventArgs e)
@@ -32,10 +36,10 @@ namespace WindowsFormsApp2023_Final
             static_month = month;
             static_year = year;
             
-            //Let's get the first day of the month
+            // get the first day of the month
             DateTime startofthemonth = new DateTime(year, month, 1);
 
-            //get the counts of days of the month
+            // get the counts of days of the month
             int days = DateTime.DaysInMonth(year, month);
             
             // convert the startofthemonth to integer
@@ -77,7 +81,7 @@ namespace WindowsFormsApp2023_Final
 
             DateTime startofthemonth = new DateTime(year, month, 1);
             
-            //get the counts of days of the month
+            // get the counts of days of the month
             int days = DateTime.DaysInMonth(year, month);
             
             // convert the startofthemonth to integer
@@ -123,7 +127,7 @@ namespace WindowsFormsApp2023_Final
 
             DateTime startofthemonth = new DateTime(year, month, 1);
             
-            //get the counts of days of the month
+            // get the counts of days of the month
             int days = DateTime.DaysInMonth(year, month);
             
             // convert the startofthemonth to integer
