@@ -868,15 +868,6 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Σχολές.
-        /// </summary>
-        internal static string Σχολές {
-            get {
-                return ResourceManager.GetString("Σχολές", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Τεχνολογιών Πληροφορικής και Τηλεπικοινωνιών.
         /// </summary>
         internal static string Τεχνολογιών_Πληροφορικής_και_Τηλεπικοινωνιών {

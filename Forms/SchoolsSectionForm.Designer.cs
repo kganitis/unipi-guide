@@ -35,18 +35,18 @@
             // 
             // MainContentTextBox
             // 
-            this.MainContentTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainContentTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.MainContentTextBox.Size = new System.Drawing.Size(492, 257);
             // 
             // SectionTitleTextBox
             // 
-            this.SectionTitleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SectionTitleTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.SectionTitleTextBox.Size = new System.Drawing.Size(721, 37);
             // 
             // highlightedButton
             // 
-            this.highlightedButton.Location = new System.Drawing.Point(10, 69);
-            this.highlightedButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.highlightedButton.Location = new System.Drawing.Point(11, 109);
+            this.highlightedButton.Margin = new System.Windows.Forms.Padding(2);
             this.highlightedButton.Size = new System.Drawing.Size(180, 65);
             this.highlightedButton.Text = "Σχολές";
             // 
@@ -58,41 +58,23 @@
             // 
             // NavButton5
             // 
-            this.NavButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton5.Location = new System.Drawing.Point(10, 357);
-            this.NavButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.NavButton5.Size = new System.Drawing.Size(180, 83);
+            this.NavButton5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButton5.Text = "Τεχνολογιών Πληροφορικής και Τηλεπικοινωνιών";
             // 
             // NavButton4
             // 
-            this.NavButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton4.Location = new System.Drawing.Point(10, 298);
-            this.NavButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.NavButton4.Size = new System.Drawing.Size(180, 56);
+            this.NavButton4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButton4.Text = "Χρηματοοικονομικής και Στατιστικής";
             // 
             // NavButton3
             // 
-            this.NavButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton3.Location = new System.Drawing.Point(10, 217);
-            this.NavButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.NavButton3.Size = new System.Drawing.Size(180, 77);
+            this.NavButton3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButton3.Text = "Ναυτιλίας και Βιομηχανίας";
             // 
             // NavButton2
             // 
-            this.NavButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton2.Location = new System.Drawing.Point(10, 136);
-            this.NavButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.NavButton2.Size = new System.Drawing.Size(180, 78);
+            this.NavButton2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NavButton2.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών";
-            // 
-            // NavButtonHome
-            // 
-            this.NavButtonHome.Location = new System.Drawing.Point(10, 3);
-            this.NavButtonHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.NavButtonHome.Size = new System.Drawing.Size(180, 66);
             // 
             // SchoolsSectionForm
             // 

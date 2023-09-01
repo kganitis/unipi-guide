@@ -78,6 +78,14 @@ namespace WindowsFormsApp2023_Final
             for (int i = 0; i < subsectionNavButtons.Count; i++)
             {
                 subsectionNavButtons[i].Text = subsections[i].Name;
+                if (subsectionNavButtons[i].Text.Equals(""))
+                {
+                    subsectionNavButtons[i].Visible = false;
+                }
+                else
+                {
+                    subsectionNavButtons[i].Visible = true;
+                }
             }
         }
 

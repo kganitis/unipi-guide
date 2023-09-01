@@ -367,9 +367,6 @@
   <data name="Οικονομικών__Επιχειρηματικών_και_Διεθνών_Σπουδών" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="Σχολές" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Σχολές.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
   <data name="Τεχνολογιών_Πληροφορικής_και_Τηλεπικοινωνιών" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Τεχνολογιών Πληροφορικής και Τηλεπικοινωνιών.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
