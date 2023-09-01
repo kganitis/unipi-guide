@@ -27,7 +27,7 @@ namespace WindowsFormsApp2023_Final
 
             subsection = new GuideSection("Ναυτιλίας και Βιομαχανίας");//Subsection1.2
             subsection.AddSubsection(new GuideSection("Ναυτιλιακών Σπουδών"));//Subsection1.2.1
-            subsection.AddSubsection(new GuideSection("Βιομηχανικής Διοικησης Τεχνολογίας"));//Subsection1.2.2
+            subsection.AddSubsection(new GuideSection("Βιομηχανικής Διοίκησης Τεχνολογίας"));//Subsection1.2.2
             subsection.AddSubsection(new GuideSection(""));//Subsection1.2.3
             subsection.AddSubsection(new GuideSection(""));//Subsection1.2.4
             section.AddSubsection(subsection);
@@ -54,43 +54,6 @@ namespace WindowsFormsApp2023_Final
             {
                 ((Button)subsection).Visible = false;
             }*/
-            
         }
-
-        protected override void NavButton1_Click(object sender, EventArgs e)
-        {
-            ResetHighlightedButton();
-            currentSection = section;
-            UpdateSectionButtonsText(section.Subsections);
-            HighlightButton(NavButton1);
-            UpdateContent();
-        }
-
-        protected override void NavButton2_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
-
-        protected override void NavButton3_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-
-        }
-
-        protected override void NavButton4_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
-
-        protected override void NavButton5_Click(object sender, EventArgs e)
-        {
-            SubsectionButtonClick(sender);
-            UpdateContent();
-        }
-
     }
-  
 }

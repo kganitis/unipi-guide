@@ -82,9 +82,8 @@
             // ViewEventsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1261, 690);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClientSize = new System.Drawing.Size(1312, 690);
+            this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.Name = "ViewEventsForm";
             this.Text = "Events";
             this.ContentPanel.ResumeLayout(false);

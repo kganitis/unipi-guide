@@ -373,9 +373,9 @@ namespace WindowsFormsApp2023_Final.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Tο Tμήμα Βιομηχανικής Διοίκησης &amp; Tεχνολογίας έχει σκοπό την εκπαίδευση, μόρφωση και ανάδειξη στελεχών στην επιστήμη της Διοίκησης της Παραγωγής, με έμφαση στις εφαρμογές των νέων τεχνολογιών στα συστήματα παραγωγής. Στόχος του Tμήματος, με το σύγχρονο πρόγραμμα σπουδών, είναι να εφοδιάσει τους φοιτητές με τη γνώση της επιστημονικής μεθοδολογίας που απαιτείται για την ανάλυση, το σχεδιασμό, την υλοποίηση και την οργάνωση κατάλληλων συστημάτων, με σκοπό την αποτελεσματική αντιμετώπιση των πολύπλοκων προβλημά [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string Βιομηχανικής_Διοικησης_Τεχνολογίας {
+        internal static string Βιομηχανικής_Διοίκησης_Τεχνολογίας {
             get {
-                return ResourceManager.GetString("Βιομηχανικής_Διοικησης_Τεχνολογίας", resourceCulture);
+                return ResourceManager.GetString("Βιομηχανικής_Διοίκησης_Τεχνολογίας", resourceCulture);
             }
         }
         
@@ -686,6 +686,15 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ναυτιλίας και Βιομαχανίας.
+        /// </summary>
+        internal static string Ναυτιλίας_και_Βιομαχανίας {
+            get {
+                return ResourceManager.GetString("Ναυτιλίας_και_Βιομαχανίας", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Το Τμήμα μας έχει έναν σταθερό και μακροχρόνιο στόχο: να παρέχει υψηλής ποιότητας γνώση και έρευνα στο πεδίο της Οικονομικής Επιστήμης.
         ///
         ///Το τετραετές Προπτυχιακό Πρόγραμμα αποτελείται από πλήθος μαθημάτων, βασικά μαθήματα κορμού και σύγχρονα μαθήματα επιλογής, που παρέχουν τόσο θεωρητική όσο και εμπειρική γνώση, απαραίτητη για την κατανόηση σύνθετων οικονομικών καταστάσεων. Επιπρόσθετα, το πρόγραμμα παρέχει τη δυνατότητα στους φοιτητές μας να μεταβούν σε αντίστοιχα Τμήματα Πανεπιστημίων του εξωτερικού, μέ [rest of string was truncated]&quot;;.
@@ -713,6 +722,15 @@ namespace WindowsFormsApp2023_Final.Properties {
             get {
                 object obj = ResourceManager.GetObject("Οικονομικής_Επιστήμης2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών.
+        /// </summary>
+        internal static string Οικονομικών__Επιχειρηματικών_και_Διεθνών_Σπουδών {
+            get {
+                return ResourceManager.GetString("Οικονομικών__Επιχειρηματικών_και_Διεθνών_Σπουδών", resourceCulture);
             }
         }
         
@@ -850,6 +868,24 @@ namespace WindowsFormsApp2023_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Σχολές.
+        /// </summary>
+        internal static string Σχολές {
+            get {
+                return ResourceManager.GetString("Σχολές", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Τεχνολογιών Πληροφορικής και Τηλεπικοινωνιών.
+        /// </summary>
+        internal static string Τεχνολογιών_Πληροφορικής_και_Τηλεπικοινωνιών {
+            get {
+                return ResourceManager.GetString("Τεχνολογιών_Πληροφορικής_και_Τηλεπικοινωνιών", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Το Τμήμα Τουριστικών Σπουδών έχει ως βασικό σκοπό να καλύπτει τις ανάγκες του ευρύτατου πεδίου του Τουρισμού, με στελέχη ανώτατης πανεπιστημιακής εκπαίδευσης που θα πληρούν όλες τις προϋποθέσεις για μια εξαίρετη σταδιοδρομία σε μεσαίες, ανώτερες και ανώτατες θέσεις σε όλους τους κλάδους της Τουριστικής Βιομηχανίας, αλλά και σε όλους τους φορείς τουριστικών ενδιαφερόντων που δρουν σε μάκρο-επίπεδο, που ασχολούνται δηλαδή με την ανάπτυξη και την πολιτική στον Τουρισμό σε εθνικό, περιφερειακό και τοπικό επίπεδ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Τουριστικών_Σπουδών {
@@ -947,6 +983,15 @@ namespace WindowsFormsApp2023_Final.Properties {
             get {
                 object obj = ResourceManager.GetObject("Χαιρετισμός2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Χρηματοοικονομικής και Στατιστικής.
+        /// </summary>
+        internal static string Χρηματοοικονομικής_και_Στατιστικής {
+            get {
+                return ResourceManager.GetString("Χρηματοοικονομικής_και_Στατιστικής", resourceCulture);
             }
         }
         

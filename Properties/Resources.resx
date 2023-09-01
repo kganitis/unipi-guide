@@ -316,8 +316,8 @@
   <data name="Οικονομικής_Επιστήμης2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Οικονομικής_Επιστήμης2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Βιομηχανικής_Διοικησης_Τεχνολογίας" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Βιομηχανικής Διοικησης Τεχνολογίας.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="Βιομηχανικής_Διοίκησης_Τεχνολογίας" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Βιομηχανικής Διοίκησης Τεχνολογίας.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
   <data name="Διεθνών_και_Ευρωπαικών_Σπουδών" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Διεθνών και Ευρωπαικών Σπουδών.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
@@ -360,5 +360,20 @@
   </data>
   <data name="Ψηφιακών_Συστημάτων2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Στιγμιότυπο οθόνης (394).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ναυτιλίας_και_Βιομαχανίας" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ναυτιλίας και Βιομαχανίας.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Οικονομικών__Επιχειρηματικών_και_Διεθνών_Σπουδών" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Σχολές" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Σχολές.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Τεχνολογιών_Πληροφορικής_και_Τηλεπικοινωνιών" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Τεχνολογιών Πληροφορικής και Τηλεπικοινωνιών.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Χρηματοοικονομικής_και_Στατιστικής" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Χρηματοοικονομικής και Στατιστικής.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
 </root>

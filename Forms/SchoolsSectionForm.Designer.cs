@@ -33,59 +33,78 @@
             this.ContentPanel.SuspendLayout();
             this.SuspendLayout();
             // 
+            // MainContentTextBox
+            // 
+            this.MainContentTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainContentTextBox.Size = new System.Drawing.Size(492, 257);
+            // 
+            // SectionTitleTextBox
+            // 
+            this.SectionTitleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SectionTitleTextBox.Size = new System.Drawing.Size(721, 37);
+            // 
             // highlightedButton
             // 
-            this.highlightedButton.Location = new System.Drawing.Point(14, 85);
-            this.highlightedButton.Size = new System.Drawing.Size(240, 80);
+            this.highlightedButton.Location = new System.Drawing.Point(10, 69);
+            this.highlightedButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.highlightedButton.Size = new System.Drawing.Size(180, 65);
             this.highlightedButton.Text = "Σχολές";
             // 
             // ContentPanel
             // 
-            this.ContentPanel.Size = new System.Drawing.Size(1045, 541);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.ContentPanel.Size = new System.Drawing.Size(784, 437);
             // 
             // NavButton5
             // 
-            this.NavButton5.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton5.Location = new System.Drawing.Point(13, 439);
-            this.NavButton5.Size = new System.Drawing.Size(240, 102);
+            this.NavButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.NavButton5.Location = new System.Drawing.Point(10, 357);
+            this.NavButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NavButton5.Size = new System.Drawing.Size(180, 83);
             this.NavButton5.Text = "Τεχνολογιών Πληροφορικής και Τηλεπικοινωνιών";
             // 
             // NavButton4
             // 
-            this.NavButton4.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton4.Location = new System.Drawing.Point(14, 367);
-            this.NavButton4.Size = new System.Drawing.Size(240, 69);
+            this.NavButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.NavButton4.Location = new System.Drawing.Point(10, 298);
+            this.NavButton4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NavButton4.Size = new System.Drawing.Size(180, 56);
             this.NavButton4.Text = "Χρηματοοικονομικής και Στατιστικής";
             // 
             // NavButton3
             // 
-            this.NavButton3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton3.Location = new System.Drawing.Point(14, 267);
-            this.NavButton3.Size = new System.Drawing.Size(240, 95);
-            this.NavButton3.Text = "Ναυτιλίας και Βιομαχανίας";
+            this.NavButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.NavButton3.Location = new System.Drawing.Point(10, 217);
+            this.NavButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NavButton3.Size = new System.Drawing.Size(180, 77);
+            this.NavButton3.Text = "Ναυτιλίας και Βιομηχανίας";
             // 
             // NavButton2
             // 
-            this.NavButton2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.NavButton2.Location = new System.Drawing.Point(14, 167);
-            this.NavButton2.Size = new System.Drawing.Size(240, 96);
+            this.NavButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.NavButton2.Location = new System.Drawing.Point(10, 136);
+            this.NavButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NavButton2.Size = new System.Drawing.Size(180, 78);
             this.NavButton2.Text = "Οικονομικών, Επιχειρηματικών και Διεθνών Σπουδών";
             // 
             // NavButtonHome
             // 
-            this.NavButtonHome.Location = new System.Drawing.Point(13, 4);
-            this.NavButtonHome.Size = new System.Drawing.Size(240, 81);
+            this.NavButtonHome.Location = new System.Drawing.Point(10, 3);
+            this.NavButtonHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NavButtonHome.Size = new System.Drawing.Size(180, 66);
             // 
             // SchoolsSectionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.ClientSize = new System.Drawing.Size(1312, 690);
-            this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "SchoolsSectionForm";
             this.Text = "Σχολές";
             ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).EndInit();
             this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
