@@ -65,7 +65,7 @@ namespace WindowsFormsApp2023_Final
                 label_desc.AutoSize = true;
                 //label_desc.MaximumSize = new Size(this.Width, 0);
                 //label_desc.AutoEllipsis = false;
-                label_desc.Font = new Font("Modern No. 20", 13.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+                label_desc.Font = new Font("Modern No. 20", 12F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
                 label_desc.BackColor = Color.Transparent;
                 label_desc.ForeColor = Color.Black;
                 label_desc.Location = new Point(120, 115 + (3 * i) * label_desc.Height);
@@ -76,7 +76,7 @@ namespace WindowsFormsApp2023_Final
 
                 Label label_date = new Label();
                 label_date.AutoSize = true;
-                label_date.Font = new Font("Modern No. 20", 13.8F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
+                label_date.Font = new Font("Modern No. 20", 12F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
                 label_date.ForeColor = Color.Maroon;
                 label_date.Location = new Point(30, 115 + (3 * i) * label_date.Height);
                 label_date.Name = "date";
