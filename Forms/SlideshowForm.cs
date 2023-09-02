@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Media;
 using System.Windows.Forms;
+using WindowsFormsApp2023_Final.Properties;
 
 namespace WindowsFormsApp2023_Final
 {
@@ -15,10 +16,11 @@ namespace WindowsFormsApp2023_Final
             InitializeComponent();
             HighlightButton(NavButton5);
             HomeToolStripMenuItem.Enabled = true;
+            ListenToolStripMenuItem.Enabled = false;
             ExportToolStripMenuItem.Text = ExportButton.Text;
             ListenToolStripMenuItem.Text = ListenButton.Text;
             slides = new UserControl[] { firstUC1, secondUC1, thirdUC1, forthUC1, fifthUC1, sixthUC1, seventhUC1, eighthUC1, ninthUC1, tenthUC1, eleventhUC1, twelfthUC1 };
-            ninthUC1.Visible = false; // WHY ?
+            ninthUC1.Visible = false;
             player = new SoundPlayer();
         }
 
@@ -26,31 +28,31 @@ namespace WindowsFormsApp2023_Final
         {
             TransitionToNextSlide();
         }
+
         private void BeginSlideshow()
         {
-            ToogleListenEnabled(true);
-            player.SoundLocation = "../../Resources/Music/music3.wav"; // Δε δουλεύει !!!
+            ToogleListenEnabled(true); // Ενεργοποίηση του κουμπιού Παύση
+            ToogleExportEnabled(false); // Απενεργοποίηση του κουμπιού Αρχή
+            timer1.Start();
+            player.Stream = Resources.music3;
             player.Play();
             guna2Transition2.HideSync(slides[11]);
-            TransitionToNextSlide(); // Γενικά να δούμε τι παίζει με το σταμάτα/ξεκίνα, το delay δεν είναι πάντα το ίδιο
-            timer1.Start();
-            ToogleExportEnabled(false);
         }
 
         private void TransitionToNextSlide()
         {
-            guna2Transition2.HideSync(slides[currentIndex]); // Δε μου αρέσει το εφέ που κάνει την εικόνα να διαλύεται, να βρούμε κάτι άλλο;
+            guna2Transition2.HideSync(slides[currentIndex]);
             currentIndex = (currentIndex + 1) % slides.Length;
             guna2Transition1.ShowSync(slides[currentIndex]);
         }
 
         private void StopSlideshow()
         {
-            ToogleListenEnabled(false);
+            ToogleListenEnabled(false); // Απενεργοποίηση του κουμπιού Παύση
+            ToogleExportEnabled(true); // Ενεργοποίηση του κουμπιού Αρχή
             timer1.Stop();
             player.Stop();
             guna2Transition1.ShowSync(slides[11]);
-            ToogleExportEnabled(true);
         }
 
         protected override void ExportButton_Click(object sender, EventArgs e)

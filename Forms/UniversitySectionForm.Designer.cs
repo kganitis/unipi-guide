@@ -53,9 +53,9 @@
             // ContentPanel
             // 
             this.ContentPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.ContentPanel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.ContentPanel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.ContentPanel.Size = new System.Drawing.Size(784, 437);
+            this.ContentPanel.Location = new System.Drawing.Point(267, 30);
+            this.ContentPanel.Margin = new System.Windows.Forms.Padding(7);
+            this.ContentPanel.Size = new System.Drawing.Size(1045, 537);
             // 
             // NavButton5
             // 
@@ -75,14 +75,15 @@
             // 
             // UniversitySectionForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(984, 561);
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(1312, 690);
+            this.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.Name = "UniversitySectionForm";
             this.Text = "Πανεπιστήμιο";
             ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ContentPictureBox2)).EndInit();
             this.ContentPanel.ResumeLayout(false);
+            this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

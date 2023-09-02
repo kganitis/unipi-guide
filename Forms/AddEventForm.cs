@@ -6,36 +6,33 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class AddEventForm : Form
     {
-        String connectionString = "Data source=rad19900.db;Version=3;";
-        SQLiteConnection connection;
+        private String connectionString = "Data source=rad19900.db;Version=3;";
+        private SQLiteConnection connection;
+        private CalendarForm calendar;
 
-        public AddEventForm()
+        public AddEventForm(string day, int month, int year, CalendarForm calendar)
         {
             InitializeComponent();
-        }
-
-        private void AddEventForm_Load(object sender, EventArgs e)
-        {
-            txdate.Text = CalendarForm.static_year + "-" + CalendarForm.static_month.ToString("00") + "-" + UserControlDays.static_day.PadLeft(2, '0');
+            txdate.Text = year + "-" + month.ToString("00") + "-" + day.PadLeft(2, '0');
+            this.calendar = calendar;
         }
 
         private void btnregister_Click(object sender, EventArgs e) // for registered users only
         {
-            string date = txdate.Text;
-            string description = rtxdescr.Text;
             connection = new SQLiteConnection(connectionString);
             connection.Open();
             String insertSQL = "insert INTO event (description, date, student_ID) values" +
-                "(@description, @date, 2)";
+                "(@description, @date, @userID)";
             SQLiteCommand command = new SQLiteCommand(insertSQL, connection);
-            command.Parameters.AddWithValue("@date", date);
-            command.Parameters.AddWithValue("@description", description);
+            command.Parameters.AddWithValue("@date", txdate.Text);
+            command.Parameters.AddWithValue("@description", rtxdescr.Text);
+            command.Parameters.AddWithValue("userID", UserSession.Instance.UserId);
             command.ExecuteNonQuery();
+            connection.Close();
+            calendar.Close();
+            new CalendarForm().Show();
             MessageBox.Show("Η Δραστηριότητα καταχωρήθηκε επιτυχώς!");
             this.Close();
-            connection.Close();
-
-            
         }
     }
 }
