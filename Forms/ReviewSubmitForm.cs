@@ -47,13 +47,15 @@ namespace WindowsFormsApp2023_Final
                 {
                     MessageBox.Show("Error: " + ex.Message);
                 }
+                SubmitButton.Enabled = false;
+                ClearButton_Click(sender, e);
                 NavigateToForm<ReviewsForm>();
             }
         }
 
         private void ReviewTextBox_Click(object sender, EventArgs e)
         {
-            if (ReviewTextBox.Text.Equals("Γράψτε εδώ τα σχόλιά σας..."))
+            if (ReviewTextBox.Text.Equals(defaultText))
             {
                 ReviewTextBox.Clear();
             }

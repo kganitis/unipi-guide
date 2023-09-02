@@ -94,7 +94,6 @@
             this.Name = "AddEventForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Καταχώρηση Νέας Δραστηριότητας";
-            this.Load += new System.EventHandler(this.AddEventForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,22 +10,25 @@ namespace WindowsFormsApp2023_Final
         private String connectionString = "Data source=rad19900.db;Version=3;";
         private SQLiteConnection connection;
         private CalendarForm calendar;
-        public static string static_day;
+        private int month, year;
+        private string day;
 
-        public UserControlDays(int numday, CalendarForm calendar)
+        public UserControlDays(int numday, int month, int year, CalendarForm calendar)
         {
             InitializeComponent();
             lbdays.Text = numday + "";
+            this.month = month;
+            this.year = year;
             this.calendar = calendar;
             displayEvent();
         }
 
         private void UserControlDays_Click(object sender, EventArgs e)
         {
-            static_day = lbdays.Text;
+            day = lbdays.Text;
             if (UserSession.Instance.IsLoggedIn())
             {
-                AddEventForm addEvent = new AddEventForm(calendar);
+                AddEventForm addEvent = new AddEventForm(day, month, year, calendar);
                 addEvent.Show();
             }
         }
@@ -37,7 +40,7 @@ namespace WindowsFormsApp2023_Final
             String selectSQL = "select description from event where date = @date";
             SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
             command.Parameters.AddWithValue("@date",
-            CalendarForm.static_year + "-" + CalendarForm.static_month.ToString("00") + "-" + lbdays.Text.PadLeft(2, '0'));
+            year + "-" + month.ToString("00") + "-" + lbdays.Text.PadLeft(2, '0'));
             SQLiteDataReader reader = command.ExecuteReader();
             int labelnum = 1; // label number for updating the two labels
             while (reader.Read() && labelnum < 3)
