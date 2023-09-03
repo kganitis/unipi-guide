@@ -23,17 +23,36 @@ namespace WindowsFormsApp2023_Final
             displayEvent();
         }
 
-        private void UserControlDays_Click(object sender, EventArgs e)
+        private void AddEvent()
         {
-            day = lbdays.Text;
             if (UserSession.Instance.IsLoggedIn())
             {
-                AddEventForm addEvent = new AddEventForm(day, month, year, calendar);
+                AddEventForm addEvent = new AddEventForm(lbdays.Text, month, year, calendar);
                 addEvent.Show();
             }
         }
 
-        public void displayEvent()
+        private void UserControlDays_Click(object sender, EventArgs e)
+        {
+            AddEvent();
+        }
+
+        private void lbevent1_Click(object sender, EventArgs e)
+        {
+            AddEvent();
+        }
+
+        private void lbevent2_Click(object sender, EventArgs e)
+        {
+            AddEvent();
+        }
+
+        private void lbdays_Click(object sender, EventArgs e)
+        {
+            AddEvent();
+        }
+
+        private void displayEvent()
         {
             connection = new SQLiteConnection(connectionString);
             connection.Open();
@@ -55,16 +74,11 @@ namespace WindowsFormsApp2023_Final
                 }
                 labelnum++;
             }
-            // if there is no event or events, the labels become invisible, so the area is clickable
-            if (lbevent1.Text.Equals(""))
-            {
-                lbevent1.Visible = false;
-            }
+            // if there is no senond event, the first event takes all the available space
             if (lbevent2.Text.Equals(""))
             {
                 lbevent2.Visible = false;
-                lbevent1.Size = new Size(140, 60); // if there is no senond event, the first event takes all the available space
-                // NAI αλλά τώρα δεν μπορούμε να προσθέσουμε δεύτερο !!!
+                lbevent1.Size = new Size(lbevent1.Width, lbevent1.Height * 2); 
             }
             reader.Close();
             command.Dispose();

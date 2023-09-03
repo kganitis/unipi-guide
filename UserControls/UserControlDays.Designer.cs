@@ -43,6 +43,7 @@
             this.lbdays.Size = new System.Drawing.Size(27, 20);
             this.lbdays.TabIndex = 0;
             this.lbdays.Text = "00";
+            this.lbdays.Click += new System.EventHandler(this.lbdays_Click);
             // 
             // lbevent1
             // 
@@ -53,16 +54,18 @@
             this.lbevent1.Size = new System.Drawing.Size(142, 31);
             this.lbevent1.TabIndex = 1;
             this.lbevent1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbevent1.Click += new System.EventHandler(this.lbevent1_Click);
             // 
             // lbevent2
             // 
             this.lbevent2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.lbevent2.Location = new System.Drawing.Point(-2, 53);
+            this.lbevent2.Location = new System.Drawing.Point(-2, 55);
             this.lbevent2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbevent2.Name = "lbevent2";
             this.lbevent2.Size = new System.Drawing.Size(142, 31);
             this.lbevent2.TabIndex = 2;
             this.lbevent2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbevent2.Click += new System.EventHandler(this.lbevent2_Click);
             // 
             // UserControlDays
             // 
