@@ -21,6 +21,7 @@ namespace WindowsFormsApp2023_Final
         {
             // Αρχικοποίηση όλων των forms εδώ
             formCache.Add(typeof(AboutForm), new AboutForm());
+            formCache.Add(typeof(RegisterForm), new RegisterForm());
             formCache.Add(typeof(GuideForm), new GuideForm());
             formCache.Add(typeof(UniversitySectionForm), new UniversitySectionForm());
             formCache.Add(typeof(ServicesSectionForm), new ServicesSectionForm());

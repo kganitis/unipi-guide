@@ -33,6 +33,7 @@ namespace WindowsFormsApp2023_Final
                 typeof(GuideSectionForm),
                 typeof(SlideshowForm)
             };
+
             if (!exportEnabledForms.Contains(currentForm))
             {
                 ExportButton.Enabled = false;

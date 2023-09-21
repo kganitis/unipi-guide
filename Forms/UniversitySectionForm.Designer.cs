@@ -42,10 +42,6 @@
             this.SectionTitleTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.SectionTitleTextBox.Size = new System.Drawing.Size(721, 37);
             // 
-            // ContentPictureBox1
-            // 
-            this.ContentPictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            // 
             // highlightedButton
             // 
             this.highlightedButton.Text = "Πανεπιστήμιο";
