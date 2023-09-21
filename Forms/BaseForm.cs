@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Speech.Synthesis;
@@ -18,15 +19,22 @@ namespace WindowsFormsApp2023_Final
         {
             InitializeComponent();
             engine = new SpeechSynthesizer();
+            Type currentForm = GetType();
 
             // Αν πρόκειται για AboutForm, disable τα σχετικά κουμπιά
-            if (GetType() == typeof(AboutForm))
+            if (currentForm == typeof(AboutForm))
             {
                 AboutButton.Enabled = false;
                 HelpToolStripMenuItem.Enabled = false;
             }
 
-            if (GetType() != typeof(GuideSectionForm) && GetType() != typeof(SlideshowForm))
+            List<Type> exportEnabledForms = new List<Type>
+            {
+                typeof(GuideSectionForm),
+                typeof(SlideshowForm)
+            };
+
+            if (!exportEnabledForms.Contains(currentForm))
             {
                 ExportButton.Enabled = false;
                 ExportToolStripMenuItem.Enabled = false;

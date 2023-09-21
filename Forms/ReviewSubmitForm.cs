@@ -23,13 +23,28 @@ namespace WindowsFormsApp2023_Final
             ReviewTextBox.Text = defaultText;
         }
 
-        private void SubmitButton_Click(object sender, EventArgs e)
-        {   
-            if (String.IsNullOrEmpty(ReviewTextBox.Text) || ReviewTextBox.Text.Equals(defaultText) || grade == 0)
+        private void SetGrade(int grade)
+        {
+            this.grade = grade;
+
+            for (int i = 0; i < stars.Length; i++)
             {
-                // if no review is written or no grade star is clicked, do nothing
+                if (i < grade)
+                {
+                    stars[i].BackgroundImage = Resources.star_gold;
+                }
+                else
+                {
+                    stars[i].BackgroundImage = Resources.star_black;
+                }
             }
-            else
+        }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            bool reviewIsWritten = !String.IsNullOrEmpty(ReviewTextBox.Text) && !ReviewTextBox.Text.Equals(defaultText);
+            bool starIsSelected = grade != 0;
+            if (reviewIsWritten && starIsSelected)
             {
                 try
                 {
@@ -63,50 +78,33 @@ namespace WindowsFormsApp2023_Final
 
         private void StarPictureBox1_Click(object sender, EventArgs e)
         {
-            UpdateGrade(1);
+            SetGrade(1);
         }
 
         private void StarPictureBox2_Click(object sender, EventArgs e)
         {
-            UpdateGrade(2);
+            SetGrade(2);
         }
 
         private void StarPictureBox3_Click(object sender, EventArgs e)
         {
-            UpdateGrade(3);
+            SetGrade(3);
         }
 
         private void StarPictureBox4_Click(object sender, EventArgs e)
         {
-            UpdateGrade(4);
+            SetGrade(4);
         }
 
         private void StarPictureBox5_Click(object sender, EventArgs e)
         {
-            UpdateGrade(5);
-        }
-
-        private void UpdateGrade(int grade)
-        {
-            this.grade = grade;
-
-            for (int i = 0; i < stars.Length; i++)
-            {
-                if (i < grade)
-                {
-                    stars[i].BackgroundImage = Resources.star_gold;
-                }
-                else
-                {
-                    stars[i].BackgroundImage = Resources.star_black;
-                }
-            }
+            SetGrade(5);
         }
 
         private void ClearButton_Click(object sender, EventArgs e)
         {
             ReviewTextBox.Clear();
-            UpdateGrade(0);
+            SetGrade(0);
         }
     }
 }

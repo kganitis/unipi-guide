@@ -19,6 +19,8 @@ namespace WindowsFormsApp2023_Final
             HomeToolStripMenuItem.Enabled = true;
             ExportButton.Enabled = true;
             ExportToolStripMenuItem.Enabled = true;
+            ContentPictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            ContentPictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         protected override void NavButton1_Click(object sender, EventArgs e)

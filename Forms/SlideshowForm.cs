@@ -22,6 +22,7 @@ namespace WindowsFormsApp2023_Final
             slides = new UserControl[] { firstUC1, secondUC1, thirdUC1, forthUC1, fifthUC1, sixthUC1, seventhUC1, eighthUC1, ninthUC1, tenthUC1, eleventhUC1, twelfthUC1 };
             ninthUC1.Visible = false;
             player = new SoundPlayer();
+            player.Stream = Resources.music3;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -34,9 +35,8 @@ namespace WindowsFormsApp2023_Final
             ToogleListenEnabled(true); // Ενεργοποίηση του κουμπιού Παύση
             ToogleExportEnabled(false); // Απενεργοποίηση του κουμπιού Αρχή
             timer1.Start();
-            player.Stream = Resources.music3;
-            player.Play();
             guna2Transition2.HideSync(slides[11]);
+            player.Play();
         }
 
         private void TransitionToNextSlide()
@@ -50,9 +50,9 @@ namespace WindowsFormsApp2023_Final
         {
             ToogleListenEnabled(false); // Απενεργοποίηση του κουμπιού Παύση
             ToogleExportEnabled(true); // Ενεργοποίηση του κουμπιού Αρχή
-            timer1.Stop();
             player.Stop();
             guna2Transition1.ShowSync(slides[11]);
+            timer1.Stop();
         }
 
         protected override void ExportButton_Click(object sender, EventArgs e)

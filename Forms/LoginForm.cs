@@ -7,12 +7,12 @@ namespace WindowsFormsApp2023_Final
 {
     public partial class LoginForm : WindowsFormsApp2023_Final.BaseForm
     {
-        string name = "";
-        string username = "";
-        int id;
-        string email = "";
-        string password;
-        SQLiteConnection connection;
+        protected string name = "";
+        protected string username = "";
+        protected int id;
+        protected string email = "";
+        protected string password;
+        protected SQLiteConnection connection;
 
         public LoginForm()
         {
@@ -157,6 +157,11 @@ namespace WindowsFormsApp2023_Final
         {
             SpeakWelcomeMessage();
             NavigateToForm<GuideForm>();
+        }
+
+        private void RegisterButton_Click(object sender, EventArgs e)
+        {
+            NavigateToForm<RegisterForm>();
         }
     }
 }

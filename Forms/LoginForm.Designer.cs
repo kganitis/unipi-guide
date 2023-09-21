@@ -41,6 +41,7 @@
             this.LanguageComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.RegisterButton = new System.Windows.Forms.Button();
             this.ContentPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -49,6 +50,7 @@
             // 
             // ContentPanel
             // 
+            this.ContentPanel.Controls.Add(this.RegisterButton);
             this.ContentPanel.Controls.Add(this.label3);
             this.ContentPanel.Controls.Add(this.LanguageComboBox);
             this.ContentPanel.Controls.Add(this.pictureBox7);
@@ -183,6 +185,19 @@
             // 
             this.timer1.Interval = 4000;
             // 
+            // RegisterButton
+            // 
+            this.RegisterButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(44)))), ((int)(((byte)(84)))));
+            this.RegisterButton.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.RegisterButton.ForeColor = System.Drawing.Color.White;
+            this.RegisterButton.Location = new System.Drawing.Point(574, 268);
+            this.RegisterButton.Name = "RegisterButton";
+            this.RegisterButton.Size = new System.Drawing.Size(154, 55);
+            this.RegisterButton.TabIndex = 13;
+            this.RegisterButton.Text = "Εγγραφείτε εδώ";
+            this.RegisterButton.UseVisualStyleBackColor = false;
+            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,22 +216,18 @@
         }
 
         #endregion
-
-      //  private System.Windows.Forms.PictureBox pictureBox1;
-      //  private System.Windows.Forms.PictureBox pictureBox2;
-      //  private System.Windows.Forms.PictureBox pictureBox4;
-      //  private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button VisitorButton;
-        private System.Windows.Forms.Button LoginButton;
-        private System.Windows.Forms.TextBox PasswordTextBox;
-        private System.Windows.Forms.TextBox UsernameTextBox;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox LanguageComboBox;
         private System.Windows.Forms.Timer timer1;
+        protected System.Windows.Forms.Button RegisterButton;
+        protected System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Button VisitorButton;
+        protected System.Windows.Forms.Button LoginButton;
+        protected System.Windows.Forms.TextBox PasswordTextBox;
+        protected System.Windows.Forms.TextBox UsernameTextBox;
+        protected System.Windows.Forms.Label label2;
+        protected System.Windows.Forms.Label label3;
+        protected System.Windows.Forms.ComboBox LanguageComboBox;
     }
 }
