@@ -39,7 +39,6 @@
             // 
             this.RegisterButton.Location = new System.Drawing.Point(574, 334);
             this.RegisterButton.Text = "Εγγραφή";
-            this.RegisterButton.Click += new System.EventHandler(this.RegisterButton_Click);
             // 
             // VisitorButton
             // 
@@ -129,6 +128,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Name = "RegisterForm";
+            this.Text = "Εγγραφή";
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
             this.ResumeLayout(false);

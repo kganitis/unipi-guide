@@ -251,6 +251,7 @@
             this.ClientSize = new System.Drawing.Size(984, 560);
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "ReviewSubmitForm";
+            this.Text = "Αξιολογήσεις";
             this.ContentPanel.ResumeLayout(false);
             this.ContentPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
