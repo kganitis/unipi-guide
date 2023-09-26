@@ -32,14 +32,12 @@ namespace WindowsFormsApp2023_Final
             String selectSQL = "SELECT comments, grade FROM reviews";
             SQLiteCommand command = new SQLiteCommand(selectSQL, connection);
             SQLiteDataReader reader = command.ExecuteReader();
+            string review, grade;
             while (reader.Read())
             {
-                ReviewsTextBox.AppendText(Environment.NewLine);
-                ReviewsTextBox.AppendText(Environment.NewLine);
-                ReviewsTextBox.AppendText(reader.GetString(0));
-                ReviewsTextBox.AppendText(" Total grade:  ");
-                ReviewsTextBox.AppendText(reader.GetInt32(1).ToString());
-                ReviewsTextBox.AppendText(" / 100");
+                review = reader.GetString(0);
+                grade = reader.GetInt32(1).ToString();
+                ReviewsTextBox.AppendText($"\n{review} ({grade} / 5)\n");
             }
             connection.Close();
         }

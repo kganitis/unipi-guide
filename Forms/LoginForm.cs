@@ -159,7 +159,7 @@ namespace WindowsFormsApp2023_Final
             NavigateToForm<GuideForm>();
         }
 
-        private void RegisterButton_Click(object sender, EventArgs e)
+        protected virtual void RegisterButton_Click(object sender, EventArgs e)
         {
             NavigateToForm<RegisterForm>();
         }

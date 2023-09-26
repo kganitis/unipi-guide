@@ -18,7 +18,7 @@ namespace WindowsFormsApp2023_Final
             InitializeComponent();
         }
 
-        private void RegisterButton_Click(object sender, EventArgs e)
+        protected override void RegisterButton_Click(object sender, EventArgs e)
         {
             connection = new SQLiteConnection(connectionString);
             connection.Open();
@@ -40,23 +40,21 @@ namespace WindowsFormsApp2023_Final
                     command.ExecuteNonQuery();
                     connection.Close();
                     MessageBox.Show("Η εγγραφή πραγματοποιήθηκε επιτυχώς!");
-                    LoginForm loginForm = new LoginForm();
-                    loginForm.Show();
-                    Hide();
-                    UsernameTextBox.Clear();
-                    PasswordTextBox.Clear();
-                    NameTextBox.Clear();
-                    MailTextBox.Clear();
+                    BackToLoginForm();
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
-            
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
+        {
+            BackToLoginForm();
+        }
+
+        private void BackToLoginForm()
         {
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
